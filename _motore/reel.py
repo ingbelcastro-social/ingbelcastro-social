@@ -70,8 +70,15 @@ def render(spec, endkind, out_mp4):
             pg.screenshot(path=f'{tmp}/f{f:04d}.jpg', type='jpeg', quality=93)
         b.close()
     beat = os.path.join(A, 'beat100.wav')
-    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-framerate', str(FPS), '-i', f'{tmp}/f%04d.jpg', '-i', beat,
-        '-af', 'loudnorm=I=-14:TP=-1.5:LRA=7', '-map', '0:v', '-map', '1:a', '-t', str(DUR),
+    vo = spec.get('voice')
+    if vo:  # reel con la voce dell'ing.: voce pulita in primo piano, beat basso sotto
+        VC = "highpass=f=90,lowpass=f=12000,afftdn=nr=24:nf=-42:tn=1,agate=threshold=0.012:ratio=2.5:attack=5:release=300,acompressor=threshold=-20dB:ratio=3:attack=10:release=200"
+        af = (f"[1:a]atrim={vo['start']}:{vo['end']},asetpts=PTS-STARTPTS,aresample=48000,{VC},afade=t=in:d=0.05,afade=t=out:st={vo['end']-vo['start']-0.15}:d=0.15,adelay={int(vo.get('at',0.3)*1000)}:all=1,apad=pad_dur=10[v];"
+              f"[2:a]aresample=48000,volume=-21dB,apad=pad_dur=2[b];[v][b]amix=inputs=2:duration=longest:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=7,atrim=0:{DUR}[a]")
+        aud = ['-i', vo['file'], '-i', beat, '-filter_complex', af, '-map', '0:v', '-map', '[a]']
+    else:
+        aud = ['-i', beat, '-af', 'loudnorm=I=-14:TP=-1.5:LRA=7', '-map', '0:v', '-map', '1:a']
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-framerate', str(FPS), '-i', f'{tmp}/f%04d.jpg'] + aud + ['-t', str(DUR),
         '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '19', '-profile:v', 'high', '-pix_fmt', 'yuv420p', '-r', str(FPS),
         '-c:a', 'aac', '-b:a', '192k', '-ar', '48000', '-movflags', '+faststart', out_mp4], check=True)
     shutil.rmtree(tmp)

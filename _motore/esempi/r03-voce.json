@@ -1,0 +1,11 @@
+{"name":"Direttore-lavori-voce","teaser":{"quando":"Domani","ora":"Mercoledì ore 19:00"},
+ "voice":{"file":"/home/claude/v3/V3.m4a","start":153.7,"end":174.75,"at":0.3},
+ "scenes":[
+ {"eyebrow":"Direttore dei lavori","title":"Misura quello che è fatto davvero","dur":3.95,"size":104},
+ {"eyebrow":"Prima di ogni pagamento","title":"Verifica i SAL","sub":"Gli stati di avanzamento dei lavori.","dur":3.95},
+ {"eyebrow":"Il punto chiave","title":"Prima che tu paghi","dur":1.7},
+ {"eyebrow":"Esempio","title":"Ti chiedono il secondo acconto?","sub":"Se i lavori sono quelli del primo, [[te lo dice]].","dur":5.1,"size":104},
+ {"eyebrow":"Le voci extra","title":"Si concordano prima","sub":"Ogni lavoro in più, messo per iscritto.","dur":4.6},
+ {"eyebrow":"Mai così","title":"[[Scoperte in fattura]]","dur":2.1},
+ {"eyebrow":"Il direttore dei lavori","title":"Lavora per te","sub":"Non per l'impresa.","dur":4.2}
+ ]}

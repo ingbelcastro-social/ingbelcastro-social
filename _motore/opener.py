@@ -53,7 +53,7 @@ function render(t){
  if(BIG){const b=document.getElementById('big');const a=BIG[0]+T.c0;const o=cl((t-a)/0.2)*cl((T.coldEnd+T.c0-t)/0.15);b.style.opacity=o;
    const p=ez(cl((t-a)/1.4)); const v=Math.round((BIG[2]+(BIG[3]-BIG[2])*p)/100)*100; document.getElementById('bn').textContent=v.toLocaleString('it-IT')+' €';
    b.style.transform='scale('+(1+0.04*Math.sin(cl((t-a-1.4)/0.4)*Math.PI))+')'}
- document.getElementById('flash').style.opacity=0.85*pulse(t,T.sg-0.12,0.12)+0.6*pulse(t,T.sg+T.ing,0.08);
+ document.getElementById('flash').style.opacity=0;
  // sigla
  const s=t-T.sg; document.getElementById('grid').style.opacity=s<0?0.5:1;
  const ww=[['wm',T.magia,T.naa],['wn',T.naa,T.ing],['wi',T.ing,T.ing+1.3]];
@@ -93,8 +93,9 @@ def sfx(T, total):
 
 def build(spec, out):
     from playwright.sync_api import sync_playwright
-    c0 = 0.3; cs, ce = spec['cold']; cold_len = ce - cs
-    cu = spec['sigla_cues']; sg = c0 + cold_len + 0.5; end = sg + spec['sigla_cut']
+    cold = spec.get('cold')
+    c0 = 0.3 if cold else 0.0; cs, ce = cold if cold else (0, 0); cold_len = ce - cs
+    cu = spec['sigla_cues']; sg = (c0 + cold_len + 0.5) if cold else 0.25; end = sg + spec['sigla_cut']
     T = {'c0': c0, 'coldEnd': cold_len, 'sg': sg, 'end': end, 'magia': cu['magia'], 'naa': cu['naa'], 'ing': cu['ing'], 'nome': cu['nome'], 'titolo': cu['titolo']}
     tmp = tempfile.mkdtemp()
     with sync_playwright() as p:
@@ -104,16 +105,18 @@ def build(spec, out):
         for f in range(int(end * FPS)):
             pg.evaluate(f'render({f / FPS})'); pg.screenshot(path=f'{tmp}/f{f:05d}.jpg', type='jpeg', quality=92)
         br.close()
-    wf.write(f'{tmp}/sfx.wav', SR, (np.clip(sfx(T, end), -1, 1) * 32767).astype(np.int16))
     beat = os.path.join(A, 'beat100.wav')
-    voice_chain = 'highpass=f=80,afftdn=nf=-25,acompressor=threshold=-20dB:ratio=3:attack=10:release=200'
-    af = (f"[1:a]atrim={cs}:{ce},asetpts=PTS-STARTPTS,aresample={SR},{voice_chain},adelay={int(c0*1000)}:all=1[cv];"
-          f"[2:a]aresample={SR},atrim=0:{spec['sigla_cut']},{voice_chain},adelay={int(sg*1000)}:all=1[sv];"
-          f"[3:a]aresample={SR},atrim=0:{end - sg - T['ing']},volume=-17dB,afade=t=in:d=0.05,afade=t=out:st={end - sg - T['ing'] - 0.8}:d=0.8,adelay={int((sg + T['ing'])*1000)}:all=1[bt];"
-          f"[4:a]aresample={SR}[fx];"
-          f"[cv][sv][bt][fx]amix=inputs=4:duration=longest:normalize=0,atrim=0:{end},loudnorm=I=-16:TP=-2:LRA=9,alimiter=limit=0.84:level=false[a]")
-    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-framerate', str(FPS), '-i', f'{tmp}/f%05d.jpg', '-i', spec['voice'], '-i', spec['sigla'], '-i', beat, '-i', f'{tmp}/sfx.wav',
-                    '-filter_complex', af, '-map', '0:v', '-map', '[a]', '-t', f'{end}', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20',
+    VC = "highpass=f=90,lowpass=f=12000,afftdn=nr=24:nf=-42:tn=1,agate=threshold=0.012:ratio=2.5:attack=5:release=300,acompressor=threshold=-20dB:ratio=3:attack=10:release=200"
+    parts = []; ins = ['-i', spec['sigla'], '-i', beat]; k = 2
+    parts.append(f"[1:a]aresample={SR},atrim=0:{spec['sigla_cut']},{VC},adelay={int(sg*1000)}:all=1,apad=pad_dur=4[sv]")
+    parts.append(f"[2:a]aresample={SR},atrim=0:{end - sg - T['ing']},volume=-31dB,afade=t=in:d=0.4,afade=t=out:st={max(0.1, end - sg - T['ing'] - 1.0)}:d=1.0,adelay={int((sg + T['ing'])*1000)}:all=1,apad=pad_dur=4[bt]")
+    mix = '[sv][bt]'; nmix = 2
+    if cold:
+        ins += ['-i', spec['voice']]; k += 1
+        parts.append(f"[{k}:a]atrim={cs}:{ce},asetpts=PTS-STARTPTS,aresample={SR},{VC},adelay={int(c0*1000)}:all=1,apad=pad_dur=4[cv]"); mix += '[cv]'; nmix += 1
+    af = ';'.join(parts) + f";{mix}amix=inputs={nmix}:duration=longest:normalize=0,loudnorm=I=-16:TP=-2:LRA=9,alimiter=limit=0.84:level=false,atrim=0:{end}[a]"
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-framerate', str(FPS), '-i', f'{tmp}/f%05d.jpg'] + ins +
+                   ['-filter_complex', af, '-map', '0:v', '-map', '[a]', '-t', f'{end}', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '20',
                     '-pix_fmt', 'yuv420p', '-r', str(FPS), '-c:a', 'aac', '-b:a', '192k', '-ar', str(SR), out], check=True)
     shutil.rmtree(tmp)
     return out, end

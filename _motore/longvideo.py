@@ -111,10 +111,11 @@ def build(spec, out):
     lst.append(f"file '{tmp}/f{len(times)-2:05d}.jpg'")
     open(f'{tmp}/list.txt', 'w').write('\n'.join(lst))
     # audio: sigla + voce, pulizia voce, beat morbido sotto
+    VC = "highpass=f=90,lowpass=f=12000,afftdn=nr=24:nf=-42:tn=1,agate=threshold=0.012:ratio=2.5:attack=5:release=300,acompressor=threshold=-20dB:ratio=3:attack=10:release=200"
     af = (f"[1:a]atrim=0:{IC},asetpts=PTS-STARTPTS,aresample=48000[a0];[2:a]aresample=48000[a1];"
-          f"[a0][a1]concat=n=2:v=0:a=1,highpass=f=80,afftdn=nf=-25,acompressor=threshold=-20dB:ratio=3:attack=10:release=200,loudnorm=I=-16:TP=-1.5:LRA=9[v];"
-          f"[3:a]aresample=48000,atrim=0:{total},volume=-23dB,afade=t=out:st={total-3}:d=3[m];"
-          f"[v][m]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-16:TP=-2:LRA=9,alimiter=limit=0.84:level=false[aout]")
+          f"[a0][a1]concat=n=2:v=0:a=1,{VC},apad=pad_dur=6[v];"
+          f"[3:a]aresample=48000,atrim=0:{total},volume=-36dB,afade=t=out:st={total-3}:d=3,apad=pad_dur=6[m];"
+          f"[v][m]amix=inputs=2:duration=first:normalize=0,loudnorm=I=-16:TP=-2:LRA=9,alimiter=limit=0.84:level=false,atrim=0:{total}[aout]")
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', f'{tmp}/list.txt',
         '-i', spec['intro_audio'], '-i', spec['voice'], '-i', spec['bed'],
         '-filter_complex', af,
