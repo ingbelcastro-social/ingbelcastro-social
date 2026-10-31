@@ -1,0 +1,19 @@
+{"name":"Caso-lavori-senza-CILA","topic":"CASO STUDIO","slides":[
+{"type":"cover","eyebrow":"CASO STUDIO","title":"Lavori fatti senza CILA: e adesso?","sub":"Un caso tipo, con le regole vere della legge.",
+ "art":"<svg width='460' height='360' viewBox='0 0 460 360' fill='none'><g stroke='#262626'><path d='M0 40H460M0 80H460M0 120H460M0 160H460M0 200H460M0 240H460M0 280H460M0 320H460M40 0V360M80 0V360M120 0V360M160 0V360M200 0V360M240 0V360M280 0V360M320 0V360M360 0V360M400 0V360M440 0V360'/></g><rect x='60' y='60' width='300' height='260' stroke='#fff' stroke-width='5'/><path d='M200 60V180' stroke='#555' stroke-width='5' stroke-dasharray='12 10'/><path d='M250 60V200' stroke='#fff' stroke-width='5'/><path d='M200 200H250' stroke='#F07A35' stroke-width='4'/><path d='M215 188L200 200L215 212' stroke='#F07A35' stroke-width='4' fill='none'/><circle cx='380' cy='280' r='54' stroke='#F07A35' stroke-width='4' fill='#111'/><text x='380' y='306' text-anchor='middle' font-family='Oswald' font-weight='700' font-size='76' fill='#F07A35'>!</text></svg>"},
+{"type":"list","kicker":"Il caso","title":"Tramezzo spostato e bagno rifatto","size":88,
+ "text":["Marco sposta un tramezzo non portante e rifà il bagno spostando i sanitari. In Comune non presenta nessuna pratica."],
+ "note":"Caso esemplificativo: nomi e dettagli sono di fantasia."},
+{"type":"list","kicker":"La regola","title":"Serviva la CILA","size":96,
+ "text":["Spostare tramezzi e cambiare la distribuzione interna è manutenzione straordinaria: va comunicata al Comune con la **CILA**, asseverata da un tecnico abilitato, prima di iniziare."],
+ "note":"Non tocca muri portanti o solai: per quelli serve la SCIA."},
+{"type":"stat","kicker":"Quanto costa rimediare","title":"La sanzione","size":84,"num":"1.000 €","numsize":170,"num_label":"per la CILA\nnon presentata",
+ "text":["Scende a **333 €** (ridotta di due terzi) se la CILA arriva spontaneamente mentre i lavori sono ancora in corso."]},
+{"type":"steps","title":"Come si sistema","size":96,
+ "steps":["Il tecnico verifica lo stato legittimo della casa","Prepara la CILA tardiva con elaborati e asseverazione","Si paga la sanzione e si deposita la pratica in Comune"],
+ "note":"Se è cambiata la distribuzione, va aggiornata anche la planimetria catastale."},
+{"type":"close","kicker":"Perché conviene farlo subito","title":"Prima del rogito, non dopo","size":96,
+ "text":["Una difformità non sistemata può bloccare o complicare vendita e mutuo.","Prima si regolarizza, meno costa."],
+ "save":"Salva il post e giralo a chi sta ristrutturando.",
+ "source":"Riferimento: art. 6-bis, comma 5, DPR 380/2001 (Testo Unico Edilizia)."}
+]}

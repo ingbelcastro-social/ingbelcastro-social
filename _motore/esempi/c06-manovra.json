@@ -1,0 +1,19 @@
+{"name":"Manovra-2027-casa","topic":"LEGGE DI BILANCIO 2027","slides":[
+{"type":"cover","eyebrow":"NOTIZIA · LEGGE DI BILANCIO","title":"Manovra 2027: cosa c'è per la tua casa","sub":"Il punto, mentre il testo è in Parlamento.","size":104,
+ "art":"<svg width='460' height='360' viewBox='0 0 460 360' fill='none'><g stroke='#262626'><path d='M0 40H460M0 80H460M0 120H460M0 160H460M0 200H460M0 240H460M0 280H460M0 320H460M40 0V360M80 0V360M120 0V360M160 0V360M200 0V360M240 0V360M280 0V360M320 0V360M360 0V360M400 0V360M440 0V360'/></g><path d='M90 180L210 80L330 180V320H90Z' stroke='#fff' stroke-width='4' stroke-linejoin='round' fill='#111'/><rect x='180' y='240' width='60' height='80' stroke='#fff' stroke-width='3'/><circle cx='360' cy='120' r='64' stroke='#F07A35' stroke-width='4' fill='#111'/><text x='360' y='145' text-anchor='middle' font-family='Oswald' font-weight='700' font-size='70' fill='#F07A35'>%</text><text x='96' y='60' font-family='Oswald' font-weight='700' font-size='34' fill='#F07A35'>2027</text></svg>"},
+{"type":"news","chip":"Cosa è successo","title":"Il Governo ha approvato il disegno di legge","size":88,
+ "text":["Il Consiglio dei ministri ha approvato il ddl di Bilancio 2027 il **28 ottobre**. Ora tocca al Parlamento, che deve approvarlo entro il **31 dicembre**."],
+ "note":"È ancora una proposta: fino al voto finale può cambiare."},
+{"type":"compare","title":"Bonus casa: le aliquote proposte","size":88,
+ "left":["Prima casa","50% di detrazione anche nel 2027"],"right":["Altre case","36% di detrazione"],
+ "after":"Tetto di spesa invariato: 96.000 € per unità immobiliare, detrazione in 10 anni."},
+{"type":"list","title":"Cosa resta come oggi","size":88,
+ "items":["Bonus ristrutturazione, ecobonus e sismabonus con le stesse aliquote","Bonus mobili al 50%, fino a 5.000 € di spesa","Niente detrazione per le nuove caldaie a combustibili fossili"],
+ "note":"Sismabonus acquisti ed ecobonus al 65%: per ora nessuna conferma."},
+{"type":"stat","kicker":"Se la proroga non passasse","title":"Dal 1° gennaio 2027","size":84,"num":"36%","num_label":"sulla prima casa\ne 30% sulle altre",
+ "text":["Per questo il voto del Parlamento conta: ti aggiorno appena il testo è definitivo."]},
+{"type":"close","kicker":"Cosa fare adesso","title":"Hai lavori pronti? Il 2026 è l'anno sicuro","size":88,
+ "text":["Per le spese pagate entro il **31 dicembre 2026** il 50% sulla prima casa è già legge.","Conta la data del **bonifico parlante**, non quella di fine lavori."],
+ "save":"Salva il post e mandalo a chi sta ristrutturando.",
+ "source":"Fonti: Edilportale e Ingenio, 28/10/2026 (ddl Bilancio 2027 approvato dal Consiglio dei ministri)."}
+]}
