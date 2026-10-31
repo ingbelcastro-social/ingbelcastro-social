@@ -16,3 +16,4 @@ Requisiti: Python 3 con playwright (Chromium) e ffmpeg.
 5. Controllo qualità: guarda le slide in un montaggio, controlla con ffprobe durata 30.0, 1080x1920, 30 fps, audio aac.
 6. Video lungo 1920x1080: `python3 longvideo.py spec.json out.mp4` (vedi esempi/video-2-ape.json). Servono: sigla V0 (voce), voce del video in un file unico, beat morbido (`DUR=<secondi> BED=1 OUT=bed.wav python3 beat.py`), inizio di ogni blocco nel file voce (bounds: si trovano con le pause lunghe, vedi procedura nel progetto). Voce pulita e normalizzata a -16 LUFS, picco < -1.5 dBTP.
 7. Miniatura 1280x720: `python3 thumb.py out.jpg "TITOLO ARANCIO" "riga bianca" "chip" [classi]`.
+8. Apertura dei video lunghi (anteprima + sigla con effetti): `python3 opener.py opener.json opener.mp4` (vedi esempi/opener-video-2-ape.json). Poi il corpo del video con longvideo.py usando intro_audio = 0,2 s di silenzio e intro_cut 0.2, e si uniscono i due file con ffmpeg concat.

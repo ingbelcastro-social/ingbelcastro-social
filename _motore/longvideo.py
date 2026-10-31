@@ -65,6 +65,7 @@ const S=%s,E=%s,IC=%f,N=%d,PTS=%s;
 function cl(x){return Math.max(0,Math.min(1,x))} function ez(x){return 1-Math.pow(1-x,3)}
 const geo=['l1','l2','l3','l4'].map(i=>{const e=document.getElementById(i);const L=e.getTotalLength();e.style.strokeDasharray=L;return [e,L]});
 function render(t){
+ if(IC<0.5){document.getElementById('intro').style.display='none';document.getElementById('geo').style.display='none'}
  const it=document.getElementById('intro'); const io=t<IC?1:cl(1-(t-IC)/0.5);
  it.style.opacity=io; document.getElementById('geo').style.opacity=0.9*io*(1-0.85*cl((t-(IC-3.6))/0.6));
  geo.forEach(([e,L],i)=>{e.style.strokeDashoffset=L*(1-ez(cl((t-0.2-i*0.6)/2.2)))});
