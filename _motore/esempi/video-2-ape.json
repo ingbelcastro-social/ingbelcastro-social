@@ -1,0 +1,148 @@
+{
+ "title": "APE: cos'è, quanto dura e quando serve",
+ "intro_audio": "/home/claude/v2/V0.m4a",
+ "intro_cut": 11.2,
+ "voice": "/home/claude/v2/V2.m4a",
+ "bed": "/home/claude/v2/bed.wav",
+ "bounds": [
+  0,
+  26.17,
+  57.77,
+  94.66,
+  128.89,
+  159.69,
+  195.1,
+  231.7,
+  263.08,
+  291.09,
+  334.0,
+  367.84,
+  395.157
+ ],
+ "blocks": [
+  {
+   "id": "V2-01",
+   "cap": "Introduzione",
+   "title": "L'APE spiegato da un ingegnere",
+   "pts": [
+    "Serve per vendere e per affittare",
+    "La classe va indicata già nell'annuncio",
+    "Quanto dura, chi lo fa, quanto rischi"
+   ]
+  },
+  {
+   "id": "V2-02",
+   "cap": "Cos'è",
+   "title": "La carta d'identità energetica della casa",
+   "pts": [
+    "Energia per riscaldare, raffrescare e acqua calda",
+    "10 classi: da A4 (migliore) a G (peggiore)",
+    "Contiene le raccomandazioni per migliorare"
+   ],
+   "classi": true
+  },
+  {
+   "id": "V2-03",
+   "cap": "Quando serve",
+   "title": "Quando è obbligatorio",
+   "pts": [
+    "Vendita, affitto, nuove costruzioni, ristrutturazioni importanti",
+    "In ogni annuncio: classe e indice di prestazione",
+    "Da fare prima di mettere in vendita"
+   ]
+  },
+  {
+   "id": "V2-04",
+   "cap": "Quanto dura",
+   "title": "Dura al massimo 10 anni",
+   "big": "10 ANNI",
+   "pts": [
+    "Solo se l'impianto fa i controlli di efficienza",
+    "Decade se fai lavori che cambiano la prestazione",
+    "Controlla anche il libretto d'impianto"
+   ]
+  },
+  {
+   "id": "V2-05",
+   "cap": "Chi lo fa",
+   "title": "Chi lo fa e come",
+   "pts": [
+    "Tecnico abilitato e indipendente",
+    "Sopralluogo, calcolo con software conforme",
+    "Trasmesso al catasto energetico regionale"
+   ]
+  },
+  {
+   "id": "V2-06",
+   "cap": "Quanto costa",
+   "title": "Quanto costa",
+   "pts": [
+    "Dipende da superficie, impianto, complessità",
+    "Diffida delle offerte troppo basse",
+    "Un APE sbagliato si può contestare"
+   ]
+  },
+  {
+   "id": "V2-07",
+   "cap": "Le sanzioni",
+   "title": "Le sanzioni",
+   "pts": [
+    "Vendita senza APE: 3.000 – 18.000 €",
+    "Affitto senza APE: 1.000 – 4.000 €",
+    "Annuncio senza classe: 500 – 3.000 €"
+   ]
+  },
+  {
+   "id": "V2-08",
+   "cap": "Come si legge",
+   "title": "Come si legge un APE",
+   "pts": [
+    "Prima pagina: classe e indice (kWh/m² anno)",
+    "Più il numero è basso, meglio è",
+    "Le raccomandazioni valgono oro"
+   ]
+  },
+  {
+   "id": "V2-09",
+   "cap": "Perché conta",
+   "title": "Pesa su bollette e prezzo",
+   "pts": [
+    "Classe G: consumi molto più alti di una classe A",
+    "Le case efficienti si vendono prima e meglio",
+    "Se compri: argomento per trattare sul prezzo"
+   ]
+  },
+  {
+   "id": "V2-10",
+   "cap": "Case green",
+   "title": "E la direttiva case green?",
+   "pts": [
+    "Direttiva UE 2024/1275: non ancora recepita in Italia",
+    "Dal 3 giugno 2026: nuovo decreto requisiti minimi",
+    "Nessun obbligo di ristrutturare, nessun divieto di vendere"
+   ]
+  },
+  {
+   "id": "V2-11",
+   "cap": "Consigli",
+   "title": "Tre consigli da ingegnere",
+   "pts": [
+    "Se vendi: APE prima dell'annuncio, fatto bene",
+    "Dopo lavori su impianti o infissi: verifica la validità",
+    "Prima di ristrutturare: simula gli interventi"
+   ],
+   "numbered": true
+  },
+  {
+   "id": "V2-12",
+   "cap": "Riassumendo",
+   "title": "Riassumendo",
+   "pts": [
+    "Serve per vendere, affittare e negli annunci",
+    "Dura fino a 10 anni, se l'impianto è in regola",
+    "Lo fa un tecnico, con il sopralluogo"
+   ],
+   "end": true
+  }
+ ]
+}

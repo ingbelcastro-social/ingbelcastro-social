@@ -14,3 +14,5 @@ Requisiti: Python 3 con playwright (Chromium) e ffmpeg.
    Reel che annuncia il video lungo del giorno dopo: aggiungi "teaser": {"quando": "Domani", "ora": "Sabato ore 19:00"} (chiusura «Domani il video completo»).
 4. Esempi di spec: cartella `esempi/` (settimana 2–8 novembre 2026).
 5. Controllo qualità: guarda le slide in un montaggio, controlla con ffprobe durata 30.0, 1080x1920, 30 fps, audio aac.
+6. Video lungo 1920x1080: `python3 longvideo.py spec.json out.mp4` (vedi esempi/video-2-ape.json). Servono: sigla V0 (voce), voce del video in un file unico, beat morbido (`DUR=<secondi> BED=1 OUT=bed.wav python3 beat.py`), inizio di ogni blocco nel file voce (bounds: si trovano con le pause lunghe, vedi procedura nel progetto). Voce pulita e normalizzata a -16 LUFS, picco < -1.5 dBTP.
+7. Miniatura 1280x720: `python3 thumb.py out.jpg "TITOLO ARANCIO" "riga bianca" "chip" [classi]`.
