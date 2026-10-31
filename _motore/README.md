@@ -11,5 +11,6 @@ Requisiti: Python 3 con playwright (Chromium) e ffmpeg.
    Testo: **grassetto**, [[evidenza arancio]], \n per andare a capo. Il programma avvisa se un testo esce dalla slide.
 3. Reel: `python3 reel.py spec.json out/` → `Reel-<name>-30s.mp4` (chiusura «Scrivimi in DM») e `Short-<name>-30s.mp4` (chiusura YouTube).
    Le scene (eyebrow, title, sub, dur, size opzionale) devono sommare 25.6 s; la chiusura dura 4.4 s.
+   Reel che annuncia il video lungo del giorno dopo: aggiungi "teaser": {"quando": "Domani", "ora": "Sabato ore 19:00"} (chiusura «Domani il video completo»).
 4. Esempi di spec: cartella `esempi/` (settimana 2–8 novembre 2026).
 5. Controllo qualità: guarda le slide in un montaggio, controlla con ffprobe durata 30.0, 1080x1920, 30 fps, audio aac.

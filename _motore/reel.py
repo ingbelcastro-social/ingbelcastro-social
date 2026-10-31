@@ -35,7 +35,11 @@ def page(spec, endkind):
         size = s.get('size', 120 if len(s['title']) < 34 else 100)
         sc += f'<div class="sc" id="s{k}"><span class="eb">{esc(s.get("eyebrow",""))}</span><h1 class="tt" style="font-size:{size}px">{esc(s["title"])}</h1>' + \
               (f'<p class="sb">{esc(s["sub"])}</p>' if s.get('sub') else '') + '</div>'
-    if endkind == 'ig':
+    if spec.get('teaser'):
+        tz = spec['teaser']  # es. {"quando": "Domani", "ora": "ore 19:00"}
+        dove = 'su YouTube' if endkind == 'ig' else 'sul canale'
+        end = f'<div class="end" id="end"><img src="{LOGO}"><h1 class="tt" style="font-size:112px">{esc(tz.get("quando","Domani"))} il video<br>completo</h1><div class="btn">{dove}</div><div class="es">{esc(tz.get("ora",""))} · @ing.belcastro<br>Attiva le notifiche per non perderlo</div></div>'
+    elif endkind == 'ig':
         e = spec['end_ig']
         end = f'<div class="end" id="end"><img src="{LOGO}"><h1 class="tt" style="font-size:112px">{esc(e["title"])}</h1><div class="btn">Scrivimi in DM</div><div class="es">Segui @ing.belcastro: un consiglio sulla<br>casa ogni giorno</div></div>'
     else:
