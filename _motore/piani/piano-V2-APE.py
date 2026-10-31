@@ -6,7 +6,7 @@ SIGLA = {'audio': '/home/claude/v2/V0b.m4a', 'cut': 9.6, 'cues': {'magia': 1.4, 
 BED = '/home/claude/v2/bed.wav'
 BLOCKS = [
  {'cap': 'Introduzione', 'audio': D + 'blk01.m4a', 'scenes': [
-   {'t': 0, 'type': 'photo', 'img': P1, 'kick': 'Certificazione energetica', 'title': "L'APE", 'size': 200, 'sub': 'Attestato di Prestazione Energetica', 'sub_t': 1.6},
+   {'t': 0, 'type': 'photo', 'img': '/home/claude/foto/render-palazzo-169.jpg', 'kick': 'Certificazione energetica', 'title': "L'APE", 'size': 200, 'sub': 'Attestato di Prestazione Energetica', 'sub_t': 1.6},
    {'t': 5.6, 'type': 'icons', 'kick': 'Ti serve per forza', 'title': '', 'items': [(0.3, 'vendita', 'Vendi', ''), (1.6, 'chiave', 'Affitti', ''), (4.0, 'annuncio', "L'annuncio", 'classe già indicata')]},
    {'t': 11.8, 'type': 'kin', 'lines': [(0.1, 'Quanto dura?'), (1.6, 'Chi lo fa?'), (2.4, 'Quanto [[rischi]]?')], 'size': 120},
    {'t': 20.2, 'type': 'kin', 'kick': 'Da ingegnere', 'lines': [(0.2, 'Senza giri'), (0.9, 'di [[parole]]')], 'size': 150}]},
@@ -20,7 +20,7 @@ BLOCKS = [
    {'t': 0, 'type': 'kin', 'lines': [(0.3, 'Quando è'), (0.7, '[[obbligatorio]]?')], 'size': 150},
    {'t': 2.9, 'type': 'icons', 'kick': 'Obbligatorio quando', 'items': [(0.2, 'vendita', 'Vendi', ''), (1.1, 'chiave', 'Affitti', ''), (2.2, 'gru', 'Costruisci', 'edificio nuovo'), (3.6, 'martello', 'Ristrutturi', 'ristrutturazione importante')]},
    {'t': 9.3, 'type': 'kin', 'kick': 'Il caso che molti dimenticano', 'lines': [(1.2, 'Gli [[annunci]]')], 'size': 170},
-   {'t': 13.0, 'type': 'listing', 'img': P1, 'kick': 'Portali · vetrine · cartelli', 'hl_t': 1.5, 'sub': 'Classe e indice devono comparire [[in ogni annuncio]]', 'sub_t': 3.0},
+   {'t': 13.0, 'type': 'listing', 'img': '/home/claude/foto/render-villa-169.jpg', 'kick': 'Portali · vetrine · cartelli', 'hl_t': 1.5, 'sub': 'Classe e indice devono comparire [[in ogni annuncio]]', 'sub_t': 3.0},
    {'t': 22.2, 'type': 'timeline', 'kick': 'Quando farlo', 'title': "Prima dell'annuncio, non al rogito", 'size': 84, 'grow_d': 3,
     'marks': [(0.5, 0.0, 'APE', 'fatto dal tecnico'), (1.5, 0.5, 'Annuncio', 'con la classe'), (2.6, 1.0, 'Rogito', 'APE allegato')]},
    {'t': 27.7, 'type': 'icons', 'kick': 'In genere esclusi · da verificare caso per caso', 'items': [(0.3, 'box', 'Box', ''), (1.1, 'cantina', 'Cantine', ''), (1.9, 'deposito', 'Depositi', '')]}]},
@@ -30,14 +30,14 @@ BLOCKS = [
    {'t': 6.5, 'type': 'timeline', 'kick': "Vale solo se l'impianto è in regola", 'title': 'Controlli di efficienza', 'size': 96, 'grow_d': 5,
     'marks': [(0.6, 0.0, 'Anno 0', 'APE'), (2.0, 0.33, 'Controllo', 'sul libretto'), (3.4, 0.66, 'Controllo', 'sul libretto'), (4.8, 1.0, 'Anno 10', 'scadenza')]},
    {'t': 14.2, 'type': 'warn', 'title': 'Salta la manutenzione?', 'sub': "L'attestato decade [[prima]]", 'sub_t': 1.0},
-   {'t': 18.0, 'type': 'photo', 'img': D1, 'kick': 'Decade anche se cambi la prestazione', 'title': 'Lavori = APE nuovo', 'size': 104,
+   {'t': 18.0, 'type': 'photo', 'img': '/home/claude/foto/cantiere-impianti-169.jpg', 'kick': 'Decade anche se cambi la prestazione', 'title': 'Lavori = APE nuovo', 'size': 104,
     'chips': [(4.5, 'infissi', 'Nuovi infissi'), (5.6, 'pompa', 'Pompa di calore'), (6.7, 'cappotto', 'Cappotto')]},
    {'t': 26.2, 'type': 'kin', 'lines': [(0.2, 'Serve un'), (0.6, '[[APE nuovo]]')], 'size': 150},
    {'t': 28.4, 'type': 'doc', 'kick': 'Non basta la data in alto', 'title': 'Controlla anche il libretto', 'size': 84, 'hls': [(0.4, 'scadenza', 'Scadenza')]}]},
  {'cap': 'Chi lo fa', 'audio': D + 'blk05.m4a', 'scenes': [
    {'t': 0, 'type': 'kin', 'lines': [(0.3, 'Chi può'), (0.8, '[[farlo]]?')], 'size': 160},
    {'t': 1.8, 'type': 'icons', 'kick': 'Un tecnico', 'items': [(0.3, 'tecnico', 'Abilitato', ''), (1.6, 'scudo', 'Indipendente', ''), (3.2, 'contratto', 'Certificatore', 'requisiti di legge')]},
-   {'t': 8.2, 'type': 'photo', 'img': P2, 'kick': 'Il sopralluogo', 'title': 'Misura e controlla', 'size': 120, 'kb': (1.05, 1.2, 40, -20),
+   {'t': 8.2, 'type': 'photo', 'img': '/home/claude/foto/facciata-bianca-cestello-169.jpg', 'kick': 'Il sopralluogo', 'title': 'Misura e controlla', 'size': 120, 'kb': (1.05, 1.2, 40, -20),
     'chips': [(2.8, 'metro', 'Misure'), (3.6, 'infissi', 'Infissi'), (4.4, 'impianto', 'Impianto'), (5.2, 'cappotto', 'Murature')]},
    {'t': 14.4, 'type': 'icons', 'kick': 'Poi', 'items': [(0.3, 'pc', 'Calcolo', 'software conforme'), (3.6, 'regione', 'Catasto energetico', 'della Regione + codice')]},
    {'t': 21.9, 'type': 'warn', 'title': 'Niente sopralluogo?', 'sub': 'Solo due foto e una planimetria:\n[[campanello d\'allarme]]', 'sub_t': 1.6}]},
@@ -59,12 +59,12 @@ BLOCKS = [
     'hls': [(1.0, 'classe', 'Classe'), (3.0, 'indice', 'Indice')]},
    {'t': 12.5, 'type': 'doc', 'kick': 'La parte che nessuno guarda', 'title': 'Vale [[oro]]', 'size': 150, 'hls': [(4.0, 'racc', 'Raccomandazioni')]},
    {'t': 20.4, 'type': 'classes', 'kick': 'Le raccomandazioni ti dicono', 'title': 'Dove puoi arrivare', 'size': 96, 'sub': 'Interventi consigliati\ne classe raggiungibile', 'jump': ('E', 'B', 'dopo i lavori'), 'jump_t': 1.5},
-   {'t': 25.2, 'type': 'photo', 'img': P1, 'kick': 'Stai comprando casa?', 'title': "Leggila prima dell'offerta", 'size': 100, 'sub': 'È un piccolo [[preventivo]] dei lavori che ti aspettano', 'sub_t': 3.6}]},
+   {'t': 25.2, 'type': 'photo', 'img': '/home/claude/foto/consegna-casa-169.jpg', 'kick': 'Stai comprando casa?', 'title': "Leggila prima dell'offerta", 'size': 100, 'sub': 'È un piccolo [[preventivo]] dei lavori che ti aspettano', 'sub_t': 3.6}]},
  {'cap': 'Perché conta', 'audio': D + 'blk09.m4a', 'scenes': [
    {'t': 0, 'type': 'kin', 'lines': [(0.3, 'Perché conta'), (0.8, '[[così tanto]]?')], 'size': 140},
    {'t': 3.3, 'type': 'icons', 'kick': 'La classe energetica pesa su', 'items': [(1.6, 'bolletta', 'Bollette', ''), (3.0, 'prezzo', 'Prezzo', '')]},
-   {'t': 8.1, 'type': 'compare', 'title': 'Diverse volte i consumi', 'sides': [(P1, 'G', '#D9372A', 640, 'consumi'), (D2, 'A', '#2A8F3F', 120, 'consumi')]},
-   {'t': 16.3, 'type': 'photo', 'img': D2, 'kick': 'Le case efficienti', 'title': 'Si vendono prima\ne [[meglio]]', 'size': 120},
+   {'t': 8.1, 'type': 'compare', 'title': 'Diverse volte i consumi', 'sides': [('/home/claude/foto/facciata-arancio-balconi-169.jpg', 'G', '#D9372A', 640, 'consumi'), ('/home/claude/foto/interno-finito-scala-169.jpg', 'A', '#2A8F3F', 120, 'consumi')]},
+   {'t': 16.3, 'type': 'photo', 'img': '/home/claude/foto/render-terrazza-169.jpg', 'kick': 'Le case efficienti', 'title': 'Si vendono prima\ne [[meglio]]', 'size': 120},
    {'t': 19.7, 'type': 'kin', 'kick': 'Se stai comprando', 'lines': [(0.4, 'Classe bassa'), (1.2, '= si [[tratta]] sul prezzo')], 'size': 120, 'sub': 'quei lavori li pagherai tu', 'sub_t': 6.5}]},
  {'cap': 'Case green', 'audio': D + 'blk10.m4a', 'scenes': [
    {'t': 0, 'type': 'icons', 'kick': 'La domanda che mi fate tutti', 'title': 'Case green: cambia tutto?', 'size': 100, 'items': [(2.8, 'ue', 'Direttiva UE', '2024/1275')]},
@@ -77,9 +77,9 @@ BLOCKS = [
    {'t': 35.2, 'type': 'check', 'kick': 'Va detto chiaramente', 'title': 'La direttiva non…', 'ic': 'x', 'items': [(1.5, 'obbliga il proprietario a ristrutturare entro una data'), (5.0, 'vieta di vendere o di affittare')]}]},
  {'cap': 'Consigli', 'audio': D + 'blk11.m4a', 'scenes': [
    {'t': 0, 'type': 'kin', 'lines': [(0.3, '3 consigli'), (0.8, 'da [[ingegnere]]')], 'size': 150},
-   {'t': 4.7, 'type': 'cards', 'img': P1, 'n': '1', 'title': 'Vendi?', 'sub': "Fai l'APE prima dell'annuncio, e fallo bene: ti tutela", 'sub_t': 1.2},
-   {'t': 12.3, 'type': 'cards', 'img': D1, 'n': '2', 'title': 'Lavori su impianti o infissi?', 'sub': 'Controlla se il tuo APE è ancora valido', 'sub_t': 1.6},
-   {'t': 20.4, 'type': 'cards', 'img': D2, 'n': '3', 'title': 'Ristrutturi?', 'sub': 'Fai simulare gli interventi prima di farli', 'sub_t': 1.6},
+   {'t': 4.7, 'type': 'cards', 'n': '1', 'title': 'Vendi?', 'sub': "Fai l'APE prima dell'annuncio, e fallo bene: ti tutela", 'sub_t': 1.2},
+   {'t': 12.3, 'type': 'cards', 'n': '2', 'title': 'Lavori su impianti o infissi?', 'sub': 'Controlla se il tuo APE è ancora valido', 'sub_t': 1.6},
+   {'t': 20.4, 'type': 'cards', 'n': '3', 'title': 'Ristrutturi?', 'sub': 'Fai simulare gli interventi prima di farli', 'sub_t': 1.6},
    {'t': 26.3, 'type': 'classes', 'kick': 'Con lo stesso calcolo', 'title': "Scegli l'intervento che rende di più", 'size': 80, 'sub': 'Cappotto, infissi o pompa di calore:\nquante classi guadagni per ogni euro', 'sub_t': 1.8, 'jump': ('F', 'C', 'simulazione'), 'jump_t': 2.5}]},
  {'cap': 'Riassumendo', 'audio': D + 'blk12.m4a', 'scenes': [
    {'t': 0, 'type': 'check', 'kick': 'Riassumendo', 'title': "L'APE", 'items': [(1.6, 'Serve per vendere, affittare e negli annunci'), (4.8, "Dura fino a 10 anni, se l'impianto è in regola"), (8.0, 'Lo fa un tecnico, con il sopralluogo'), (10.6, 'Senza: sanzioni fino a 18.000 €')]},

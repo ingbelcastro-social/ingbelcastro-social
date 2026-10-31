@@ -23,13 +23,13 @@ BLOCKS = [
  {'cap': 'Prima di iniziare', 'audio': D + 'blk04.m4a', 'scenes': [
    {'t': 0, 'type': 'kin', 'lines': [(0.3, 'Cosa fa,'), (0.8, 'in [[concreto]]?')], 'size': 150},
    {'t': 3.4, 'type': 'check', 'kick': 'Prima che inizino i lavori', 'title': 'Verifica', 'items': [(1.5, "Che l'impresa abbia capito il progetto"), (4.5, 'Che il preventivo corrisponda ai lavori'), (8.5, 'Redige il verbale di consegna')]},
-   {'t': 15.8, 'type': 'photo', 'img': P1, 'kick': 'Verbale di consegna', 'title': 'Nero su bianco', 'size': 130, 'chips': [(0.9, 'calendario', 'Tempi'), (1.8, 'chiave', 'Accessi'), (2.8, 'foto', 'Stato dei luoghi')]},
+   {'t': 15.8, 'type': 'photo', 'img': '/home/claude/foto/frontalini-gru-169.jpg', 'kick': 'Verbale di consegna', 'title': 'Nero su bianco', 'size': 130, 'chips': [(0.9, 'calendario', 'Tempi'), (1.8, 'chiave', 'Accessi'), (2.8, 'foto', 'Stato dei luoghi')]},
    {'t': 21.0, 'type': 'kin', 'kick': 'Sembra burocrazia', 'lines': [(0.8, 'Ti [[tutela]]')], 'size': 190, 'sub': 'se a metà cantiere nascono contestazioni', 'sub_t': 2.5}]},
  {'cap': 'Durante i lavori', 'audio': D + 'blk05.m4a', 'scenes': [
-   {'t': 0, 'type': 'photo', 'img': PG, 'kick': 'Durante il cantiere', 'title': 'Sopralluoghi:\n3 controlli', 'size': 120, 'kb': (1.08, 1.2, 30, -10)},
-   {'t': 4.9, 'type': 'cards', 'img': D2, 'n': '1', 'title': 'Il progetto', 'sub': 'Si costruisce quello che è scritto nel progetto e nel titolo edilizio, misure comprese', 'sub_t': 1.0},
-   {'t': 11.7, 'type': 'cards', 'img': P2, 'n': '2', 'title': 'I materiali', 'sub': 'Quelli previsti, certificati; per le strutture, prove di laboratorio', 'sub_t': 1.0},
-   {'t': 18.5, 'type': 'cards', 'img': TT, 'n': '3', 'title': "La qualità d'esecuzione", 'sub': '', 'sub_t': 1.0},
+   {'t': 0, 'type': 'photo', 'img': TT, 'kick': 'Durante il cantiere', 'title': 'Sopralluoghi:\n3 controlli', 'size': 120, 'kb': (1.08, 1.2, 30, -10)},
+   {'t': 4.9, 'type': 'cards', 'img': '/home/claude/foto/cad-computo-169.jpg', 'n': '1', 'title': 'Il progetto', 'sub': 'Si costruisce quello che è scritto nel progetto e nel titolo edilizio, misure comprese', 'sub_t': 1.0},
+   {'t': 11.7, 'type': 'cards', 'n': '2', 'title': 'I materiali', 'sub': 'Quelli previsti, certificati; per le strutture, prove di laboratorio', 'sub_t': 1.0},
+   {'t': 18.5, 'type': 'cards', 'img': '/home/claude/foto/ponteggio-palazzo-169.jpg', 'n': '3', 'title': "La qualità d'esecuzione", 'sub': '', 'sub_t': 1.0},
    {'t': 21.3, 'type': 'icons', 'kick': 'Errori che, una volta coperti, non si vedono più', 'items': [(0.3, 'goccia', 'Impermeabilizzazione', 'fatta male'), (2.2, 'superficie', 'Massetto', 'senza pendenza'), (4.0, 'cappotto', 'Isolamento', 'con ponti termici')]}]},
  {'cap': 'I tuoi soldi', 'audio': D + 'blk06.m4a', 'scenes': [
    {'t': 0, 'type': 'kin', 'kick': 'Il tuo portafoglio', 'lines': [(1.5, 'La [[contabilità]]')], 'size': 160},
@@ -39,7 +39,7 @@ BLOCKS = [
    {'t': 22.0, 'type': 'kin', 'kick': 'Le voci extra', 'lines': [(1.0, 'Si concordano [[prima]]'), (3.6, 'non in fattura')], 'size': 120}]},
  {'cap': 'Le varianti', 'audio': D + 'blk07.m4a', 'scenes': [
    {'t': 0, 'type': 'kin', 'lines': [(0.2, 'Le [[varianti]]')], 'size': 190},
-   {'t': 2.4, 'type': 'photo', 'img': P1, 'kick': 'In cantiere succede spesso', 'title': '«Togliamo questa parete»', 'size': 104, 'sub': '«Spostiamo questa finestra»', 'sub_t': 2.6},
+   {'t': 2.4, 'type': 'photo', 'img': '/home/claude/foto/demolizione-tramezzo-169.jpg', 'kick': 'In cantiere succede spesso', 'title': '«Togliamo questa parete»', 'size': 104, 'sub': '«Spostiamo questa finestra»', 'sub_t': 2.6},
    {'t': 7.9, 'type': 'kin', 'kick': 'Il direttore dei lavori ti dice', 'lines': [(0.6, 'Serve una pratica'), (1.6, 'in [[variante]]?')], 'size': 120},
    {'t': 13.9, 'type': 'warn', 'title': 'Variante senza pratica', 'sub': '= [[difformità]]\nfino alla vendita della casa', 'sub_t': 1.6},
    {'t': 20.8, 'type': 'check', 'kick': 'La legge è chiara: se vede difformità', 'title': 'Il DL deve', 'items': [(2.8, 'Contestarle'), (4.0, 'Segnalarle al Comune'), (6.0, "Nei casi gravi, rinunciare all'incarico")]}]},
@@ -47,10 +47,10 @@ BLOCKS = [
    {'t': 0, 'type': 'kin', 'lines': [(0.3, 'Una responsabilità'), (1.0, '[[vera]]')], 'size': 140},
    {'t': 4.8, 'type': 'icons', 'kick': 'Testo unico edilizia · rispondono insieme', 'title': 'Conformità al titolo edilizio', 'size': 76, 'items': [(1.5, 'chiave', 'Committente', ''), (2.4, 'gru', 'Impresa', ''), (3.4, 'casco', 'Direttore lavori', '')]},
    {'t': 14.6, 'type': 'kin', 'kick': 'Non è una firma di cortesia', 'lines': [(0.8, 'Se firma e non controlla'), (2.6, 'ne [[risponde]]')], 'size': 110},
-   {'t': 20.2, 'type': 'photo', 'img': P2, 'kick': 'Per questo', 'title': 'Un buon DL\nè [[esigente]]', 'size': 130, 'sub': 'E fa bene.', 'sub_t': 4.1}]},
+   {'t': 20.2, 'type': 'kin', 'kick': 'Per questo un buon direttore dei lavori', 'lines': [(0.5, 'È [[esigente]]')], 'size': 180, 'sub': 'E fa bene.', 'sub_t': 4.1}]},
  {'cap': 'Fine lavori', 'audio': D + 'blk09.m4a', 'scenes': [
    {'t': 0, 'type': 'check', 'kick': 'A fine lavori chiude il cerchio', 'title': 'I documenti', 'items': [(2.0, 'Comunicazione di fine lavori'), (4.5, 'Conformità degli impianti'), (7.5, 'Aggiornamento catastale'), (10.0, 'Agibilità'), (13.5, 'Asseverazioni per i bonus fiscali')]},
-   {'t': 19.9, 'type': 'photo', 'img': D2, 'kick': 'Senza questi documenti', 'title': 'Casa finita,\nma [[non in regola]]', 'size': 120}]},
+   {'t': 19.9, 'type': 'kin', 'kick': 'Senza questi documenti', 'lines': [(0.3, 'Casa finita,'), (1.2, 'ma [[non in regola]]')], 'size': 130}]},
  {'cap': 'Quanto costa', 'audio': D + 'blk10.m4a', 'scenes': [
    {'t': 0, 'type': 'kin', 'lines': [(0.3, 'Quanto'), (0.7, '[[costa]]?')], 'size': 170},
    {'t': 2.3, 'type': 'icons', 'kick': "Disciplinare d'incarico, per iscritto", 'items': [(1.5, 'contratto', 'Importo', 'dei lavori'), (3.5, 'complessita', 'Complessità', '')]},
@@ -59,10 +59,10 @@ BLOCKS = [
    {'t': 20.1, 'type': 'kin', 'lines': [(0.2, 'Il costo vero'), (1.0, 'è [[non averlo]]')], 'size': 150}]},
  {'cap': 'Come sceglierlo', 'audio': D + 'blk11.m4a', 'scenes': [
    {'t': 0, 'type': 'kin', 'kick': 'Come sceglierlo', 'lines': [(1.1, '3 [[regole]]')], 'size': 190},
-   {'t': 3.2, 'type': 'cards', 'img': D1, 'n': '1', 'title': "Indipendente dall'impresa", 'sub': 'Deve poter dire di no', 'sub_t': 2.4},
-   {'t': 8.6, 'type': 'cards', 'img': P1, 'n': '2', 'title': 'Incarico scritto', 'sub': 'Compiti, numero di visite e compenso', 'sub_t': 1.4},
+   {'t': 3.2, 'type': 'cards', 'n': '1', 'title': "Indipendente dall'impresa", 'sub': 'Deve poter dire di no', 'sub_t': 2.4},
+   {'t': 8.6, 'type': 'cards', 'n': '2', 'title': 'Incarico scritto', 'sub': 'Compiti, numero di visite e compenso', 'sub_t': 1.4},
    {'t': 13.6, 'type': 'icons', 'kick': '3 · Come ti terrà informato', 'items': [(1.2, 'contratto', 'Verbali', ''), (2.0, 'foto', 'Foto', ''), (2.9, 'libro', 'Giornale dei lavori', '')]},
-   {'t': 19.9, 'type': 'photo', 'img': D1, 'kick': 'Un buon direttore dei lavori', 'title': 'Ti informa anche\nquando [[non ci sei]]', 'size': 116}]},
+   {'t': 19.9, 'type': 'kin', 'kick': 'Un buon direttore dei lavori', 'lines': [(0.3, 'Ti informa anche'), (1.2, 'quando [[non ci sei]]')], 'size': 120}]},
  {'cap': 'Riassumendo', 'audio': D + 'blk12.m4a', 'scenes': [
    {'t': 0, 'type': 'check', 'kick': 'Riassumendo', 'title': 'Il direttore dei lavori', 'items': [(1.5, 'Lavora per te'), (3.5, 'Obbligatorio con permesso, SCIA e strutture'), (7.5, 'Controlla progetto, materiali, qualità e soldi'), (11.5, 'Ne risponde per legge')]},
    {'t': 15.3, 'type': 'cta', 'title': 'Stai per iniziare un cantiere?', 'sub': 'Scrivimi su Instagram [[@ing.belcastro]] o per email', 'btn': 'Iscriviti al canale', 'btn_t': 6.0}]},
