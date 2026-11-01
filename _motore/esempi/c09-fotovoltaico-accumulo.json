@@ -1,0 +1,19 @@
+{"name":"Fotovoltaico-accumulo","topic":"ENERGIA","slides":[
+{"type":"cover","eyebrow":"FOTOVOLTAICO","title":"La batteria conviene davvero?","sub":"Dipende da quando consumi, non solo da quanto.",
+ "art":"<svg width='460' height='360' viewBox='0 0 460 360' fill='none'><g stroke='#262626'><path d='M0 40H460M0 80H460M0 120H460M0 160H460M0 200H460M0 240H460M0 280H460M0 320H460M40 0V360M80 0V360M120 0V360M160 0V360M200 0V360M240 0V360M280 0V360M320 0V360M360 0V360M400 0V360M440 0V360'/></g><circle cx='370' cy='80' r='40' stroke='#F07A35' stroke-width='5'/><path d='M60 250L150 140H330L240 250Z' stroke='#fff' stroke-width='5'/><path d='M105 195H285M150 140L120 250M240 140L200 250' stroke='#555' stroke-width='4'/><rect x='320' y='200' width='90' height='130' rx='10' stroke='#fff' stroke-width='5'/><rect x='335' y='250' width='60' height='65' fill='#F07A35'/><path d='M350 190H380' stroke='#fff' stroke-width='8'/></svg>"},
+{"type":"compare","title":"Di giorno produci, di sera consumi","size":88,
+ "left":["Senza batteria","L'energia del mezzogiorno che non usi va in rete e ti viene pagata poco."],
+ "right":["Con la batteria","La immagazzini e la usi la sera, invece di comprarla dal fornitore."],
+ "after":"Conta l'[[autoconsumo]]: la parte di energia prodotta che usi in casa."},
+{"type":"list","kicker":"Cosa è cambiato","title":"Niente più scambio sul posto","size":88,
+ "text":["Per i **nuovi impianti** lo scambio sul posto non c'è più: l'energia in eccesso si vende al GSE con il ritiro dedicato, a un prezzo più basso di quello che paghi in bolletta.","Per questo oggi l'autoconsumo pesa più di prima."]},
+{"type":"list","kicker":"Quando conviene","title":"Conviene di più se…","size":92,
+ "items":["La casa è vuota di giorno e i consumi sono la sera","Hai o avrai pompa di calore, auto elettrica o piano a induzione","La batteria è dimensionata sui **consumi serali**, non sulla produzione"],
+ "note":"Batteria troppo grande = capacità pagata che resta ferma."},
+{"type":"stat","kicker":"Incentivi 2026","title":"Bonus ristrutturazioni","size":84,"num":"50%","numsize":170,"num_label":"prima casa\n(36% le altre)",
+ "text":["Vale anche per la batteria, se è collegata all'impianto. Limite **96.000 €** per unità, in 10 anni. Servono bonifico parlante e comunicazione ENEA entro 90 giorni."]},
+{"type":"close","kicker":"Prima di comprare","title":"Guarda le bollette di un anno","size":92,
+ "text":["Con i consumi ora per ora si sceglie la taglia giusta di impianto e batteria.","Domani il reel, mercoledì il video completo su YouTube."],
+ "save":"Salva il post e giralo a chi sta pensando al fotovoltaico.",
+ "source":"Fonti verificate l'1/11/2026: art. 16-bis TUIR; Agenzia delle Entrate (accumulo detraibile se collegato all'impianto); delibera ARERA 457/2024 e DL 181/2023 (fine dello scambio sul posto per i nuovi impianti)."}
+]}

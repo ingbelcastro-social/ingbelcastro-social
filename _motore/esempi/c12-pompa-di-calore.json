@@ -1,0 +1,19 @@
+{"name":"Pompa-di-calore-o-caldaia","topic":"ENERGIA","slides":[
+{"type":"cover","eyebrow":"RISCALDAMENTO","title":"Pompa di calore o caldaia?","sub":"La risposta dipende dalla tua casa, non dal catalogo.",
+ "art":"<svg width='460' height='360' viewBox='0 0 460 360' fill='none'><g stroke='#262626'><path d='M0 40H460M0 80H460M0 120H460M0 160H460M0 200H460M0 240H460M0 280H460M0 320H460M40 0V360M80 0V360M120 0V360M160 0V360M200 0V360M240 0V360M280 0V360M320 0V360M360 0V360M400 0V360M440 0V360'/></g><rect x='50' y='110' width='200' height='150' rx='12' stroke='#fff' stroke-width='5'/><circle cx='130' cy='185' r='48' stroke='#F07A35' stroke-width='5'/><path d='M130 145V225M90 185H170M102 157L158 213M158 157L102 213' stroke='#F07A35' stroke-width='3'/><rect x='300' y='80' width='110' height='200' rx='10' stroke='#555' stroke-width='5'/><path d='M330 230C330 200 380 205 370 170C395 195 395 245 355 250C335 250 330 240 330 230Z' stroke='#555' stroke-width='4'/></svg>"},
+{"type":"list","kicker":"Dal 2025","title":"Caldaia solo a gas: niente detrazioni","size":84,
+ "text":["Per le spese 2025, 2026 e 2027 le caldaie uniche a combustibili fossili, anche a condensazione, sono **escluse** da ecobonus e bonus ristrutturazioni."],
+ "note":"Restano agevolati pompe di calore, sistemi ibridi e generatori a biomassa."},
+{"type":"list","kicker":"Il punto chiave","title":"La temperatura dell'acqua","size":92,
+ "text":["La pompa di calore rende al massimo con acqua **tiepida, 35–45 °C**.","Se la casa per scaldarsi ha bisogno di acqua a 60–70 °C, il rendimento scende e i consumi salgono."]},
+{"type":"steps","title":"Come scegliere","size":92,
+ "steps":["Casa isolata e pavimento radiante o ventilconvettori: pompa di calore","Casa poco isolata: prima valuta le dispersioni, o un sistema ibrido","Radiatori: si può fare, ma vanno verificati con un calcolo"]},
+{"type":"compare","title":"Detrazione o Conto Termico 3.0","size":84,
+ "left":["Detrazione","50% prima casa, 36% altre, in 10 anni. Bonifico parlante e comunicazione ENEA."],
+ "right":["Conto Termico 3.0","Contributo GSE fino al [[65%]], in rata unica fino a 15.000 €. Domanda entro 90 giorni."],
+ "after":"Sulla stessa spesa **o l'uno o l'altro**: non si sommano."},
+{"type":"close","kicker":"Prima di cambiare","title":"Fai controllare l'involucro","size":92,
+ "text":["Infissi e isolamento cambiano tutto il conto.","Domani il reel, sabato il video completo su YouTube."],
+ "save":"Salva il post e giralo a chi deve cambiare il riscaldamento.",
+ "source":"Fonti verificate l'1/11/2026: L. 207/2024, art. 1, c. 55; Agenzia delle Entrate, circolare 8/E del 19/6/2025; D.M. MASE 7/8/2025 (Conto Termico 3.0, in vigore dal 25/12/2025)."}
+]}
