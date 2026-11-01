@@ -7,12 +7,13 @@ Metricool pubblica da solo, a PC spento, scaricando i file da qui.
 
 | Cartella | Cosa c'è |
 |---|---|
-| `progetto/claude/` | Guida operativa (`00-LEGGIMI`), **stato e programmazione** (`01-STATO-E-PLANNING`), Metricool (`02`), **calendario fino al 31/12** (`03-PIANO-EDITORIALE`), motore video e foto (`04`) |
+| `progetto/claude/` | Guida operativa (`00-LEGGIMI`), **stato e programmazione** (`01-STATO-E-PLANNING`), **calendario fino al 31/12** (`03-PIANO-EDITORIALE`), motore video e foto (`04`) |
 | `progetto/strategia/` | Strategia: posizionamento, pilastri, regole per commenti e DM |
 | `progetto/notizie/` | Controllo notizie di ogni mattina, un file al giorno (`AAAA-MM-GG.md`) |
 | `progetto/instagram/` | Caroselli e reel della settimana: testi, didascalie, spec del motore (`settimana-AAAA-MM-GG.md`) |
 | `progetto/youtube/` | Copioni dei video lunghi e scadenze dei vocali (`copioni-settimana-AAAA-MM-GG.md`) |
-| `media/AAAA-MM-GG/` | Slide e video pronti, una cartella per settimana (data del lunedì) o per giorno |
+| `media/AAAA-MM-GG/` | Slide e video programmati, una cartella per settimana (data del lunedì). Indice in `media/README.md`; contenuti di riserva in `media/_scorta/` |
+| `progetto/_archivio/` | Documenti superati, solo come storia |
 | `_motore/` | Il motore grafico che crea caroselli, reel e video lunghi |
 | `_attivita/` | Testi delle due attività automatiche |
 
