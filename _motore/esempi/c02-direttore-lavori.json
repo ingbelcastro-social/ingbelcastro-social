@@ -1,0 +1,18 @@
+{"name":"Direttore-lavori","topic":"DIREZIONE LAVORI","slides":[
+{"type":"cover","eyebrow":"DIREZIONE LAVORI","title":"Il direttore dei lavori è solo un costo?","sub":"Cosa fa davvero e quando è obbligatorio.",
+ "art":"<svg width='460' height='360' viewBox='0 0 460 360' fill='none'><g stroke='#262626'><path d='M0 40H460M0 80H460M0 120H460M0 160H460M0 200H460M0 240H460M0 280H460M0 320H460M40 0V360M80 0V360M120 0V360M160 0V360M200 0V360M240 0V360M280 0V360M320 0V360M360 0V360M400 0V360M440 0V360'/></g><rect x='70' y='70' width='220' height='260' stroke='#fff' stroke-width='5'/><path d='M100 120H260M100 165H260M100 210H220' stroke='#555' stroke-width='5'/><path d='M105 270L135 300L195 240' stroke='#F07A35' stroke-width='8' fill='none'/><circle cx='360' cy='170' r='62' stroke='#F07A35' stroke-width='5' fill='#111'/><path d='M404 214L440 250' stroke='#F07A35' stroke-width='10'/></svg>"},
+{"type":"list","kicker":"Chi è","title":"Il tecnico che lavora per te","size":92,
+ "text":["Ingegnere, architetto o geometra abilitato, incaricato da te committente. **Non lavora per l'impresa: rappresenta te.**"],
+ "note":"Non è il capocantiere (dell'impresa) né il coordinatore per la sicurezza."},
+{"type":"list","kicker":"Quando è obbligatorio","title":"Dipende dalla pratica","size":90,
+ "items":["**Permesso di costruire:** sì, il nome va comunicato al Comune prima di iniziare","**SCIA:** nella pratica è richiesto","**Opere strutturali:** serve il direttore dei lavori per le strutture","**CILA:** la legge nazionale non lo impone, ma alcuni Comuni lo chiedono"]},
+{"type":"steps","title":"Cosa controlla in cantiere","size":92,
+ "steps":["Che si costruisca quello che dice il progetto, misure comprese","Materiali e certificazioni, con le prove per le strutture","La qualità di esecuzione, prima che venga coperta"],
+ "note":"Impermeabilizzazioni, pendenze, ponti termici: una volta coperti non si vedono più."},
+{"type":"list","kicker":"I tuoi soldi","title":"Paghi solo quello che è fatto","size":92,
+ "text":["Misura i lavori eseguiti e verifica i [[SAL]] prima che tu paghi.","Ogni lavoro extra si concorda **prima**, non si scopre in fattura."]},
+{"type":"close","kicker":"In sintesi","title":"Non è una firma: è una tutela","size":96,
+ "text":["Controlla progetto, materiali e pagamenti per conto tuo.","Domani il reel, mercoledì il video completo su YouTube."],
+ "save":"Salva il post e giralo a chi sta per ristrutturare.",
+ "source":"Riferimenti verificati il 31/10/2026: DPR 380/2001, art. 29 (responsabilità di committente, costruttore e direttore dei lavori)."}
+]}
