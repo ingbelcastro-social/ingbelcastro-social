@@ -14,6 +14,7 @@ Scrivi sempre in italiano, in modo semplice: l'ing. non è un tecnico informatic
 - I file per Metricool e i documenti vanno **su `main`**: Metricool legge solo da lì. Prima `git fetch origin main` e `git rebase origin/main`, poi commit e push su main; dopo il push verifica con `git ls-tree -r --name-only origin/main`.
 - Link per Metricool: `https://raw.githubusercontent.com/ingbelcastro-social/ingbelcastro-social/main/media/AAAA-MM-GG/<file>`. Non scaricarlo con curl dal cloud (è bloccato), Metricool invece lo scarica.
 - Mai sovrascrivere un file già usato: per sostituirlo usa un nome nuovo (es. `-v2`).
+- In `media/` resta solo l'ultima versione di ogni file: quando la nuova è programmata su Metricool e verificata, cancella con `git rm` le versioni precedenti (Metricool usa già le sue copie su static.metricool.com).
 - Ogni modifica a `progetto/` va subito su main, così le attività automatiche la vedono.
 
 ## Metricool
