@@ -27,27 +27,29 @@ Documento di riferimento per **cosa è uscito, cosa è programmato e cosa viene 
 ## Settimana tipo (dal 2/11)
 Lun carosello IG+FB · Mar reel IG + Short YT (con la voce, annuncia il video) · Mer video lungo YT+FB · Gio carosello · Ven reel + Short · Sab video lungo · Dom riposo e produzione. **Orari: novembre tutto alle 19:00, dicembre tutto alle 9:30.** Dettagli e calendario: `03-PIANO-EDITORIALE-NOV-DIC.md`.
 
-## Programmato su Metricool (ricontrollato con getScheduledPosts l'1/11/2026, seconda sessione: 16 post in coda dal 1/11 al 15/11, nessun doppione)
+## Programmato su Metricool (riorganizzato e ricontrollato con getScheduledPosts l'1/11/2026 sera)
+
+Regola dal 2/11: lun carosello · mar reel (IG + reel FB + Short YT) · mer video lungo sullo **stesso argomento**; gio · ven · sab su un secondo argomento. Calendario completo in `03-PIANO-EDITORIALE-NOV-DIC.md` e nell'Excel.
 
 | Data | Ora | Canali | Contenuto | Stato |
 |---|---|---|---|---|
-| Sab 31/10 | 14:35 | YouTube Short | Bonus: pagare entro il 31 dicembre | ✅ pubblicato |
-| Sab 31/10 | 19:00 | Instagram | Reel CILA, SCIA o permesso | ✅ pubblicato |
 | Dom 1/11 | 19:00 | IG reel + YT Short · YT + FB | APE in 30 secondi · **Video 2 APE** | ⏱ programmato |
-| Lun 2/11 | 19:00 | Facebook | Carosello stato legittimo (**IG: dall'app, a cura dell'ing.**) | ⏱ programmato |
-| Mar 3/11 | 19:00 | IG reel + YT Short | Direttore dei lavori, con la voce | ⏱ programmato |
-| Mer 4/11 | 19:00 | YT + FB · FB | **Video 3 Direttore dei lavori** · carosello tolleranze (**IG dall'app**) | ⏱ programmato |
-| Gio 5/11 | 19:00 | IG + FB | Carosello notizia: Manovra 2027 e casa | ⏱ programmato (numero AC del DDL non ancora trovato l'1/11, ricercato due volte) |
-| Ven 6/11 | 19:00 | IG reel + YT Short | «Compri casa? Chi controlla cosa», con la voce | ⏱ programmato |
-| Sab 7/11 | 19:00 | YT + FB | **Video 4 Stato legittimo e documenti** | ⏱ programmato |
-| Lun 9/11 | 19:00 | IG + FB | Carosello caso studio: lavori senza CILA | ⏱ programmato |
-| Mar 10/11 | 19:00 | IG reel + YT Short | «La batteria conviene davvero?» (provvisorio) | ⏱ programmato (file in media/2026-11-09/, caricati l'1/11) |
+| Lun 2/11 | 19:00 | FB (IG dall'app, a cura dell'ing.) | Carosello «Il catasto non basta» | ⏱ programmato |
+| Mar 3/11 | 19:00 | IG reel + FB reel + YT Short | «Compri casa? Chi controlla cosa» con la voce, chiusura «Mercoledì ore 19:00» (file v3) | ⏱ programmato |
+| Mer 4/11 | 19:00 | YT + FB | **Video 4 Stato legittimo** | ⏱ programmato |
+| Gio 5/11 | 19:00 | IG + FB | Carosello «Il direttore dei lavori è solo un costo?» (nuovo, v2) | ⏱ programmato |
+| Ven 6/11 | 19:00 | IG reel + FB reel + YT Short | Direttore dei lavori con la voce, chiusura «Sabato ore 19:00» (file v3) | ⏱ programmato |
+| Sab 7/11 | 19:00 | YT + FB | **Video 3 Direttore dei lavori** | ⏱ programmato |
+| Lun 9/11 | 19:00 | IG + FB | Carosello «La batteria conviene davvero?» (nuovo) | ⏱ programmato |
+| Mar 10/11 | 19:00 | IG reel + FB reel + YT Short | «La batteria conviene davvero?» (provvisorio) | ⏱ programmato |
 | Mer 11/11 | 19:00 | YT + FB | **Video 6 Fotovoltaico con accumulo** | ✍️ copione pronto · vocali entro lun 9/11 ore 12:00 |
-| Gio 12/11 | 19:00 | IG + FB | Carosello CER: cosa sono e come entrarci | ⏱ programmato |
-| Ven 13/11 | 19:00 | IG reel + YT Short | «Pompa di calore o caldaia?» (provvisorio) | ⏱ programmato |
+| Gio 12/11 | 19:00 | IG + FB | Carosello «Pompa di calore o caldaia?» (nuovo) | ⏱ programmato |
+| Ven 13/11 | 19:00 | IG reel + FB reel + YT Short | «Pompa di calore o caldaia?» (provvisorio) | ⏱ programmato |
 | Sab 14/11 | 19:00 | YT + FB | **Video 7 Pompa di calore o caldaia** | ✍️ copione pronto · vocali entro gio 12/11 ore 12:00 |
+| Lun 16/11 | 19:00 | IG + FB | Carosello «Manovra 2027 e casa» (spostato dal 5/11: ricontrollare il testo prima dell'uscita) | ⏱ programmato |
+| Gio 19/11 | 19:00 | IG + FB | Carosello «Caso studio: lavori senza CILA» (spostato dal 9/11) | ⏱ programmato |
 
-Settimana 2–7/11: era già tutta programmata il 31/10; l'1/11 controllata due volte, nessun doppione, nessuna modifica. Settimana 9–14/11 preparata in anticipo l'1/11: testi, didascalie e spec del motore in `instagram/settimana-2026-11-09.md`, copioni in `youtube/copioni-settimana-2026-11-09.md`. **Blocco risolto (1/11, terza sessione):** il push su main ora funziona; file rigenerati dalle spec, controllati (ffprobe 30,0 s, 1080×1920, 30 fps, aac; slide e fotogrammi guardati) e caricati in `media/2026-11-09/`; 6 post programmati su Metricool (reel+Short 10/11, carosello CER 12/11, reel+Short 13/11), riletti con 5 hashtag e link static.metricool.com. Nota tecnica: nel cloud il motore va lanciato con `/usr/bin/python3` e Chromium `/opt/pw-browsers/chromium-1243/chrome-linux64/chrome` (executable_path, --no-sandbox).
+Di scorta in bozza (29/12, non pubblicate): carosello «Tolleranze» (solo FB, da rifare anche per IG), carosello «CER». Restano anche le bozze tecniche di test del 31/12 e il reel «SCORTA» CILA del 30/12 (base per il reel del 20/11).
 
 Di scorta (bozza in Metricool, 30/12): reel «CILA, SCIA o permesso? Il test in 30 secondi». Copione Video 5 CILA/SCIA pronto in `youtube/copioni-video-4-5.md` (vocali entro gio 12:00 se esce sabato).
 **Formato video lunghi (dal 31/10 sera):** motore dinamico `_motore/video2.py`: sigla V0 subito, poi una scena animata per ogni frase a tempo con la voce (audio un file per blocco), foto reali dell'ing. diverse per ogni video, beat molto basso, capitoli da `0:00 Introduzione`. L'ing. ha approvato il dinamismo dei video 2 e 3.

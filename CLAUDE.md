@@ -20,15 +20,16 @@ Scrivi sempre in italiano, in modo semplice: l'ing. non è un tecnico informatic
 ## Metricool
 - Brand id 7777116, fuso Europe/Rome, autoPublish true.
 - Carosello: providers instagram + facebook, type POST, slide nell'ordine.
-- Reel: instagram type REEL, showReelOnFeed true, videoCoverMilliseconds 1500. Short: post separato youtube, type short, titolo con #shorts, madeForKids false, category EDUCATION.
+- Reel: instagram type REEL, showReelOnFeed true, videoCoverMilliseconds 1500 + **post separato facebook type REEL** con lo stesso video + Short: post separato youtube, type short, titolo con #shorts, madeForKids false, category EDUCATION.
 - Video lungo: youtube type video + facebook, titolo, descrizione con capitoli (il primo è `0:00 Introduzione`) e fonti, tag, miniatura.
 - Ogni pubblicazione: didascalia completa con invito all'azione ed **esattamente 5 hashtag**.
 - Prima di programmare controlla i doppioni con getScheduledPosts; dopo, rileggi e verifica data, ora, testo, hashtag e media (link static.metricool.com).
-- I caroselli del 2/11 e del 4/11 su Instagram li programma l'ing. dall'app: su Metricool restano solo Facebook.
+- Il carosello del 2/11 su Instagram lo programma l'ing. dall'app: su Metricool resta solo Facebook. Tutti gli altri caroselli vanno su Instagram + Facebook via Metricool.
 - Dopo ogni modifica aggiorna la tabella «Programmato su Metricool» in `01-STATO-E-PLANNING.md`.
 
 ## Calendario e formati
-- Settimana tipo: lun carosello · mar reel + Short (annuncia il video) · mer video lungo · gio carosello · ven reel + Short · sab video lungo · dom riposo.
+- Settimana tipo, **due argomenti**: lun carosello (IG+FB) · mar reel 30 s (IG + reel FB + Short YT) che preannuncia il video di domani · mer video lungo (YT+FB) → tutti e tre sullo **stesso argomento A**. Gio · ven · sab uguale, sull'argomento B. Dom riposo.
+- Dentro il reel la chiusura dice il giorno del video («Domani il video completo · Mercoledì/Sabato ore …»): se un reel cambia giorno, va rifatta la chiusura. La penultima slide del carosello dice «Domani il reel, mercoledì/sabato il video completo».
 - Orario unico: novembre 2026 alle 19:00, dicembre 2026 alle 9:30.
 - Reel/Short 30,0 s, 1080x1920, 30 fps, audio AAC. Caroselli 6–7 slide 1080x1350: penultima scura con fonte e «non sostituisce una consulenza», ultima «Scrivimi in DM». Video lunghi ~8 min, −16 LUFS.
 

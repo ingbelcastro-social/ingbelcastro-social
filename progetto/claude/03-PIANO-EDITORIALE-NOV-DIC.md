@@ -1,143 +1,138 @@
 # Piano editoriale 2 novembre – 31 dicembre 2026
 
-Deciso il 31/10/2026 con l'ing. Belcastro (versione delle 16:15). **Prevale su ogni calendario precedente.**
+Aggiornato l'1/11/2026 sera con l'ing. Belcastro. **Prevale su ogni calendario precedente.** Versione Excel: `progetto/cronoprogramma-nov-dic-2026.xlsx`.
 
-## La settimana tipo
+## La regola: due argomenti a settimana, ognuno in tre uscite
 
-| Giorno | Cosa esce | Dove |
-|---|---|---|
-| Lunedì | Carosello (guida, errore, caso studio o notizia con fonte) | Instagram + Pagina Facebook |
-| Martedì | Reel ~30 s con **la voce dell'ing.** presa dal video di mercoledì, chiusura «Domani il video completo» | Instagram + Short YouTube |
-| Mercoledì | **Video lungo ~8 minuti** con la voce dell'ing. | YouTube + Facebook |
-| Giovedì | Carosello | Instagram + Pagina Facebook |
-| Venerdì | Reel ~30 s con la voce dell'ing. presa dal video di sabato | Instagram + Short YouTube |
-| Sabato | **Video lungo ~8 minuti** | YouTube + Facebook |
-| Domenica | Riposo: Claude prepara e programma la settimana dopo e manda i copioni | — |
+| Giorno | Cosa esce | Dove | Argomento |
+|---|---|---|---|
+| Lunedì | Carosello 6–7 slide | Instagram + Facebook | A |
+| Martedì | Reel 30 s che **preannuncia il video di domani** (chiusura «Domani il video completo · Mercoledì ore …») | Instagram + Facebook (reel) + YouTube Shorts | A |
+| Mercoledì | Video lungo 6–8 min | YouTube + Facebook | A |
+| Giovedì | Carosello 6–7 slide | Instagram + Facebook | B |
+| Venerdì | Reel 30 s che preannuncia il video di domani (chiusura «… Sabato ore …») | Instagram + Facebook (reel) + YouTube Shorts | B |
+| Sabato | Video lungo 6–8 min | YouTube + Facebook | B |
+| Domenica | Riposo: l'attività automatica prepara la settimana dopo | — | — |
 
-## Orari (test)
+Carosello, reel e video lungo dello stesso argomento parlano della **stessa cosa**. La penultima slide del carosello dice «Domani il reel, mercoledì (o sabato) il video completo su YouTube».
+
+## Orari
 - **Novembre: tutto alle 19:00.**
 - **Dicembre: tutto alle 9:30.**
-A fine dicembre si confrontano i risultati dei due orari (visualizzazioni, copertura, interazioni, follower) e si sceglie l'orario per il 2027.
 
-## Video lunghi e vocali
-- Copioni consegnati la **domenica** per i due video della settimana (e, quando possibile, già la domenica prima).
-- **Vocali:** video del mercoledì entro **lunedì ore 12:00**; video del sabato entro **giovedì ore 12:00**. Un file per blocco (Vn-01, Vn-02…), sigla V0 già registrata.
-- Con i vocali Claude monta: video lungo (formato del canale, sigla, logo, beat morbido −16 LUFS) + **reel/Short di ~30 s con uno spezzone della voce** (beat sotto, −14 LUFS) che sostituisce la versione provvisoria.
-- La domenica il reel del martedì e del venerdì viene già programmato in **versione provvisoria** (testo + beat, chiusura «Domani il video completo»): se i vocali non arrivano esce quella, il video slitta e la didascalia del reel viene corretta.
+## Vocali
+Video del mercoledì: vocali entro **lunedì ore 12:00**. Video del sabato: entro **giovedì ore 12:00**. Un file per blocco (Vn-01, Vn-02…). La domenica il reel del martedì e del venerdì si programma in versione provvisoria (testo + beat); con i vocali viene sostituito dalla versione con la voce.
 
-## Regole di ogni pubblicazione
-Didascalia completa (testo utile + invito all'azione) ed **esattamente 5 hashtag chiave**. Video YouTube: titolo, descrizione con capitoli e fonti, tag.
+## Di scorta (bozze su Metricool, non pubblicate)
+- Carosello «Tolleranze costruttive (Salva Casa)»
+- Carosello «Comunità energetiche (CER)»
+- Reel «CILA, SCIA o permesso? Il test in 30 secondi» (base per il reel del 20/11)
 
 ## Notizie flash
-Controllo ogni mattina alle 7:06. Se c'è una notizia FLASH da **fonte ufficiale**, sostituisce in automatico il carosello o il reel del giorno (reel notizia senza voce); può uscire anche di domenica, all'orario del mese. Fonti solo giornalistiche: proposta all'ing., che conferma con «vai».
-
-## Dove stanno i file
-Repository GitHub pubblico `ingbelcastro-social/ingbelcastro-social`: motore grafico in `_motore/`, file in `media/AAAA-MM-GG/`, link raw su Metricool. Riserva: cartella Drive «000. Social ing.belcastro» passando dal PC.
+Controllo ogni mattina alle 7:06. Con una notizia FLASH da **fonte ufficiale** si sostituisce in automatico il carosello o il reel del giorno; con fonti solo giornalistiche si chiede il «vai» all'ing.
 
 ## Calendario
-Gli argomenti di ogni settimana vengono confermati la domenica, in base a notizie, Insight e risultati.
 
-### Settimana 1 · 2–8 nov · tema: **Casa in regola (transizione: già programmata)**
 
-| Data | Ora | Tipo | Contenuto |
-|---|---|---|---|
-| Lun 2/11 | 19:00 | Carosello IG + FB | Carosello stato legittimo ✅ (IG dall'app + FB) |
-| Mar 3/11 | 19:00 | Reel IG + Short YT | Reel Direttore dei lavori ✅ + Short ✅ |
-| Mer 4/11 | 19:00 | Video lungo YT + FB | **Video 3 Direttore dei lavori** (vocali entro mar 3/11 12:00) · FB: carosello tolleranze ✅ |
-| Gio 5/11 | 19:00 | Carosello IG + FB | Carosello notizia: Manovra 2027 e casa ✅ |
-| Ven 6/11 | 19:00 | Reel IG + Short YT | Reel teaser «5 documenti prima del compromesso» ✅ + Short ✅ |
-| Sab 7/11 | 19:00 | Video lungo YT + FB | **Video 4 Stato legittimo e documenti** (vocali entro gio 5/11 12:00) |
-| Dom 8/11 | — | — | Riposo · produzione settimana dopo |
+### Settimana del 26/10
 
-### Settimana 2 · 9–15 nov · tema: **Energia e rinnovabili**
+| Data | Ora | Dove | Tipo | Argomento | Contenuto | Stato |
+|---|---|---|---|---|---|---|
+| Dom 1/11 | 19:00 | Instagram + YouTube Shorts | Reel 30 s | APE | APE in 30 secondi | ✅ Programmato su Metricool |
+| Dom 1/11 | 19:00 | YouTube + Facebook | Video lungo 6–8 min | APE | Video 2 – APE: cos'è, quanto dura e quando serve | ✅ Programmato su Metricool |
 
-| Data | Ora | Tipo | Contenuto |
-|---|---|---|---|
-| Lun 9/11 | 19:00 | Carosello IG + FB | Carosello caso studio: lavori senza CILA ✅ |
-| Mar 10/11 | 19:00 | Reel IG + Short YT | Reel teaser: fotovoltaico con accumulo, i conti |
-| Mer 11/11 | 19:00 | Video lungo YT + FB | **Video: Fotovoltaico con accumulo, conviene davvero?** (vocali entro lun 9/11 12:00) |
-| Gio 12/11 | 19:00 | Carosello IG + FB | Carosello: Comunità energetiche (CER), cosa sono e chi può entrare |
-| Ven 13/11 | 19:00 | Reel IG + Short YT | Reel teaser: pompa di calore o caldaia |
-| Sab 14/11 | 19:00 | Video lungo YT + FB | **Video: Pompa di calore o caldaia, quando conviene** (vocali entro gio 12/11 12:00) |
-| Dom 15/11 | — | — | Riposo · produzione settimana dopo |
+### Settimana del 2/11
 
-### Settimana 3 · 16–22 nov · tema: **Bonus e Legge di Bilancio 2027**
+| Data | Ora | Dove | Tipo | Argomento | Contenuto | Stato |
+|---|---|---|---|---|---|---|
+| Lun 2/11 | 19:00 | Instagram + Facebook | Carosello | Stato legittimo: il catasto non basta | Il catasto non basta (IG dall'app, FB su Metricool) | ✅ Programmato su Metricool |
+| Mar 3/11 | 19:00 | Instagram + Facebook + YouTube Shorts | Reel 30 s | Stato legittimo: il catasto non basta | Compri casa? Chi controlla cosa (con la tua voce) | ✅ Programmato su Metricool · Preannuncia il video completo di domani |
+| Mer 4/11 | 19:00 | YouTube + Facebook | Video lungo 6–8 min | Stato legittimo: il catasto non basta | Video 4 – I 5 documenti prima del compromesso | ✅ Programmato su Metricool |
+| Gio 5/11 | 19:00 | Instagram + Facebook | Carosello | Direttore dei lavori | Il direttore dei lavori è solo un costo? | ✅ Programmato su Metricool |
+| Ven 6/11 | 19:00 | Instagram + Facebook + YouTube Shorts | Reel 30 s | Direttore dei lavori | Direttore dei lavori: paghi solo quello che è fatto (con la tua voce) | ✅ Programmato su Metricool · Preannuncia il video completo di domani |
+| Sab 7/11 | 19:00 | YouTube + Facebook | Video lungo 6–8 min | Direttore dei lavori | Video 3 – Direttore dei lavori: cosa fa e quando è obbligatorio | ✅ Programmato su Metricool |
 
-| Data | Ora | Tipo | Contenuto |
-|---|---|---|---|
-| Lun 16/11 | 19:00 | Carosello IG + FB | Carosello notizia: Legge di Bilancio 2027, a che punto è in Parlamento |
-| Mar 17/11 | 19:00 | Reel IG + Short YT | Reel teaser: bonifico parlante, i 3 errori |
-| Mer 18/11 | 19:00 | Video lungo YT + FB | **Video: Bonifico parlante e gli errori che fanno perdere il bonus** |
-| Gio 19/11 | 19:00 | Carosello IG + FB | Carosello: Bonus mobili 2027, come funziona |
-| Ven 20/11 | 19:00 | Reel IG + Short YT | Reel teaser: prima o seconda casa, 50% o 36%? |
-| Sab 21/11 | 19:00 | Video lungo YT + FB | **Video: Chi ha diritto al 50% (e chi no)** |
-| Dom 22/11 | — | — | Riposo · produzione settimana dopo |
+### Settimana del 9/11
 
-### Settimana 4 · 23–29 nov · tema: **Strutture e sismica**
+| Data | Ora | Dove | Tipo | Argomento | Contenuto | Stato |
+|---|---|---|---|---|---|---|
+| Lun 9/11 | 19:00 | Instagram + Facebook | Carosello | Fotovoltaico con accumulo | La batteria conviene davvero? | ✅ Programmato su Metricool |
+| Mar 10/11 | 19:00 | Instagram + Facebook + YouTube Shorts | Reel 30 s | Fotovoltaico con accumulo | Fotovoltaico con batteria: conviene davvero? | ✅ Programmato (provvisorio: con la tua voce viene sostituito) · Preannuncia il video completo di domani |
+| Mer 11/11 | 19:00 | YouTube + Facebook | Video lungo 6–8 min | Fotovoltaico con accumulo | Video 6 – Fotovoltaico con accumulo: conviene davvero? | ✍️ Copione pronto: si monta con i vocali · 🎙 Vocali entro lunedì 9/11 ore 12:00 |
+| Gio 12/11 | 19:00 | Instagram + Facebook | Carosello | Pompa di calore o caldaia | Pompa di calore o caldaia? | ✅ Programmato su Metricool |
+| Ven 13/11 | 19:00 | Instagram + Facebook + YouTube Shorts | Reel 30 s | Pompa di calore o caldaia | Pompa di calore o caldaia? | ✅ Programmato (provvisorio: con la tua voce viene sostituito) · Preannuncia il video completo di domani |
+| Sab 14/11 | 19:00 | YouTube + Facebook | Video lungo 6–8 min | Pompa di calore o caldaia | Video 7 – Pompa di calore o caldaia: quando conviene | ✍️ Copione pronto: si monta con i vocali · 🎙 Vocali entro giovedì 12/11 ore 12:00 |
 
-| Data | Ora | Tipo | Contenuto |
-|---|---|---|---|
-| Lun 23/11 | 19:00 | Carosello IG + FB | Carosello: Muro portante o tramezzo, come riconoscerlo |
-| Mar 24/11 | 19:00 | Reel IG + Short YT | Reel teaser: crepe nei muri, quali preoccupano |
-| Mer 25/11 | 19:00 | Video lungo YT + FB | **Video: Crepe nei muri, la guida dell'ingegnere** |
-| Gio 26/11 | 19:00 | Carosello IG + FB | Carosello: Classificazione sismica, la pagella della casa |
-| Ven 27/11 | 19:00 | Reel IG + Short YT | Reel teaser: aprire un varco in un muro portante |
-| Sab 28/11 | 19:00 | Video lungo YT + FB | **Video: Unire cucina e soggiorno in sicurezza** |
-| Dom 29/11 | — | — | Riposo · produzione settimana dopo |
+### Settimana del 16/11
 
-### Settimana 5 · 30 nov–6 dic · tema: **Cantiere, sicurezza e imprese (lun 30/11 ore 19:00, poi 9:30)**
+| Data | Ora | Dove | Tipo | Argomento | Contenuto | Stato |
+|---|---|---|---|---|---|---|
+| Lun 16/11 | 19:00 | Instagram + Facebook | Carosello | Manovra 2027: 50% o 36%? | Manovra 2027 e casa (testo aggiornato se serve) | ✅ Programmato su Metricool |
+| Mar 17/11 | 19:00 | Instagram + Facebook + YouTube Shorts | Reel 30 s | Manovra 2027: 50% o 36%? | Prima o seconda casa: 50% o 36%? | ⏳ Lo prepara l'attività di domenica 15/11 · Preannuncia il video completo di domani |
+| Mer 18/11 | 19:00 | YouTube + Facebook | Video lungo 6–8 min | Manovra 2027: 50% o 36%? | Chi ha diritto al 50% (e chi no) | ✍️ Copione domenica 15/11 · 🎙 Vocali entro lunedì 16/11 ore 12:00 |
+| Gio 19/11 | 19:00 | Instagram + Facebook | Carosello | CILA, SCIA o permesso? | Caso studio: lavori senza CILA | ✅ Programmato su Metricool |
+| Ven 20/11 | 19:00 | Instagram + Facebook + YouTube Shorts | Reel 30 s | CILA, SCIA o permesso? | CILA, SCIA o permesso? Il test in 30 secondi | ⏳ Lo prepara l'attività di domenica 15/11 · Preannuncia il video completo di domani |
+| Sab 21/11 | 19:00 | YouTube + Facebook | Video lungo 6–8 min | CILA, SCIA o permesso? | Video 5 – CILA, SCIA o permesso di costruire | ✍️ Copione già pronto · 🎙 Vocali entro giovedì 19/11 ore 12:00 |
 
-| Data | Ora | Tipo | Contenuto |
-|---|---|---|---|
-| Lun 30/11 | 19:00 | Carosello IG + FB | Carosello: CSP e CSE, quando sono obbligatori |
-| Mar 1/12 | 9:30 | Reel IG + Short YT | Reel teaser: patente a crediti in cantiere |
-| Mer 2/12 | 9:30 | Video lungo YT + FB | **Video: Patente a crediti spiegata bene** |
-| Gio 3/12 | 9:30 | Carosello IG + FB | Carosello: 8 cose da controllare prima di firmare con l'impresa |
-| Ven 4/12 | 9:30 | Reel IG + Short YT | Reel teaser: pagare i lavori a SAL |
-| Sab 5/12 | 9:30 | Video lungo YT + FB | **Video: Come pagare un'impresa senza rischi** |
-| Dom 6/12 | — | — | Riposo · produzione settimana dopo |
+### Settimana del 23/11
 
-### Settimana 6 · 7–13 dic · tema: **Grandi opere: Italia e mondo**
+| Data | Ora | Dove | Tipo | Argomento | Contenuto | Stato |
+|---|---|---|---|---|---|---|
+| Lun 23/11 | 19:00 | Instagram + Facebook | Carosello | Crepe nei muri | Crepe nei muri: quali preoccupano | ⏳ Lo prepara l'attività di domenica 22/11 |
+| Mar 24/11 | 19:00 | Instagram + Facebook + YouTube Shorts | Reel 30 s | Crepe nei muri | Crepe nei muri in 30 secondi | ⏳ Lo prepara l'attività di domenica 22/11 · Preannuncia il video completo di domani |
+| Mer 25/11 | 19:00 | YouTube + Facebook | Video lungo 6–8 min | Crepe nei muri | Crepe nei muri, la guida dell'ingegnere | ✍️ Copione domenica 22/11 · 🎙 Vocali entro lunedì 23/11 ore 12:00 |
+| Gio 26/11 | 19:00 | Instagram + Facebook | Carosello | Muro portante o tramezzo | Muro portante o tramezzo: come riconoscerlo | ⏳ Lo prepara l'attività di domenica 22/11 |
+| Ven 27/11 | 19:00 | Instagram + Facebook + YouTube Shorts | Reel 30 s | Muro portante o tramezzo | Aprire un varco in un muro portante | ⏳ Lo prepara l'attività di domenica 22/11 · Preannuncia il video completo di domani |
+| Sab 28/11 | 19:00 | YouTube + Facebook | Video lungo 6–8 min | Muro portante o tramezzo | Unire cucina e soggiorno in sicurezza | ✍️ Copione domenica 22/11 · 🎙 Vocali entro giovedì 26/11 ore 12:00 |
 
-| Data | Ora | Tipo | Contenuto |
-|---|---|---|---|
-| Lun 7/12 | 9:30 | Carosello IG + FB | Carosello: I 5 ponti più lunghi del mondo |
-| Mar 8/12 | 9:30 | Reel IG + Short YT | Reel teaser: Ponte sullo Stretto, a che punto siamo |
-| Mer 9/12 | 9:30 | Video lungo YT + FB | **Video: Ponte sullo Stretto, l'ingegneria spiegata** |
-| Gio 10/12 | 9:30 | Carosello IG + FB | Carosello: Alta velocità Salerno–Reggio Calabria, i numeri |
-| Ven 11/12 | 9:30 | Reel IG + Short YT | Reel teaser: come resiste al sisma un grattacielo |
-| Sab 12/12 | 9:30 | Video lungo YT + FB | **Video: Grattacieli antisismici, le tecniche** |
-| Dom 13/12 | — | — | Riposo · produzione settimana dopo |
+### Settimana del 30/11
 
-### Settimana 7 · 14–20 dic · tema: **Condominio, comfort e case green**
+| Data | Ora | Dove | Tipo | Argomento | Contenuto | Stato |
+|---|---|---|---|---|---|---|
+| Lun 30/11 | 19:00 | Instagram + Facebook | Carosello | Patente a crediti | Patente a crediti in cantiere: cos'è | ⏳ Lo prepara l'attività di domenica 29/11 |
+| Mar 1/12 | 09:30 | Instagram + Facebook + YouTube Shorts | Reel 30 s | Patente a crediti | Patente a crediti in 30 secondi | ⏳ Lo prepara l'attività di domenica 29/11 · Preannuncia il video completo di domani |
+| Mer 2/12 | 09:30 | YouTube + Facebook | Video lungo 6–8 min | Patente a crediti | Patente a crediti spiegata bene | ✍️ Copione domenica 29/11 · 🎙 Vocali entro lunedì 30/11 ore 12:00 |
+| Gio 3/12 | 09:30 | Instagram + Facebook | Carosello | Pagare l'impresa senza rischi | 8 cose da controllare prima di firmare con l'impresa | ⏳ Lo prepara l'attività di domenica 29/11 |
+| Ven 4/12 | 09:30 | Instagram + Facebook + YouTube Shorts | Reel 30 s | Pagare l'impresa senza rischi | Pagare i lavori a SAL | ⏳ Lo prepara l'attività di domenica 29/11 · Preannuncia il video completo di domani |
+| Sab 5/12 | 09:30 | YouTube + Facebook | Video lungo 6–8 min | Pagare l'impresa senza rischi | Come pagare un'impresa senza rischi | ✍️ Copione domenica 29/11 · 🎙 Vocali entro giovedì 3/12 ore 12:00 |
 
-| Data | Ora | Tipo | Contenuto |
-|---|---|---|---|
-| Lun 14/12 | 9:30 | Carosello IG + FB | Carosello: Lavori in condominio, cosa decide l'assemblea |
-| Mar 15/12 | 9:30 | Reel IG + Short YT | Reel teaser: muffa dopo gli infissi nuovi |
-| Mer 16/12 | 9:30 | Video lungo YT + FB | **Video: Muffa, ponti termici e ventilazione** |
-| Gio 17/12 | 9:30 | Carosello IG + FB | Carosello: Termovalvole e contabilizzazione del calore |
-| Ven 18/12 | 9:30 | Reel IG + Short YT | Reel teaser: case green, cosa deve fare il condominio |
-| Sab 19/12 | 9:30 | Video lungo YT + FB | **Video: Direttiva case green e condomini** |
-| Dom 20/12 | — | — | Riposo · produzione settimana dopo |
+### Settimana del 7/12
 
-### Settimana 8 · 21–27 dic · tema: **La manovra approvata e il 2027**
+| Data | Ora | Dove | Tipo | Argomento | Contenuto | Stato |
+|---|---|---|---|---|---|---|
+| Lun 7/12 | 09:30 | Instagram + Facebook | Carosello | Ponte sullo Stretto | Ponte sullo Stretto: a che punto siamo | ⏳ Lo prepara l'attività di domenica 6/12 |
+| Mar 8/12 | 09:30 | Instagram + Facebook + YouTube Shorts | Reel 30 s | Ponte sullo Stretto | Ponte sullo Stretto in 30 secondi | ⏳ Lo prepara l'attività di domenica 6/12 · Preannuncia il video completo di domani |
+| Mer 9/12 | 09:30 | YouTube + Facebook | Video lungo 6–8 min | Ponte sullo Stretto | Ponte sullo Stretto, l'ingegneria spiegata | ✍️ Copione domenica 6/12 · 🎙 Vocali entro lunedì 7/12 ore 12:00 |
+| Gio 10/12 | 09:30 | Instagram + Facebook | Carosello | Grattacieli antisismici | Come resiste al sisma un grattacielo | ⏳ Lo prepara l'attività di domenica 6/12 |
+| Ven 11/12 | 09:30 | Instagram + Facebook + YouTube Shorts | Reel 30 s | Grattacieli antisismici | Grattacieli e terremoto in 30 secondi | ⏳ Lo prepara l'attività di domenica 6/12 · Preannuncia il video completo di domani |
+| Sab 12/12 | 09:30 | YouTube + Facebook | Video lungo 6–8 min | Grattacieli antisismici | Grattacieli antisismici, le tecniche | ✍️ Copione domenica 6/12 · 🎙 Vocali entro giovedì 10/12 ore 12:00 |
 
-| Data | Ora | Tipo | Contenuto |
-|---|---|---|---|
-| Lun 21/12 | 9:30 | Carosello IG + FB | Carosello notizia: Manovra approvata? Cosa cambia per la casa |
-| Mar 22/12 | 9:30 | Reel IG + Short YT | Reel teaser: bonus casa 2027, la tabella finale |
-| Mer 23/12 | 9:30 | Video lungo YT + FB | **Video: Tutti i bonus 2027 in 8 minuti** |
-| Gio 24/12 | 9:30 | Carosello IG + FB | Carosello: Luci di Natale e impianto elettrico, 5 regole |
-| Ven 25/12 | 9:30 | Reel IG + Short YT | Reel leggero: Buon Natale (senza video) |
-| Sab 26/12 | 9:30 | Video lungo YT + FB | Nessun video (Santo Stefano) |
-| Dom 27/12 | — | — | Riposo · produzione settimana dopo |
+### Settimana del 14/12
 
-### Settimana 9 · 28–31 dic · tema: **Dal 1° gennaio 2027**
+| Data | Ora | Dove | Tipo | Argomento | Contenuto | Stato |
+|---|---|---|---|---|---|---|
+| Lun 14/12 | 09:30 | Instagram + Facebook | Carosello | Muffa e infissi nuovi | Muffa dopo gli infissi nuovi: perché | ⏳ Lo prepara l'attività di domenica 13/12 |
+| Mar 15/12 | 09:30 | Instagram + Facebook + YouTube Shorts | Reel 30 s | Muffa e infissi nuovi | Muffa in 30 secondi | ⏳ Lo prepara l'attività di domenica 13/12 · Preannuncia il video completo di domani |
+| Mer 16/12 | 09:30 | YouTube + Facebook | Video lungo 6–8 min | Muffa e infissi nuovi | Muffa, ponti termici e ventilazione | ✍️ Copione domenica 13/12 · 🎙 Vocali entro lunedì 14/12 ore 12:00 |
+| Gio 17/12 | 09:30 | Instagram + Facebook | Carosello | Case green e condominio | Case green: cosa deve fare il condominio | ⏳ Lo prepara l'attività di domenica 13/12 |
+| Ven 18/12 | 09:30 | Instagram + Facebook + YouTube Shorts | Reel 30 s | Case green e condominio | Case green in 30 secondi | ⏳ Lo prepara l'attività di domenica 13/12 · Preannuncia il video completo di domani |
+| Sab 19/12 | 09:30 | YouTube + Facebook | Video lungo 6–8 min | Case green e condominio | Direttiva case green e condomini | ✍️ Copione domenica 13/12 · 🎙 Vocali entro giovedì 17/12 ore 12:00 |
 
-| Data | Ora | Tipo | Contenuto |
-|---|---|---|---|
-| Lun 28/12 | 9:30 | Carosello IG + FB | Carosello: Scadenze di fine anno, cosa pagare entro il 31/12 |
-| Mar 29/12 | 9:30 | Reel IG + Short YT | Reel teaser: bonifico entro il 31 dicembre, perché conta |
-| Mer 30/12 | 9:30 | Video lungo YT + FB | **Video: Ultimi giorni per il 50%, cosa fare** |
-| Gio 31/12 | 9:30 | Carosello IG + FB | Carosello: Dal 1° gennaio 2027, cosa cambia per la casa |
+### Settimana del 21/12
+
+| Data | Ora | Dove | Tipo | Argomento | Contenuto | Stato |
+|---|---|---|---|---|---|---|
+| Lun 21/12 | 09:30 | Instagram + Facebook | Carosello | Bonus 2027 dopo la manovra | Manovra approvata? Cosa cambia per la casa | ⏳ Lo prepara l'attività di domenica 20/12 |
+| Mar 22/12 | 09:30 | Instagram + Facebook + YouTube Shorts | Reel 30 s | Bonus 2027 dopo la manovra | Bonus casa 2027, la tabella finale | ⏳ Lo prepara l'attività di domenica 20/12 · Preannuncia il video completo di domani |
+| Mer 23/12 | 09:30 | YouTube + Facebook | Video lungo 6–8 min | Bonus 2027 dopo la manovra | Tutti i bonus 2027 in 8 minuti | ✍️ Copione domenica 20/12 · 🎙 Vocali entro lunedì 21/12 ore 12:00 |
+| Gio 24/12 | 09:30 | Instagram + Facebook | Carosello | Natale | Luci di Natale e impianto elettrico, 5 regole | ⏳ Lo prepara l'attività di domenica 20/12 |
+| Ven 25/12 | 09:30 | Instagram + Facebook | Reel 30 s | Natale | Buon Natale (reel leggero, senza video) | ⏳ Lo prepara l'attività di domenica 20/12 |
+
+### Settimana del 28/12
+
+| Data | Ora | Dove | Tipo | Argomento | Contenuto | Stato |
+|---|---|---|---|---|---|---|
+| Lun 28/12 | 09:30 | Instagram + Facebook | Carosello | Fine anno: ultimi giorni per il 50% | Scadenze di fine anno: cosa pagare entro il 31/12 | ⏳ Lo prepara l'attività di domenica 27/12 |
+| Mar 29/12 | 09:30 | Instagram + Facebook + YouTube Shorts | Reel 30 s | Fine anno: ultimi giorni per il 50% | Bonifico entro il 31 dicembre, perché conta | ⏳ Lo prepara l'attività di domenica 27/12 · Preannuncia il video completo di domani |
+| Mer 30/12 | 09:30 | YouTube + Facebook | Video lungo 6–8 min | Fine anno: ultimi giorni per il 50% | Ultimi giorni per il 50%, cosa fare | ✍️ Copione domenica 27/12 · 🎙 Vocali entro lunedì 28/12 ore 12:00 |
+| Gio 31/12 | 09:30 | Instagram + Facebook | Carosello | Dal 1° gennaio 2027 | Dal 1° gennaio 2027: cosa cambia per la casa | ⏳ Lo prepara l'attività di domenica 27/12 · Il reel e il video di questo argomento escono a gennaio |
