@@ -33,6 +33,10 @@ Scrivi sempre in italiano, in modo semplice: l'ing. non è un tecnico informatic
 - Orario unico: novembre 2026 alle 19:00, dicembre 2026 alle 9:30.
 - Reel/Short 30,0 s, 1080x1920, 30 fps, audio AAC. Caroselli 6–7 slide 1080x1350: penultima scura con fonte e «non sostituisce una consulenza», ultima «Scrivimi in DM». Video lunghi ~8 min, −16 LUFS.
 
+## Stile dei reel (approvato dall'ing. l'8/11)
+- I reel e gli Short si fanno con la composizione Remotion `ReelPunch` (`_motore/reels/ReelPunch.tsx`, esempio di props in `_motore/reels/punch-props-fv6.json`): sottotitoli grandi parola per parola (parola detta in arancione), gancio grande, parole chiave a tutto schermo, contrasti barrati, icone animate, sfondo foto sfocato in movimento, chiusura «Domani il video completo · giorno ore …». Parole con tempi da faster-whisper (kit IT Reelsmaker, `transcribe.py`), audio a −14 LUFS (`master_audio.py`).
+- Le frasi della voce vanno tagliate solo nei silenzi e mai a metà concetto.
+
 ## Vocali dell'ing.
 - Arrivano in questa chat, un file per blocco (V6-01, V6-02…). Scadenze: video del mercoledì entro lunedì ore 12:00, video del sabato entro giovedì ore 12:00.
 - Con i vocali: monta il video lungo (`_motore/video2.py`), rifai reel e Short con la voce (nomi nuovi), carica su main, programma su Metricool, aggiorna lo stato.
