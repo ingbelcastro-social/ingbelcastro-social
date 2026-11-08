@@ -10,7 +10,8 @@ const ease = Easing.out(Easing.cubic);
 const C = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const io = (t: number, a: number, b: number, from = 0, to = 1) => interpolate(t, [a, b], [from, to], { ...C, easing: ease });
 const win = (t: number, a: number, b: number, f = 0.25) => Math.min(io(t, a, a + f), 1 - io(t, b - f, b));
-export const PONTE_DUR = 50;
+export const PONTE_DUR = 70.5;
+const SK = [0, 4.6, 10, 14.5, 20, 24.5, 28.5, 34.5, 40.5, 43.5, 47.5, 50], RK = [0, 5.5, 13.5, 18.5, 27, 33, 39, 48, 57, 63, 67.5, 70.5];
 
 // Geometria (vista laterale, altezze esagerate)
 const SEA = 1250, TL = 170, TR = 910, TOP = 1015, MID = 540, HALF = 370, SAG = 150;
@@ -97,13 +98,13 @@ const List: React.FC<{ t: number; a: number; b: number; title: string; color: st
 );
 
 export const Ponte: React.FC = () => {
-  const f = useCurrentFrame(); const t = f / 30;
+  const f = useCurrentFrame(); const R = f / 30; const t = interpolate(R, RK, SK, C);
 
   // costruzione
   const tw = io(t, 0.2, 1.2), cab = io(t, 1.0, 2.3), deck = io(t, 1.8, 3.0);
   // sisma
-  const quake = t > 20.2 && t < 23.2 ? Math.sin(t * 61) * 10 * (1 - io(t, 22.0, 23.2)) : 0;
-  const sway = (t > 14.5 && t < 20 ? 4 * Math.sin(t * 5) * win(t, 14.6, 20, 0.6) : 0) + quake * 0.4;
+  const quake = t > 20.2 && t < 23.2 ? Math.sin(R * 61) * 10 * (1 - io(t, 22.0, 23.2)) : 0;
+  const sway = (t > 14.5 && t < 20 ? 4 * Math.sin(R * 5) * win(t, 14.6, 20, 0.6) : 0) + quake * 0.4;
   // camera
   const K = [0, 3.0, 10.0, 10.8, 14.0, 14.6, 24.6, 25.4, 28.2, 28.6];
   const z = interpolate(t, K, [1.15, 1, 1, 3.2, 3.2, 1, 1, 1.7, 1.7, 1], { ...C, easing: Easing.inOut(Easing.cubic) });
@@ -115,10 +116,10 @@ export const Ponte: React.FC = () => {
   const traffic = win(t, 10.6, 14.2, 0.3);
   const cars = Array.from({ length: 7 }, (_, i) => {
     const dir = i % 2 ? 1 : -1, sp = 55 + (i * 17) % 30;
-    let x = ((t * sp * dir + i * 97) % 740 + 740) % 740 + TL;
+    let x = ((R * sp * dir + i * 97) % 740 + 740) % 740 + TL;
     return { x, dir, y: deckY(x) - (dir > 0 ? 7 : 4) };
   });
-  const trainX = TL - 200 + ((t - 10.4) * 140);
+  const trainX = TL - 200 + ((R - 13.9) * 140);
 
   // nave (scena D3)
   const shipX = interpolate(t, [24.6, 28.4], [120, 900], C);
@@ -127,7 +128,7 @@ export const Ponte: React.FC = () => {
 
   // Tacoma
   const tac = (k: number) => {
-    const A = 26 * Math.sin(t * 7);
+    const A = 26 * Math.sin(R * 7);
     const top = Array.from({ length: 31 }, (_, i) => { const x = 160 + i * 25; const y = 760 - 12 + A * Math.sin(Math.PI * i / 30) * k; return `${i ? "L" : "M"}${x},${y}`; }).join(" ");
     const bot = Array.from({ length: 31 }, (_, i) => { const j = 30 - i; const x = 160 + j * 25; const y = 760 + 12 - A * Math.sin(Math.PI * j / 30) * k; return `L${x},${y}`; }).join(" ");
     return top + " " + bot + " Z";
@@ -143,7 +144,7 @@ export const Ponte: React.FC = () => {
         {Array.from({ length: 14 }, (_, i) => <line key={i} x1={0} x2={1080} y1={i * 140} y2={i * 140} stroke="rgba(240,122,53,.05)" />)}
         {Array.from({ length: 9 }, (_, i) => <line key={`v${i}`} y1={0} y2={1920} x1={i * 135} x2={i * 135} stroke="rgba(240,122,53,.05)" />)}
         <g transform={camT}>
-          <Sea t={t} />
+          <Sea t={R} />
           <Land />
           <Bridge tw={tw} cab={cab} deck={deck} sway={sway} t={t} />
           {/* quote: campata */}
@@ -171,7 +172,7 @@ export const Ponte: React.FC = () => {
             <line x1={MID + 82} x2={MID + 98} y1={deckY(MID + 90) + 4} y2={deckY(MID + 90) + 4} stroke={OR} strokeWidth={2.5} />
           </g>
         </g>
-        <Wind t={t} k={win(t, 14.6, 20.0, 0.4)} />
+        <Wind t={R} k={win(t, 14.6, 20.0, 0.4)} />
         {/* crepa del sisma */}
         <path d="M0,1500 L120,1470 L190,1530 L300,1490 L420,1560 L540,1500 L660,1570 L780,1510 L900,1560 L1080,1520" fill="none" stroke={OR} strokeWidth={5}
           pathLength={1} strokeDasharray="1" strokeDashoffset={1 - io(t, 20.3, 21.2)} opacity={win(t, 20.2, 24.6, 0.3)} />
@@ -186,11 +187,11 @@ export const Ponte: React.FC = () => {
           <rect x={120} y={600} width={840} height={330} rx={26} fill="rgba(10,10,10,.88)" stroke="#444" strokeWidth={3} />
           {[[170, 290], [510, 60], [620, 290]].map(([x, w], i) => <rect key={i} x={x} y={735} width={w} height={44} rx={18} fill={i === 1 ? OR : "#e8e8e8"} />)}
           {Array.from({ length: 8 }, (_, i) => {
-            const x = ((t * 700 + i * 140) % 980) - 60; const gx = [480, 700][i % 2];
+            const x = ((R * 700 + i * 140) % 980) - 60; const gx = [480, 700][i % 2];
             const dy = Math.max(0, 1 - Math.abs(x - gx) / 90) * (i % 2 ? 1 : -1) * 30;
             return <circle key={i} cx={x} cy={757 + (i < 4 ? -70 : 70) + dy * (i < 4 ? -1 : 1) * -1} r={5} fill="rgba(255,255,255,.7)" />;
           })}
-          {[[480, 465], [700, 465]].map(([x], i) => <g key={i}><line x1={x} x2={x} y1={690} y2={830} stroke={OR} strokeWidth={4} strokeDasharray="10 8" strokeDashoffset={-t * 60} /></g>)}
+          {[[480, 465], [700, 465]].map(([x], i) => <g key={i}><line x1={x} x2={x} y1={690} y2={830} stroke={OR} strokeWidth={4} strokeDasharray="10 8" strokeDashoffset={-R * 60} /></g>)}
         </g>
       </svg>
 
@@ -213,9 +214,9 @@ export const Ponte: React.FC = () => {
       <div style={{ position: "absolute", top: 420, left: 80, right: 80, opacity: win(t, 6.9, 10.0, 0.3) }}>
         <div style={{ fontFamily: OSW, fontWeight: 700, fontSize: 64, color: "#fff", textTransform: "uppercase", marginBottom: 30 }}>Campata più lunga</div>
         <div style={{ fontFamily: INT, fontWeight: 800, fontSize: 36, color: "#bbb" }}>Çanakkale 1915 (Turchia) · record attuale</div>
-        <div style={{ height: 54, width: `${61 * io(t, 7.2, 8.0)}%`, background: "#777", borderRadius: 8, margin: "12px 0 30px", display: "flex", alignItems: "center", justifyContent: "flex-end", paddingRight: 14, fontFamily: OSW, fontWeight: 700, fontSize: 38, color: "#fff" }}>2.023 m</div>
+        <div style={{ height: 54, width: `${61 * io(t, 7.2, 8.0)}%`, background: "#777", overflow: "hidden", whiteSpace: "nowrap", borderRadius: 8, margin: "12px 0 30px", display: "flex", alignItems: "center", justifyContent: "flex-end", paddingRight: 14, fontFamily: OSW, fontWeight: 700, fontSize: 38, color: "#fff" }}>2.023 m</div>
         <div style={{ fontFamily: INT, fontWeight: 800, fontSize: 36, color: "#fff" }}>Ponte sullo Stretto · progetto</div>
-        <div style={{ height: 54, width: `${100 * io(t, 7.9, 8.9)}%`, background: OR, borderRadius: 8, margin: "12px 0 0", display: "flex", alignItems: "center", justifyContent: "flex-end", paddingRight: 14, fontFamily: OSW, fontWeight: 700, fontSize: 38, color: "#fff" }}>3.300 m</div>
+        <div style={{ height: 54, width: `${100 * io(t, 7.9, 8.9)}%`, background: OR, overflow: "hidden", whiteSpace: "nowrap", borderRadius: 8, margin: "12px 0 0", display: "flex", alignItems: "center", justifyContent: "flex-end", paddingRight: 14, fontFamily: OSW, fontWeight: 700, fontSize: 38, color: "#fff" }}>3.300 m</div>
       </div>
       {/* C — traffico */}
       <Big top={430} op={win(t, 10.8, 14.3, 0.25)} size={120}><O>6</O> corsie<br /><O>2</O> binari</Big>
