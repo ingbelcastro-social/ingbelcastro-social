@@ -5,6 +5,13 @@ Si lavora **solo** da Claude Code con questo repository collegato (una chat prin
 Il progetto claude.ai «Social_ing.belcastro» è solo archivio e non si aggiorna più.
 Scrivi sempre in italiano, in modo semplice: l'ing. non è un tecnico informatico.
 
+## La priorità dell'ing. (8/11/2026): massima precisione E massima creatività
+- Ogni contenuto deve essere **interessante, che intrattiene, mai noioso, montato bene**. Il gioco è usare l'IA meglio degli altri: fare sempre il massimo.
+- Identità fissa: nero + arancio #F07A35, logo bianco su fondo nero, font Oswald/Inter. Dentro questa identità: **sbizzarrirsi** con foto, video, immagini e grafiche pertinenti al caso specifico di cui si parla.
+- Niente schermate «solo testo su nero» se esiste un'immagine o un'animazione migliore. Ritmo: un cambio visivo ogni 1,5–3 s, parole chiave grandi, movimento continuo.
+- Immagini, in quest'ordine: foto dei cantieri dell'ing. → immagini fornite dall'ing. (diritti dichiarati da lui) → archivi a licenza libera (Wikimedia Commons, Pexels/Pixabay se c'è la chiave) → immagini generate con IA quando servono scene su misura (dichiarate «IA» su Instagram/YouTube) → grafiche animate. Mai Google Immagini o foto di terzi senza licenza; mai loghi di enti o aziende.
+- Ogni dato resta verificato con fonte e data: la creatività non cambia i fatti.
+
 ## Dove stanno le cose
 - Indice delle cartelle: `README.md`.
 - Documenti di lavoro in `progetto/`. Leggi per primi `progetto/claude/01-STATO-E-PLANNING.md` (cosa è uscito, cosa è programmato) e `progetto/claude/03-PIANO-EDITORIALE-NOV-DIC.md` (calendario fino al 31/12). Guida completa: `progetto/claude/00-LEGGIMI-guida-operativa.md`. Motore video e archivio foto: `progetto/claude/04-MOTORE-VIDEO-E-FOTO.md`.
