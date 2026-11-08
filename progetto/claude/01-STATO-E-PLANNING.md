@@ -1,6 +1,6 @@
 # Stato pubblicazioni e planning
 
-Documento di riferimento per **cosa è uscito, cosa è programmato e cosa viene dopo**. Ultimo aggiornamento: dom 1/11/2026 (terza sessione automatica della domenica: push su main riuscito).
+Documento di riferimento per **cosa è uscito, cosa è programmato e cosa viene dopo**. Ultimo aggiornamento: dom 8/11/2026 (sessione automatica della domenica: settimana 16–21/11 preparata e programmata, dati della settimana registrati).
 **Scaletta, temi e calendario fino al 31/12: `claude/03-PIANO-EDITORIALE-NOV-DIC.md`** (prevale su ogni calendario precedente). **Motore video e archivio foto: `claude/04-MOTORE-VIDEO-E-FOTO.md`.**
 
 ## 🎯 OBIETTIVO UNICO AL 31/12/2026
@@ -10,7 +10,7 @@ Documento di riferimento per **cosa è uscito, cosa è programmato e cosa viene 
 | Controllo (domenica) | Instagram | YouTube | Reale IG | Reale YT |
 |---|---|---|---|---|
 | 1/11 (partenza) | — | — | 1.131 (dato del 30/10) | 1 |
-| 8/11 | 3.000 | 150 | | |
+| 8/11 | 3.000 | 150 | 1.146 (dato del 6/11) · −62% | 5 · −97% |
 | 15/11 | 6.000 | 400 | | |
 | 22/11 | 10.000 | 800 | | |
 | 29/11 | 16.000 | 1.300 | | |
@@ -21,13 +21,15 @@ Documento di riferimento per **cosa è uscito, cosa è programmato e cosa viene 
 
 **Dati reali da Metricool (letti l'1/11/2026, settimana 26/10–1/11; riletti nella seconda sessione: nessun dato nuovo sincronizzato):** Instagram 1.131 follower (30/10), 1.132 (31/10) (ultimo dato sincronizzato), 1.353 profili seguiti; +6 follower guadagnati, −1 persi (netto +5); 654 visualizzazioni, 192 account raggiunti; reel del 30/10 ore 18:00 (bonus 50%): 82 visualizzazioni, 37 account raggiunti, 3 interazioni, visione media 8,7 s su 30 (29%, sotto la soglia del 60%). I dati del 31/10 e dell'1/11 (reel CILA, Short e Video 2 APE) non erano ancora sincronizzati. YouTube: 1 iscritto secondo Metricool (canale nuovo, dato da verificare in YouTube Studio). **Confronto orari/tipi:** finora un solo reel misurato (venerdì, 18:00); il test 19:00 parte da questa settimana. Il primo controllo con tappa è domenica 8/11 (obiettivo 3.000 IG / 150 YT): al ritmo attuale siamo molto sotto, quindi servono ganci più forti nei primi 2 secondi e le collaborazioni (lista entro il 9/11).
 
+**Dati reali da Metricool (letti l'8/11/2026, settimana 1–8/11; Instagram sincronizzato fino al 6/11, YouTube fino all'8/11):** Instagram 1.137 follower l'1/11 → **1.146 il 6/11** (+12 guadagnati, −2 persi: netto +10 in 6 giorni, circa +1,5 al giorno); visualizzazioni 1.494 e copertura 508 (somma giornaliera 1–6/11). Reel: dom 1/11 ore 19:00 (APE) 202 visualizzazioni, 144 account raggiunti, 4 interazioni; mar 3/11 ore 19:00 (Compri casa, con la voce) 65 visualizzazioni, 45 raggiunti, 4 interazioni; reel del 6/11 non ancora sincronizzato. YouTube: **5 iscritti** (da 1), 789 visualizzazioni tra l'1 e il 5/11 (punta di 355 il 3/11). **Confronto orari/tipi:** a parità di orario (19:00) il reel della domenica ha reso circa 3 volte quello del martedì; il reel del 30/10 alle 18:00 aveva fatto 82 visualizzazioni. Il carosello del lunedì 2/11 ha portato il picco di visualizzazioni del 2/11 (303). **Tappa dell'8/11 mancata di oltre il 20%** (IG −62%, YT −97%): secondo la regola vanno cambiati formati, orari e temi. Proposte da decidere con l'ing.: (1) gancio con un numero o una domanda nei primi 2 secondi di ogni reel; (2) provare un reel in più la domenica alle 19:00 (oggi giorno di riposo), visto il risultato dell'1/11; (3) lista delle 10 pagine per le collaborazioni (scadenza 9/11); (4) chiedere a chi commenta di salvare e condividere.
+
 **Vincoli fissi:** l'ing. Belcastro non mostra il volto e non fa dirette.
 **Regola di controllo:** ogni lunedì si registra il dato reale. Se siamo sotto la tappa di oltre il 20%, si cambiano formati, orari e temi.
 
 ## Settimana tipo (dal 2/11)
 Lun carosello IG+FB · Mar reel IG + Short YT (con la voce, annuncia il video) · Mer video lungo YT+FB · Gio carosello · Ven reel + Short · Sab video lungo · Dom riposo e produzione. **Orari: novembre tutto alle 19:00, dicembre tutto alle 9:30.** Dettagli e calendario: `03-PIANO-EDITORIALE-NOV-DIC.md`.
 
-## Programmato su Metricool (riorganizzato e ricontrollato con getScheduledPosts l'1/11/2026 sera)
+## Programmato su Metricool (ricontrollato con getScheduledPosts l'8/11/2026: settimana 9–14/11 senza errori, settimana 16–21/11 aggiunta)
 
 Regola dal 2/11: lun carosello · mar reel (IG + reel FB + Short YT) · mer video lungo sullo **stesso argomento**; gio · ven · sab su un secondo argomento. Calendario completo in `03-PIANO-EDITORIALE-NOV-DIC.md` e nell'Excel.
 
@@ -46,8 +48,12 @@ Regola dal 2/11: lun carosello · mar reel (IG + reel FB + Short YT) · mer vide
 | Gio 12/11 | 19:00 | IG + FB | Carosello «Pompa di calore o caldaia?» (nuovo) | ⏱ programmato |
 | Ven 13/11 | 19:00 | IG reel + FB reel + YT Short | «Pompa di calore o caldaia?» (provvisorio) | ⏱ programmato |
 | Sab 14/11 | 19:00 | YT + FB | **Video 7 Pompa di calore o caldaia** | ✍️ copione pronto · vocali entro gio 12/11 ore 12:00 |
-| Lun 16/11 | 19:00 | IG + FB | Carosello «Manovra 2027 e casa» (spostato dal 5/11: ricontrollare il testo prima dell'uscita) | ⏱ programmato |
-| Gio 19/11 | 19:00 | IG + FB | Carosello «Caso studio: lavori senza CILA» (spostato dal 9/11) | ⏱ programmato |
+| Lun 16/11 | 19:00 | IG + FB | Carosello «Manovra 2027 e casa» **v2** (rifatto l'8/11: dati aggiornati, chi ha il 50%, «Domani il reel, mercoledì il video»; ricontrollare gli emendamenti lunedì mattina) | ⏱ programmato |
+| Mar 17/11 | 19:00 | IG reel + FB reel + YT Short | «Prima o seconda casa: 50% o 36%?» (provvisorio, chiusura «Mercoledì ore 19:00») | ⏱ programmato |
+| Mer 18/11 | 19:00 | YT + FB | **Video 8 Bonus casa 2027: chi ha diritto al 50%** | ✍️ copione pronto · vocali entro lun 16/11 ore 12:00 |
+| Gio 19/11 | 19:00 | IG + FB | Carosello «Caso studio: lavori senza CILA» **v2** (penultima con «Domani il reel, sabato il video») | ⏱ programmato |
+| Ven 20/11 | 19:00 | IG reel + FB reel + YT Short | «CILA, SCIA o permesso? Il test in 30 secondi» (provvisorio, chiusura «Sabato ore 19:00») | ⏱ programmato |
+| Sab 21/11 | 19:00 | YT + FB | **Video 5 CILA, SCIA o permesso di costruire** | ✍️ copione pronto (ricontrollato l'8/11) · vocali entro gio 19/11 ore 12:00 |
 
 Di scorta in bozza (29/12, non pubblicate): carosello «Tolleranze» (solo FB, da rifare anche per IG), carosello «CER». Restano anche le bozze tecniche di test del 31/12 e il reel «SCORTA» CILA del 30/12 (base per il reel del 20/11).
 
@@ -56,3 +62,5 @@ Di scorta (bozza in Metricool, 30/12): reel «CILA, SCIA o permesso? Il test in 
 
 ## Ogni domenica
 Claude legge le statistiche da Metricool, aggiorna la tabella delle tappe, prepara e programma la settimana dopo (caroselli, reel di 30 s con la voce, video lunghi) e manda i copioni.
+
+**Nota tecnica (8/11):** nel cloud `python3` non vede playwright; il motore gira con `/usr/local/bin/python3.13` e Chromium in `/opt/pw-browsers/chromium` (passare `executable_path` a `chromium.launch()`). File e testi della settimana 16–21/11: `instagram/settimana-2026-11-16.md`; copioni: `youtube/copioni-settimana-2026-11-16.md`.

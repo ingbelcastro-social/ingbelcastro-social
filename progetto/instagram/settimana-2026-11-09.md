@@ -2,6 +2,8 @@
 
 Preparata domenica 1/11/2026 (sessione automatica). **Stato (aggiornato 1/11, terza sessione): file caricati in media/2026-11-09/ e post programmati su Metricool (reel/Short 10/11, carosello 12/11, reel/Short 13/11). Testo originale:** ~~file prodotti e controllati, NON ancora su Metricool~~: la sessione non ha avuto accesso in scrittura al repository GitHub (il push è stato rifiutato: il repository non era tra quelli autorizzati della sessione) e il PC non era collegato per la riserva Drive. Appena l'accesso torna, si caricano i file in `media/2026-11-09/` e si programma con i testi qui sotto (link raw `https://raw.githubusercontent.com/ingbelcastro-social/ingbelcastro-social/main/media/2026-11-09/<file>`).
 
+> **Nota dell'8/11:** il calendario qui sotto è superato. Su Metricool (verificato l'8/11) ci sono: lun 9/11 carosello «La batteria conviene davvero?», gio 12/11 carosello «Pompa di calore o caldaia?» (file in `media/2026-11-09/`); il carosello CER è di scorta (`media/_scorta/`), il caso CILA esce il 19/11. Fa fede la tabella in `claude/01-STATO-E-PLANNING.md`.
+
 ## Calendario
 
 | Data | Ora | Tipo | Contenuto | Stato |

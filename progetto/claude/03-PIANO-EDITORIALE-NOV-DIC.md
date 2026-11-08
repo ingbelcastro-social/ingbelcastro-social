@@ -67,12 +67,12 @@ Controllo ogni mattina alle 7:06. Con una notizia FLASH da **fonte ufficiale** s
 
 | Data | Ora | Dove | Tipo | Argomento | Contenuto | Stato |
 |---|---|---|---|---|---|---|
-| Lun 16/11 | 19:00 | Instagram + Facebook | Carosello | Manovra 2027: 50% o 36%? | Manovra 2027 e casa (testo aggiornato se serve) | ✅ Programmato su Metricool |
-| Mar 17/11 | 19:00 | Instagram + Facebook + YouTube Shorts | Reel 30 s | Manovra 2027: 50% o 36%? | Prima o seconda casa: 50% o 36%? | ⏳ Lo prepara l'attività di domenica 15/11 · Preannuncia il video completo di domani |
-| Mer 18/11 | 19:00 | YouTube + Facebook | Video lungo 6–8 min | Manovra 2027: 50% o 36%? | Chi ha diritto al 50% (e chi no) | ✍️ Copione domenica 15/11 · 🎙 Vocali entro lunedì 16/11 ore 12:00 |
-| Gio 19/11 | 19:00 | Instagram + Facebook | Carosello | CILA, SCIA o permesso? | Caso studio: lavori senza CILA | ✅ Programmato su Metricool |
-| Ven 20/11 | 19:00 | Instagram + Facebook + YouTube Shorts | Reel 30 s | CILA, SCIA o permesso? | CILA, SCIA o permesso? Il test in 30 secondi | ⏳ Lo prepara l'attività di domenica 15/11 · Preannuncia il video completo di domani |
-| Sab 21/11 | 19:00 | YouTube + Facebook | Video lungo 6–8 min | CILA, SCIA o permesso? | Video 5 – CILA, SCIA o permesso di costruire | ✍️ Copione già pronto · 🎙 Vocali entro giovedì 19/11 ore 12:00 |
+| Lun 16/11 | 19:00 | Instagram + Facebook | Carosello | Manovra 2027: 50% o 36%? | Manovra 2027: cosa c'è per la tua casa (v2, aggiornato l'8/11) | ✅ Programmato su Metricool |
+| Mar 17/11 | 19:00 | Instagram + Facebook + YouTube Shorts | Reel 30 s | Manovra 2027: 50% o 36%? | Prima o seconda casa: 50% o 36%? | ✅ Programmato (provvisorio: con la tua voce viene sostituito) · Preannuncia il video completo di domani |
+| Mer 18/11 | 19:00 | YouTube + Facebook | Video lungo 6–8 min | Manovra 2027: 50% o 36%? | Video 8 – Bonus casa 2027: chi ha diritto al 50% (e chi no) | ✍️ Copione pronto (8/11): si monta con i vocali · 🎙 Vocali entro lunedì 16/11 ore 12:00 |
+| Gio 19/11 | 19:00 | Instagram + Facebook | Carosello | CILA, SCIA o permesso? | Caso studio: lavori senza CILA (v2) | ✅ Programmato su Metricool |
+| Ven 20/11 | 19:00 | Instagram + Facebook + YouTube Shorts | Reel 30 s | CILA, SCIA o permesso? | CILA, SCIA o permesso? Il test in 30 secondi | ✅ Programmato (provvisorio: con la tua voce viene sostituito) · Preannuncia il video completo di domani |
+| Sab 21/11 | 19:00 | YouTube + Facebook | Video lungo 6–8 min | CILA, SCIA o permesso? | Video 5 – CILA, SCIA o permesso di costruire | ✍️ Copione pronto (ricontrollato l'8/11) · 🎙 Vocali entro giovedì 19/11 ore 12:00 |
 
 ### Settimana del 23/11
 
