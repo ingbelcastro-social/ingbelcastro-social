@@ -43,6 +43,7 @@ Scrivi sempre in italiano, in modo semplice: l'ing. non è un tecnico informatic
 ## Stile dei reel (approvato dall'ing. l'8/11)
 - I reel e gli Short si fanno con la composizione Remotion `ReelPunch` (`_motore/reels/ReelPunch.tsx`, esempio di props in `_motore/reels/punch-props-fv6.json`): sottotitoli grandi parola per parola (parola detta in arancione), gancio grande, parole chiave a tutto schermo, contrasti barrati, icone animate, sfondo foto sfocato in movimento, chiusura «Domani il video completo · giorno ore …». Parole con tempi da faster-whisper (kit IT Reelsmaker, `transcribe.py`), audio a −14 LUFS (`master_audio.py`).
 - Le frasi della voce vanno tagliate solo nei silenzi e mai a metà concetto.
+- **Stile «animazione ingegneristica» (piaciuto molto all'ing. il 8/11):** video senza voce interamente animati in codice (Remotion), con la struttura che si muove (torre che oscilla, vento, ponte che si costruisce, sisma), contatori, confronti, suoni sincronizzati, logo fisso e chiusura «Segui @ing.belcastro». Esempi: `_motore/reels/Viral1.tsx` (Taipei 101, 34 s) e `_motore/reels/Ponte.tsx` (Ponte sullo Stretto, 50 s). È lo stile di riferimento per i reel e per le parti animate dei video.
 
 ## Vocali dell'ing.
 - Arrivano in questa chat, un file per blocco (V6-01, V6-02…). Scadenze: video del mercoledì entro lunedì ore 12:00, video del sabato entro giovedì ore 12:00.
