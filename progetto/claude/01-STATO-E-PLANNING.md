@@ -53,6 +53,7 @@ Regola dal 2/11: lun carosello · mar reel (IG + reel FB + Short YT) · mer vide
 | Mar 17/11 | 19:00 | IG reel + FB reel + YT Short | «Prima o seconda casa: 50% o 36%?» (provvisorio, chiusura «Mercoledì ore 19:00») | ⏱ programmato |
 | Mer 18/11 | 19:00 | YT + FB | **Video 8 Bonus casa 2027: chi ha diritto al 50%** | ✍️ copione pronto · vocali entro lun 16/11 ore 12:00 |
 | Gio 19/11 | 19:00 | IG + FB | Carosello «Caso studio: lavori senza CILA» **v2** (penultima con «Domani il reel, sabato il video») | ⏱ programmato |
+| Gio 19/11 | 19:00 | IG reel + FB reel + YT Short | **Meraviglie dell'ingegneria #2 – Tower Bridge** (3D, 42 s, IT + EN, foto dell'ing. con consenso; `media/2026-11-16/Reel-Meraviglie-2-Tower-Bridge-42s.mp4`) | ⏱ programmato (9/11, ok dell'ing.) |
 | Ven 20/11 | 19:00 | IG reel + FB reel + YT Short | «CILA, SCIA o permesso? Il test in 30 secondi» (provvisorio, chiusura «Sabato ore 19:00») | ⏱ programmato |
 | Sab 21/11 | 19:00 | YT + FB | **Video 5 CILA, SCIA o permesso di costruire** | ✍️ copione pronto (ricontrollato l'8/11) · vocali entro gio 19/11 ore 12:00 |
 
