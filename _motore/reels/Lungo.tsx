@@ -172,7 +172,8 @@ const Scene: React.FC<{ s: S; lt: number }> = ({ s, lt }) => {
       const big = (s.lines?.[0]?.[1] || "").replace(/\[\[|\]\]/g, "").split("\n")[0];
       return <>
         <div style={{ position: "absolute", top: 300, left: -200 + lt * 30, whiteSpace: "nowrap", fontFamily: OSW, fontWeight: 700, fontSize: 380, color: "transparent", WebkitTextStroke: "3px rgba(240,122,53,.12)", textTransform: "uppercase" }}>{big}</div>
-        <div style={CEN}><div style={pop(lt, 0)}><Kick s={s.kick} /></div>
+        <div style={CEN}>{s.icon && <div style={{ ...pop(lt, 0), width: 230, height: 230, borderRadius: 115, background: "rgba(25,25,25,.9)", border: `3px solid ${OR}`, boxShadow: `0 0 ${30 + 20 * Math.sin(lt * 3)}px rgba(240,122,53,.35)`, display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 6 }}><Icon n={s.icon} lt={lt} size={160} /></div>}
+          <div style={pop(lt, 0)}><Kick s={s.kick} /></div>
           {s.lines?.map(([t, x]: any, i: number) => <div key={i} style={pop(lt, t)}><Title s={x} size={s.size || 130} /></div>)}
           <div style={{ height: 8, width: 300 * io(lt, 0.3, 1.0), background: OR, borderRadius: 4 }} />
           {s.sub && <div style={pop(lt, s.sub_t || 1)}><Sub s={s.sub} /></div>}</div></>;
@@ -209,8 +210,9 @@ const Scene: React.FC<{ s: S; lt: number }> = ({ s, lt }) => {
         <svg width={620} height={620} viewBox="0 0 620 620" style={{ position: "absolute", left: 1150, top: 230 }}>
           <circle cx={310} cy={310} r={260} fill="none" stroke="#222" strokeWidth={40} />
           <circle cx={310} cy={310} r={260} fill="none" stroke={OR} strokeWidth={40} strokeLinecap="round" pathLength={1} strokeDasharray="1" strokeDashoffset={1 - Math.min(1, frac)} transform="rotate(-90 310 310)" />
-          <g transform="translate(250 120) scale(0.6)"><Icon n={s.icon || "ok"} lt={lt} /></g>
-          <text x={310} y={380} textAnchor="middle" fontFamily={OSW} fontWeight={700} fontSize={fmt.length > 4 ? 120 : 150} fill="#fff">{s.pre?.trim()}{fmt}{s.suf}</text>
+          <g transform="translate(265 70) scale(0.4)"><Icon n={s.icon || "ok"} lt={lt} /></g>
+          {s.pre?.trim() && <text x={310} y={275} textAnchor="middle" fontFamily={INT} fontWeight={800} fontSize={40} fill={OR}>{s.pre.trim()}</text>}
+          <text x={310} y={390} textAnchor="middle" fontFamily={OSW} fontWeight={700} fontSize={(fmt + (s.suf || "")).length > 6 ? 110 : 150} fill="#fff">{fmt}{s.suf}</text>
         </svg></>;
     }
     case "timeline": {
@@ -250,6 +252,59 @@ const Scene: React.FC<{ s: S; lt: number }> = ({ s, lt }) => {
   }
 };
 
+// ---------- sigla: un filo arancione disegna l'edificio e la gru («Magia? Naaa, è semplice ingegneria») ----------
+const Sigla: React.FC<{ t: number; cue: (k: string) => number; title: string; T0: number }> = ({ t, cue, title, T0 }) => {
+  const M = cue("magia"), N = cue("naa"), G = cue("ing");
+  const G0 = 820, XS = [780, 900, 1020, 1140], YS = [820, 700, 580, 460, 340];
+  const segs: number[][] = [];
+  YS.slice(1).forEach((y, i) => { const y0 = YS[i]; XS.forEach((x) => segs.push([x, y0, x, y])); segs.push([XS[0], y, XS[3], y]); });
+  segs.push([900, 340, 900, 250], [900, 250, 1020, 250], [1020, 250, 1020, 340], [960, 250, 960, 170]);
+  const brace = YS.slice(1).map((y, i) => `M${XS[i % 3]},${YS[i]} L${XS[i % 3 + 1]},${y} M${XS[i % 3 + 1]},${YS[i]} L${XS[i % 3]},${y}`).join(" ");
+  const crane = "M1420,820 L1420,190 M1440,820 L1440,190 M1420,190 L1440,190 " + Array.from({ length: 16 }, (_, i) => `M1420,${820 - i * 40} L1440,${780 - i * 40}`).join(" ") + " M1180,190 L1720,190 M1180,215 L1420,215 M1430,120 L1430,190 M1430,120 L1200,190 M1430,120 L1700,190 M1640,190 L1640,235 L1720,235 L1720,190";
+  const pFrame = interpolate(t, [0.4, G, G + 0.6], [0, 0.8, 1], C);
+  const hookX = interpolate(t, [0.9, 2.2, 3.4, G + 0.5], [1300, 1300, 1060, 1060], C);
+  const hookY = interpolate(t, [0.9, 2.2, 3.4, G + 0.5], [215, 700, 300, 330], { ...C, easing: Easing.inOut(Easing.cubic) });
+  const out = io(t, G + 0.9, G + 1.6); // il disegno si ritira dietro il logo
+  const glow = { filter: "drop-shadow(0 0 8px rgba(240,122,53,.9))" };
+  const stars = Array.from({ length: 18 }, (_, i) => ({ x: 700 + ((i * 271) % 520), y: 200 + ((i * 397) % 560), s: 10 + (i % 4) * 6 }));
+  const magia = win(t, M - 0.1, G + 0.2, 0.2), strike = io(t, N, N + 0.35), ingT = io(t, G, G + 0.4);
+  return (
+    <AbsoluteFill style={{ opacity: 1 - io(t, T0 - 0.1, T0 + 0.4) }}>
+      <svg width={1920} height={1080} style={{ position: "absolute" }}>
+        <g opacity={io(t, 0, 0.6) * (1 - 0.6 * out)}>{Array.from({ length: 28 }, (_, i) => <line key={i} x1={i * 70} x2={i * 70} y1={0} y2={1080} stroke="rgba(127,182,224,.08)" />)}{Array.from({ length: 16 }, (_, i) => <line key={`h${i}`} y1={i * 70} y2={i * 70} x1={0} x2={1920} stroke="rgba(127,182,224,.08)" />)}</g>
+        <g style={{ transformOrigin: "960px 500px", transform: `translateY(${-120 * out}px) scale(${1 - 0.25 * out})` }} opacity={1 - 0.75 * out}>
+          <path d="M520,820 L1800,820" stroke="#fff" strokeWidth={4} pathLength={1} strokeDasharray="1" strokeDashoffset={1 - io(t, 0.1, 0.8)} />
+          <g style={glow}>{segs.map(([x1, y1, x2, y2], k) => { const q = Math.min(1, Math.max(0, pFrame * segs.length - k)); if (q <= 0) return null;
+            const ex = x1 + (x2 - x1) * q, ey = y1 + (y2 - y1) * q;
+            return <g key={k}><line x1={x1} y1={y1} x2={ex} y2={ey} stroke={OR} strokeWidth={6} strokeLinecap="round" />{q < 1 && <circle cx={ex} cy={ey} r={10} fill="#fff" />}</g>; })}</g>
+          <path d={crane} fill="none" stroke="#e8e8e8" strokeWidth={3} pathLength={1} strokeDasharray="1" strokeDashoffset={1 - io(t, 0.6, 2.4)} />
+          <g opacity={io(t, 0.9, 1.2) * (1 - io(t, G + 0.4, G + 0.7))}>
+            <line x1={hookX} y1={190} x2={hookX} y2={hookY} stroke="#ccc" strokeWidth={2} /><rect x={hookX - 70} y={hookY} width={140} height={14} fill={OR} />
+          </g>
+          <path d={brace} fill="none" stroke="#fff" strokeWidth={3} pathLength={1} strokeDasharray="1" strokeDashoffset={1 - io(t, G, G + 0.7)} opacity={0.8} />
+          <g opacity={ingT} fontFamily={INT} fontWeight={800} fontSize={22} fill="#9cc7ea">
+            <line x1={720} y1={820} x2={720} y2={340} stroke="#9cc7ea" strokeWidth={2} />
+            {YS.map((y, i) => <g key={y}><line x1={710} x2={730} y1={y} y2={y} stroke="#9cc7ea" strokeWidth={2} /><text x={700} y={y + 7} textAnchor="end">+{(i * 3.2).toFixed(2).replace(".", ",")}</text></g>)}
+            <line x1={780} y1={860} x2={1140} y2={860} stroke="#9cc7ea" strokeWidth={2} /><text x={960} y={895} textAnchor="middle">3 × 4,00 m</text>
+          </g>
+          <g opacity={magia * (1 - strike * 0.9)}>{stars.map((s, i) => { const fall = strike * (200 + i * 15); const tw = 0.5 + 0.5 * Math.abs(Math.sin(t * 6 + i)); return <path key={i} d={`M0,${-s.s} L${s.s * 0.25},${-s.s * 0.25} L${s.s},0 L${s.s * 0.25},${s.s * 0.25} L0,${s.s} L${-s.s * 0.25},${s.s * 0.25} L${-s.s},0 L${-s.s * 0.25},${-s.s * 0.25} Z`} fill="#ffe2a8" opacity={tw} transform={`translate(${s.x} ${s.y + fall}) rotate(${t * 90 + i * 20})`} />; })}</g>
+        </g>
+      </svg>
+      {/* parole della voce */}
+      <div style={{ position: "absolute", left: 120, top: 330, opacity: magia * (1 - out), fontFamily: OSW, fontWeight: 700, fontSize: 120, color: "#ffe2a8", fontStyle: "italic", transform: `rotate(-4deg) scale(${0.8 + 0.2 * io(t, M, M + 0.3)})` }}>
+        MAGIA?<div style={{ position: "absolute", left: -10, top: 78, height: 12, width: `${110 * strike}%`, background: OR, borderRadius: 6 }} /></div>
+      <div style={{ position: "absolute", left: 1480, top: 560, opacity: io(t, N, N + 0.3) * (1 - io(t, G - 0.1, G + 0.2)), fontFamily: OSW, fontWeight: 700, fontSize: 110, color: "#fff" }}>NAAA</div>
+      <div style={{ position: "absolute", left: 110, top: 520, opacity: ingT * (1 - out), fontFamily: OSW, fontWeight: 700, fontSize: 84, color: "#fff", lineHeight: 1.05, textTransform: "uppercase", transform: `translateY(${(1 - ingT) * 30}px)` }}>È semplice<br /><span style={{ color: OR }}>ingegneria</span></div>
+      {/* logo, nome e titolo */}
+      <AbsoluteFill style={{ alignItems: "center", justifyContent: "flex-start", flexDirection: "column", gap: 26, paddingTop: 150 }}>
+        <Img src={staticFile("brands/ingbelcastro/logo-white.png")} style={{ height: 330, opacity: io(t, G + 1.0, G + 1.5), transform: `scale(${0.8 + 0.2 * io(t, G + 1.0, G + 1.7)})` }} />
+        <div style={{ fontFamily: INT, fontWeight: 800, fontSize: 40, color: OR, letterSpacing: "0.2em", opacity: io(t, cue("nome"), cue("nome") + 0.4) }}>@ING.BELCASTRO</div>
+        <div style={{ fontFamily: OSW, fontWeight: 700, fontSize: 88, color: "#fff", textTransform: "uppercase", textAlign: "center", padding: "0 150px", lineHeight: 1.05, marginTop: 20, ...pop(t, cue("titolo")) }}>{title}</div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
 export const Lungo: React.FC<LungoProps> = (p) => {
   const f = useCurrentFrame(); const t = f / 30;
   const cue = (k: string) => p.cues[k] ?? 0;
@@ -264,15 +319,7 @@ export const Lungo: React.FC<LungoProps> = (p) => {
         {Array.from({ length: 26 }, (_, i) => { const x = (i * 331) % 1920, y = 1080 - ((t * (12 + (i % 5) * 6) + i * 157) % 1180); return <circle key={i} cx={x + 20 * Math.sin(t * 0.5 + i)} cy={y} r={2 + (i % 3)} fill={OR} opacity={0.15 + 0.1 * (i % 3)} />; })}
       </svg>
       {/* sigla */}
-      {inSig && <AbsoluteFill style={{ opacity: 1 - io(t, p.T0 - 0.1, p.T0 + 0.4), alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 40 }}>
-        <svg width={1920} height={1080} style={{ position: "absolute" }}>
-          {Array.from({ length: 12 }, (_, i) => { const a = (i / 12) * Math.PI * 2; const r = 1400 * io(t, cue("magia") - 0.3, cue("ing")); return <line key={i} x1={960} y1={430} x2={960 + Math.cos(a + t * 0.2) * r} y2={430 + Math.sin(a + t * 0.2) * r} stroke="rgba(240,122,53,.25)" strokeWidth={3} />; })}
-          <circle cx={960} cy={430} r={600 * io(t, cue("naa") - 0.2, cue("naa") + 0.8)} fill="none" stroke={OR} strokeWidth={6} opacity={1 - io(t, cue("naa"), cue("naa") + 1.2)} />
-        </svg>
-        <Img src={staticFile("brands/ingbelcastro/logo-white.png")} style={{ height: 340, opacity: io(t, cue("ing"), cue("ing") + 0.4), transform: `scale(${0.7 + 0.3 * io(t, cue("ing"), cue("ing") + 0.6)})` }} />
-        <div style={{ fontFamily: INT, fontWeight: 800, fontSize: 40, color: OR, letterSpacing: "0.2em", opacity: io(t, cue("nome"), cue("nome") + 0.4) }}>@ING.BELCASTRO</div>
-        <div style={{ fontFamily: OSW, fontWeight: 700, fontSize: 92, color: "#fff", textTransform: "uppercase", textAlign: "center", padding: "0 150px", lineHeight: 1.05, ...pop(t, cue("titolo")) }}>{p.title}</div>
-      </AbsoluteFill>}
+      {inSig && <Sigla t={t} cue={cue} title={p.title} T0={p.T0} />}
       {/* scene */}
       {p.scenes.filter((s) => t >= s.a - 0.05 && t < s.z + 0.05).map((s, i) => (
         <AbsoluteFill key={i} style={{ opacity: win(t, s.a, s.z, 0.25) }}><Scene s={s} lt={t - s.a} /></AbsoluteFill>
