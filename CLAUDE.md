@@ -46,7 +46,7 @@ Scrivi sempre in italiano, in modo semplice: l'ing. non è un tecnico informatic
 - **REGOLA DELL'ING. (8/11): TUTTI i video lunghi e TUTTI i reel/Short si fanno nello stile «animazione ingegneristica»**: grafiche interamente animate in codice (Remotion) con le strutture e gli impianti che si muovono (torre che oscilla, vento, ponte che si costruisce, sisma, sole che si sposta, flussi di energia, ventole che girano, calore che esce), contatori, confronti, suoni sincronizzati, logo fisso. Esempi: `_motore/reels/Viral1.tsx` (Taipei 101), `_motore/reels/Ponte.tsx` (Ponte sullo Stretto), `_motore/reels/ReelPdc7.tsx` (reel con voce e sottotitoli parola per parola). Video lunghi 1920x1080: composizione `_motore/reels/Lungo.tsx` (icone e illustrazioni animate, stacchi di capitolo, barra dei capitoli) con le props generate da `_motore/lungo.py piano-Vn.py cartella [audio.mp4]` partendo dal piano scene di video2.
 - **Anteprima prima di montare (ing. 9/11):** per ogni nuovo video o reel mandare prima all'ing. un'anteprima (storyboard con i fotogrammi chiave e cosa succede in ogni scena) e montare solo dopo il suo ok.
 - **Ogni video deve sorprendere più del precedente (ing. 9/11):** animazioni sempre nuove e pertinenti all'argomento, mai ripetere le stesse scene. I primi video animati (Taipei 101, Ponte sullo Stretto) hanno superato le 1.000 visualizzazioni: è la strada giusta.
-- **Serie «Meraviglie dell'ingegneria» (proposta il 9/11, in attesa dell'ok sui giorni):** reel animati su opere famose nel mondo, numerati (#1, #2…), chiusura con domanda per i commenti e «Segui per la #…». Per i monumenti all'estero (Londra, America, ecc.) testo principale in italiano + **sottotitolo in inglese** più piccolo sotto; per quelli italiani solo italiano. Torri Gemelle e tragedie simili: solo taglio tecnico e rispettoso.
+- **Serie «Meraviglie dell'ingegneria» (approvata il 9/11: domenica e giovedì alle 19:00 a novembre, 9:30 a dicembre; #1 Torre di Pisa dom 15/11, #2 Tower Bridge):** reel animati su opere famose nel mondo, numerati (#1, #2…), chiusura con domanda per i commenti e «Segui per la #…». Per i monumenti all'estero (Londra, America, ecc.) testo principale in italiano + **sottotitolo in inglese** più piccolo sotto; per quelli italiani solo italiano. Torri Gemelle e tragedie simili: solo taglio tecnico e rispettoso.
 - **Tempi di lettura:** ogni scritta deve restare a schermo abbastanza da essere letta con calma (l'ing. l'8/11: «è così veloce che non riesco a leggere»). Movimento veloce sì, testi lenti.
 
 ## Vocali dell'ing.
@@ -58,7 +58,7 @@ Guarda ogni slide e un montaggio dei fotogrammi di ogni video; ffprobe su durata
 Ogni dato normativo ha fonte e data. Distingui sempre **proposta** (ddl) e **legge in vigore**.
 
 ## Vincoli fissi
-- Il volto dell'ing. non compare mai, niente dirette.
+- Il volto dell'ing. non compare mai, niente dirette. **Unica eccezione (consenso dell'ing. del 9/11):** la sua foto davanti al Tower Bridge, solo nell'episodio «Meraviglie dell'ingegneria» sul Tower Bridge.
 - Prezzi, preventivi e pareri su casi reali non si pubblicano.
 - Ogni video ha foto sue: la stessa foto di cantiere non si riusa. Sfoca nomi di committenti, imprese, fornitori e numeri di pratica.
 - Obiettivo al 31/12/2026: 50.000 follower su Instagram e 5.000 iscritti su YouTube.
