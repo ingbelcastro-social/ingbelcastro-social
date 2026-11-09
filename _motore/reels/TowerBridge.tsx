@@ -154,7 +154,7 @@ export const TowerBridge: React.FC = () => {
       <AbsoluteFill style={{ opacity: photo * (1 - io(t, 37.8, 38.3)), background: "#07090c" }}>
         <div style={{ position: "absolute", left: 90, right: 90, top: 380, height: 1100, borderRadius: 34, overflow: "hidden", border: `6px solid ${OR}`, transform: `scale(${0.94 + 0.06 * photo}) rotate(${(1 - photo) * -3}deg)` }}>
           <Img src={staticFile("ing/tower-bridge-ing.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.04 + 0.05 * io(t, 34.4, 38.0)})` }} /></div>
-        <Txt op={io(t, 34.8, 35.3)} top={1520} it={<>Io ci sono stato <O>📍</O></>} en="I was there · London" size={84} />
+        <Txt op={io(t, 34.8, 35.3)} top={1500} it={<>Io ci sono stato.<br /><O>E tu?</O></>} en="I was there. What about you?" size={88} />
       </AbsoluteFill>
       <AbsoluteFill style={{ opacity: win(t, 38.0, 39.6, 0.3), background: "rgba(7,7,7,.95)" }}>
         <Txt op={io(t, 38.1, 38.5)} top={700} it={<>Quale meraviglia<br />nella <O>#3</O>?</>} en="Which wonder should be next? Comment below" size={96} />
@@ -165,6 +165,7 @@ export const TowerBridge: React.FC = () => {
         <div style={{ fontFamily: OSW, fontWeight: 700, fontSize: 80, color: "#fff", textTransform: "uppercase" }}>Segui per la <span style={{ color: OR }}>#3</span></div>
         <div style={{ fontFamily: INT, fontWeight: 800, fontSize: 40, color: "#ccc" }}>@ing.belcastro</div>
       </AbsoluteFill>
+      <Audio src={staticFile("tb/sound.wav")} />
       <div style={{ position: "absolute", top: 1860, left: 0, right: 0, textAlign: "center", fontFamily: INT, fontWeight: 600, fontSize: 22, color: "#999", opacity: (1 - endIn) * (1 - photo) }}>Animazione 3D illustrativa · proporzioni semplificate</div>
     </AbsoluteFill>
   );
