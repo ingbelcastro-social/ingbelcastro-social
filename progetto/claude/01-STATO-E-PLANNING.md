@@ -48,6 +48,7 @@ Regola dal 2/11: lun carosello · mar reel (IG + reel FB + Short YT) · mer vide
 | Gio 12/11 | 19:00 | IG + FB | Carosello «Pompa di calore o caldaia?» (nuovo) | ⏱ programmato |
 | Ven 13/11 | 19:00 | IG reel + FB reel + YT Short | «Pompa di calore o caldaia?» **animato con la voce** (`Reel-Pompa-di-calore-animato-v3-30s.mp4`) | ⏱ programmato (9/11, ok dell'ing.) |
 | Sab 14/11 | 19:00 | YT + FB | **Video 7 Pompa di calore o caldaia** (7:01, animato, sigla architettonica, `Video-7-Pompa-di-calore-animato-v2.mp4` + miniatura; crediti foto CC BY 2.0 in descrizione) | ⏱ programmato (9/11, ok dell'ing.) |
+| Dom 15/11 | 19:00 | IG reel + FB reel + YT Short | **Meraviglie dell'ingegneria #1 – Torre di Pisa** (38 s, animato senza voce, `Reel-Meraviglie-1-Torre-di-Pisa-38s.mp4`) | ⏱ programmato (9/11, ok dell'ing. sull'anteprima) |
 | Lun 16/11 | 19:00 | IG + FB | Carosello «Manovra 2027 e casa» **v2** (rifatto l'8/11: dati aggiornati, chi ha il 50%, «Domani il reel, mercoledì il video»; ricontrollare gli emendamenti lunedì mattina) | ⏱ programmato |
 | Mar 17/11 | 19:00 | IG reel + FB reel + YT Short | «Prima o seconda casa: 50% o 36%?» (provvisorio, chiusura «Mercoledì ore 19:00») | ⏱ programmato |
 | Mer 18/11 | 19:00 | YT + FB | **Video 8 Bonus casa 2027: chi ha diritto al 50%** | ✍️ copione pronto · vocali entro lun 16/11 ore 12:00 |

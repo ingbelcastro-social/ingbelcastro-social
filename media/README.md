@@ -25,6 +25,7 @@ Metricool pubblica dalle sue copie: questi file servono come archivio e per rifa
 | Gio 12/11 | Pompa di calore o caldaia | `Carosello-Pompa-di-calore-o-caldaia-slide-1…7.png` |
 | Ven 13/11 | Pompa di calore o caldaia | `Reel-Pompa-di-calore-animato-v3-30s.mp4` (con la voce, IG + FB + Shorts) |
 | Sab 14/11 | Pompa di calore o caldaia | `Video-7-Pompa-di-calore-animato-v2.mp4` + `Miniatura-Video-7-Pompa-di-calore.jpg` |
+| Dom 15/11 | Meraviglie dell'ingegneria #1 | `Reel-Meraviglie-1-Torre-di-Pisa-38s.mp4` (IG + FB + Shorts) |
 
 Dal 16/11: i caroselli Manovra (16/11) e CILA (19/11) sono già su Metricool; il resto lo carica l'attività della domenica.
 
