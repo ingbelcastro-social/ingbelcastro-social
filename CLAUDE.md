@@ -48,6 +48,10 @@ Scrivi sempre in italiano, in modo semplice: l'ing. non è un tecnico informatic
 - **Ogni video deve sorprendere più del precedente (ing. 9/11):** animazioni sempre nuove e pertinenti all'argomento, mai ripetere le stesse scene. I primi video animati (Taipei 101, Ponte sullo Stretto) hanno superato le 1.000 visualizzazioni: è la strada giusta.
 - **Serie «Meraviglie dell'ingegneria» (approvata il 9/11: domenica e giovedì alle 19:00 a novembre, 9:30 a dicembre; #1 Torre di Pisa dom 15/11, #2 Tower Bridge):** reel animati su opere famose nel mondo, numerati (#1, #2…), chiusura con domanda per i commenti e «Segui per la #…». Per i monumenti all'estero (Londra, America, ecc.) testo principale in italiano + **sottotitolo in inglese** più piccolo sotto; per quelli italiani solo italiano. Torri Gemelle e tragedie simili: solo taglio tecnico e rispettoso.
 - **3D e innovazione continua (ing. 9/11):** il 3D (Remotion + three.js, `@remotion/three`, render con `--gl=swangle`; esempi `_motore/reels/Build3D.tsx` «dal progetto al cantiere» e `_motore/reels/TowerBridge.tsx`) è piaciuto molto: usarlo quando l'opera si presta (costruzione, apertura, cantiere). Regola: **non standardizzare**, ogni video deve avere un'idea nuova e diversa dai precedenti.
+- **Quale stile per quale contenuto (decisione dell'ing. 9/11):**
+  - **Costruzioni e «Meraviglie dell'ingegneria»** (edifici, torri, ponti, grandi opere): **modello 3D che si costruisce** (come `_motore/reels/TowerBridge.tsx` e `Build3D.tsx`), poi l'opera in funzione.
+  - **Caroselli di informazione e normativa** (bonus, pratiche, leggi, incentivi): **motore dei caroselli di sempre** (`_motore/`, stesso formato e impaginazione usati finora), senza cambiarlo.
+  - Reel e video lunghi sui temi normativi/impianti: stile «animazione ingegneristica» 2D con la voce (`ReelPdc7.tsx`, `ReelFv6.tsx`, `Lungo.tsx`).
 - **Tempi di lettura:** ogni scritta deve restare a schermo abbastanza da essere letta con calma (l'ing. l'8/11: «è così veloce che non riesco a leggere»). Movimento veloce sì, testi lenti.
 
 ## Vocali dell'ing.
