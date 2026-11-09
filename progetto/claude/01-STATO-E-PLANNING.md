@@ -43,7 +43,7 @@ Regola dal 2/11: lun carosello · mar reel (IG + reel FB + Short YT) · mer vide
 | Ven 6/11 | 19:00 | IG reel + FB reel + YT Short | Direttore dei lavori con la voce, chiusura «Sabato ore 19:00» (file v3) | ⏱ programmato |
 | Sab 7/11 | 19:00 | YT + FB | **Video 3 Direttore dei lavori** | ⏱ programmato |
 | Lun 9/11 | 19:00 | IG + FB | Carosello «La batteria conviene davvero?» (nuovo) | ⏱ programmato |
-| Mar 10/11 | 19:00 | IG reel + FB reel + YT Short | «La batteria conviene davvero?» **con la voce, nuovo stile** (`Reel-Fotovoltaico-accumulo-voce-v2-30s.mp4`) | ⏱ programmato (8/11) |
+| Mar 10/11 | 19:00 | IG reel + FB reel + YT Short | «La batteria conviene davvero?» **animato con la voce** (`Reel-Fotovoltaico-accumulo-animato-v3-30s.mp4`) | ⏱ programmato (9/11, ok dell'ing. sull'anteprima) |
 | Mer 11/11 | 19:00 | YT + FB | **Video 6 Fotovoltaico con accumulo** (8:02, nuovo stile «animazione ingegneristica», sigla architettonica, `Video-6-Fotovoltaico-accumulo-animato-v3.mp4`) | ⏱ programmato (9/11, ok dell'ing.) |
 | Gio 12/11 | 19:00 | IG + FB | Carosello «Pompa di calore o caldaia?» (nuovo) | ⏱ programmato |
 | Ven 13/11 | 19:00 | IG reel + FB reel + YT Short | «Pompa di calore o caldaia?» **animato con la voce** (`Reel-Pompa-di-calore-animato-v3-30s.mp4`) | ⏱ programmato (9/11, ok dell'ing.) |

@@ -20,7 +20,7 @@ Metricool pubblica dalle sue copie: questi file servono come archivio e per rifa
 | Giorno | Argomento | File |
 |---|---|---|
 | Lun 9/11 | Fotovoltaico con accumulo | `Carosello-Fotovoltaico-accumulo-slide-1…7.png` |
-| Mar 10/11 | Fotovoltaico con accumulo | `Reel-Fotovoltaico-accumulo-voce-v2-30s.mp4` (con la voce, IG + FB + Shorts) |
+| Mar 10/11 | Fotovoltaico con accumulo | `Reel-Fotovoltaico-accumulo-animato-v3-30s.mp4` (animato con la voce, IG + FB + Shorts) |
 | Mer 11/11 | Fotovoltaico con accumulo | `Video-6-Fotovoltaico-accumulo-animato-v3.mp4` + miniatura |
 | Gio 12/11 | Pompa di calore o caldaia | `Carosello-Pompa-di-calore-o-caldaia-slide-1…7.png` |
 | Ven 13/11 | Pompa di calore o caldaia | `Reel-Pompa-di-calore-animato-v3-30s.mp4` (con la voce, IG + FB + Shorts) |
