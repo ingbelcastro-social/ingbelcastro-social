@@ -29,7 +29,7 @@ Documento di riferimento per **cosa è uscito, cosa è programmato e cosa viene 
 ## Settimana tipo (dal 2/11)
 Lun carosello IG+FB · Mar reel IG + Short YT (con la voce, annuncia il video) · Mer video lungo YT+FB · Gio carosello · Ven reel + Short · Sab video lungo · Dom riposo e produzione. **Orari: novembre tutto alle 19:00, dicembre tutto alle 9:30.** Dettagli e calendario: `03-PIANO-EDITORIALE-NOV-DIC.md`.
 
-## Programmato su Metricool (ricontrollato con getScheduledPosts l'8/11/2026: settimana 9–14/11 senza errori, settimana 16–21/11 aggiunta)
+## Programmato su Metricool (ricontrollato con getScheduledPosts il 9/11/2026: Video 6, reel del 13/11 e Video 7 nel nuovo stile animato)
 
 Regola dal 2/11: lun carosello · mar reel (IG + reel FB + Short YT) · mer video lungo sullo **stesso argomento**; gio · ven · sab su un secondo argomento. Calendario completo in `03-PIANO-EDITORIALE-NOV-DIC.md` e nell'Excel.
 
@@ -44,10 +44,10 @@ Regola dal 2/11: lun carosello · mar reel (IG + reel FB + Short YT) · mer vide
 | Sab 7/11 | 19:00 | YT + FB | **Video 3 Direttore dei lavori** | ⏱ programmato |
 | Lun 9/11 | 19:00 | IG + FB | Carosello «La batteria conviene davvero?» (nuovo) | ⏱ programmato |
 | Mar 10/11 | 19:00 | IG reel + FB reel + YT Short | «La batteria conviene davvero?» **con la voce, nuovo stile** (`Reel-Fotovoltaico-accumulo-voce-v2-30s.mp4`) | ⏱ programmato (8/11) |
-| Mer 11/11 | 19:00 | YT + FB | **Video 6 Fotovoltaico con accumulo** (8:02, grafiche animate, miniatura) | ⏱ programmato (8/11) |
+| Mer 11/11 | 19:00 | YT + FB | **Video 6 Fotovoltaico con accumulo** (8:02, nuovo stile «animazione ingegneristica», sigla architettonica, `Video-6-Fotovoltaico-accumulo-animato-v3.mp4`) | ⏱ programmato (9/11, ok dell'ing.) |
 | Gio 12/11 | 19:00 | IG + FB | Carosello «Pompa di calore o caldaia?» (nuovo) | ⏱ programmato |
-| Ven 13/11 | 19:00 | IG reel + FB reel + YT Short | «Pompa di calore o caldaia?» (provvisorio) | ⏱ programmato |
-| Sab 14/11 | 19:00 | YT + FB | **Video 7 Pompa di calore o caldaia** | ✍️ copione pronto · vocali entro gio 12/11 ore 12:00 |
+| Ven 13/11 | 19:00 | IG reel + FB reel + YT Short | «Pompa di calore o caldaia?» **animato con la voce** (`Reel-Pompa-di-calore-animato-v3-30s.mp4`) | ⏱ programmato (9/11, ok dell'ing.) |
+| Sab 14/11 | 19:00 | YT + FB | **Video 7 Pompa di calore o caldaia** (7:01, animato, sigla architettonica, `Video-7-Pompa-di-calore-animato-v2.mp4` + miniatura; crediti foto CC BY 2.0 in descrizione) | ⏱ programmato (9/11, ok dell'ing.) |
 | Lun 16/11 | 19:00 | IG + FB | Carosello «Manovra 2027 e casa» **v2** (rifatto l'8/11: dati aggiornati, chi ha il 50%, «Domani il reel, mercoledì il video»; ricontrollare gli emendamenti lunedì mattina) | ⏱ programmato |
 | Mar 17/11 | 19:00 | IG reel + FB reel + YT Short | «Prima o seconda casa: 50% o 36%?» (provvisorio, chiusura «Mercoledì ore 19:00») | ⏱ programmato |
 | Mer 18/11 | 19:00 | YT + FB | **Video 8 Bonus casa 2027: chi ha diritto al 50%** | ✍️ copione pronto · vocali entro lun 16/11 ore 12:00 |

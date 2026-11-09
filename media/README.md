@@ -21,10 +21,10 @@ Metricool pubblica dalle sue copie: questi file servono come archivio e per rifa
 |---|---|---|
 | Lun 9/11 | Fotovoltaico con accumulo | `Carosello-Fotovoltaico-accumulo-slide-1…7.png` |
 | Mar 10/11 | Fotovoltaico con accumulo | `Reel-Fotovoltaico-accumulo-voce-v2-30s.mp4` (con la voce, IG + FB + Shorts) |
-| Mer 11/11 | Fotovoltaico con accumulo | `Video-6-Fotovoltaico-accumulo-v1.mp4` + miniatura |
+| Mer 11/11 | Fotovoltaico con accumulo | `Video-6-Fotovoltaico-accumulo-animato-v3.mp4` + miniatura |
 | Gio 12/11 | Pompa di calore o caldaia | `Carosello-Pompa-di-calore-o-caldaia-slide-1…7.png` |
-| Ven 13/11 | Pompa di calore o caldaia | `Reel-…` e `Short-Pompa-di-calore-o-caldaia-teaser-30s.mp4` (provvisori) |
-| Sab 14/11 | Pompa di calore o caldaia | Video 7: arriva con i vocali |
+| Ven 13/11 | Pompa di calore o caldaia | `Reel-Pompa-di-calore-animato-v3-30s.mp4` (con la voce, IG + FB + Shorts) |
+| Sab 14/11 | Pompa di calore o caldaia | `Video-7-Pompa-di-calore-animato-v2.mp4` + `Miniatura-Video-7-Pompa-di-calore.jpg` |
 
 Dal 16/11: i caroselli Manovra (16/11) e CILA (19/11) sono già su Metricool; il resto lo carica l'attività della domenica.
 
