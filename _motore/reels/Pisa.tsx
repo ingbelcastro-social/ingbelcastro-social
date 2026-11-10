@@ -96,7 +96,7 @@ export const Pisa: React.FC = () => {
       <div style={{ position: "absolute", top: 232, left: 0, right: 0, display: "flex", justifyContent: "center", opacity: 1 - endIn }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14, background: "rgba(7,7,7,.85)", padding: "8px 22px", borderRadius: 40 }}>
           <Img src={staticFile("brands/ingbelcastro/logo-white.png")} style={{ height: 54 }} /><span style={{ fontFamily: INT, fontWeight: 800, fontSize: 34, color: "#fff" }}>@ing.belcastro</span></div></div>
-      <Small top={330} op={(1 - endIn) * io(t, 0.1, 0.5)} size={30} color={OR}>MERAVIGLIE DELL'INGEGNERIA · #1</Small>
+      <Small top={330} op={(1 - endIn) * io(t, 0.1, 0.5)} size={30} color={OR}>LE GRANDI OPERE · #2</Small>
 
       {/* testi */}
       <Big top={420} op={win(t, 0.1, 3.4, 0.2)} size={118}>Pende da<br /><O>850 anni</O></Big>
@@ -122,16 +122,15 @@ export const Pisa: React.FC = () => {
       <AbsoluteFill style={{ opacity: win(t, 31.0, 35.0, 0.3), background: "rgba(7,7,7,.9)" }}>
         <Big top={560} op={io(t, 31.1, 31.5)} size={90}>Non l'hanno<br />raddrizzata.</Big>
         <Big top={820} op={io(t, 32.0, 32.4)} size={120} color={OR}>L'hanno salvata.</Big>
-        <Small top={1080} op={io(t, 32.8, 33.2)} size={46}>Quale meraviglia vuoi nella #2?<br />Scrivilo nei commenti 👇</Small>
+        <Small top={1080} op={io(t, 32.8, 33.2)} size={46}>Quale grande opera vuoi vedere?<br />Scrivilo nei commenti 👇</Small>
       </AbsoluteFill>
       <AbsoluteFill style={{ opacity: endIn, background: "#000", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 36 }}>
         <Img src={staticFile("brands/ingbelcastro/logo-white.png")} style={{ width: 440 }} />
-        <div style={{ fontFamily: INT, fontWeight: 800, fontSize: 36, color: OR, letterSpacing: "0.15em" }}>MERAVIGLIE DELL'INGEGNERIA</div>
-        <div style={{ fontFamily: OSW, fontWeight: 700, fontSize: 80, color: "#fff", textTransform: "uppercase" }}>Segui per la <span style={{ color: OR }}>#2</span></div>
+        <div style={{ fontFamily: INT, fontWeight: 800, fontSize: 36, color: OR, letterSpacing: "0.15em" }}>LE GRANDI OPERE</div>
+        <div style={{ fontFamily: OSW, fontWeight: 700, fontSize: 80, color: "#fff", textTransform: "uppercase" }}>Segui per la <span style={{ color: OR }}>#3</span></div>
         <div style={{ fontFamily: INT, fontWeight: 800, fontSize: 40, color: "#ccc" }}>@ing.belcastro</div>
       </AbsoluteFill>
       <Small top={1860} op={(1 - endIn) * 0.5} size={22}>Animazione illustrativa · proporzioni semplificate</Small>
-      <Audio src={staticFile("pisa/sound.wav")} />
     </AbsoluteFill>
   );
 };

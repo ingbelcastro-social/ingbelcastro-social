@@ -3,6 +3,7 @@ import { AbsoluteFill, Audio, Img, interpolate, Sequence, staticFile, useCurrent
 import { loadFont as loadOswald } from "@remotion/google-fonts/Oswald";
 import { loadFont as loadInter } from "@remotion/google-fonts/Inter";
 import { TowerBridge, TB_DUR } from "./TowerBridge";
+import { Pisa, PISA_DUR } from "./Pisa";
 const { fontFamily: OSW } = loadOswald("normal", { weights: ["700"], subsets: ["latin", "latin-ext"] });
 const { fontFamily: INT } = loadInter("normal", { weights: ["600", "800"], subsets: ["latin", "latin-ext"] });
 const OR = "#F07A35";
@@ -40,5 +41,14 @@ export const GOTowerBridge: React.FC = () => (
     <Sequence durationInFrames={INTRO * 30}><GOIntro title="Tower Bridge" place="Londra · London" num={1} /></Sequence>
     <Sequence from={INTRO * 30}><TowerBridge /></Sequence>
     <Audio src={staticFile("go-tb/mix.wav")} />
+  </AbsoluteFill>
+);
+
+export const GO_PISA_DUR = INTRO + PISA_DUR;
+export const GOPisa: React.FC = () => (
+  <AbsoluteFill style={{ background: "#000" }}>
+    <Sequence durationInFrames={INTRO * 30}><GOIntro title="Torre di Pisa" place="Pisa · Italia" num={2} /></Sequence>
+    <Sequence from={INTRO * 30}><Pisa /></Sequence>
+    <Audio src={staticFile("go-pisa/mix.wav")} />
   </AbsoluteFill>
 );
