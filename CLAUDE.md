@@ -38,13 +38,13 @@ Scrivi sempre in italiano, in modo semplice: l'ing. non è un tecnico informatic
 - L'ultimo video lungo è il Video 6 di mercoledì 11/11. Dal 12/11 **nessun video lungo** (il Video 7 è in bozza su Metricool, non esce).
 - Settimana tipo, **due argomenti**:
   - **Lunedì** post/carosello (IG + FB) con descrizione e 5 hashtag — argomento A (informazione/normativa).
-  - **Martedì** video animato **3D** sullo stesso argomento del post, **massimo 50 s**, senza voce (scritte + suoni, come Taipei 101).
-  - **Mercoledì** «Meraviglie dell'ingegneria», sempre sorprendente, **massimo 90 s**.
-  - **Giovedì** post/carosello — argomento B. **Venerdì** video 3D sull'argomento B (max 50 s). **Sabato** «Meraviglie dell'ingegneria».
+  - **Martedì** video animato **3D** sullo stesso argomento del post, **massimo 60 s**, senza voce (scritte + musica + suoni, come Taipei 101).
+  - **Mercoledì** «Le Grandi Opere», sempre sorprendente, **massimo 90 s**.
+  - **Giovedì** post/carosello — argomento B. **Venerdì** video 3D sull'argomento B (max 60 s). **Sabato** «Le Grandi Opere».
   - **Domenica** nulla.
 - Pubblicazione: **Instagram + Facebook**; in più gli stessi video come **Short su YouTube** (scelta dell'ing. del 10/11).
 - Penultima slide del carosello e didascalia del post: **«Seguimi per approfondimenti! Domani il video completo!»** (ing. 10/11).
-- Nei post e nei video del martedì/venerdì **non si annunciano le «Meraviglie»** né il loro giorno/ora: le Meraviglie escono senza preannuncio.
+- Nei post e nei video del martedì/venerdì **non si annunciano le «Grandi Opere»** né il loro giorno/ora: le Grandi Opere escono senza preannuncio.
 - Orario unico: novembre 2026 alle 19:00, dicembre 2026 alle 9:30.
 - Video verticali 1080x1920, 30 fps, audio AAC −14 LUFS. Caroselli 6–7 slide 1080x1350: penultima scura con fonte e «non sostituisce una consulenza», ultima «Scrivimi in DM».
 - Vocali dell'ing.: non servono più (video senza voce).
@@ -55,12 +55,14 @@ Scrivi sempre in italiano, in modo semplice: l'ing. non è un tecnico informatic
 - **REGOLA DELL'ING. (8/11): TUTTI i video lunghi e TUTTI i reel/Short si fanno nello stile «animazione ingegneristica»**: grafiche interamente animate in codice (Remotion) con le strutture e gli impianti che si muovono (torre che oscilla, vento, ponte che si costruisce, sisma, sole che si sposta, flussi di energia, ventole che girano, calore che esce), contatori, confronti, suoni sincronizzati, logo fisso. Esempi: `_motore/reels/Viral1.tsx` (Taipei 101), `_motore/reels/Ponte.tsx` (Ponte sullo Stretto), `_motore/reels/ReelPdc7.tsx` (reel con voce e sottotitoli parola per parola). Video lunghi 1920x1080: composizione `_motore/reels/Lungo.tsx` (icone e illustrazioni animate, stacchi di capitolo, barra dei capitoli) con le props generate da `_motore/lungo.py piano-Vn.py cartella [audio.mp4]` partendo dal piano scene di video2.
 - **Anteprima prima di montare (ing. 9/11):** per ogni nuovo video o reel mandare prima all'ing. un'anteprima (storyboard con i fotogrammi chiave e cosa succede in ogni scena) e montare solo dopo il suo ok.
 - **Ogni video deve sorprendere più del precedente (ing. 9/11):** animazioni sempre nuove e pertinenti all'argomento, mai ripetere le stesse scene. I primi video animati (Taipei 101, Ponte sullo Stretto) hanno superato le 1.000 visualizzazioni: è la strada giusta.
-- **Serie «Meraviglie dell'ingegneria» (dal 10/11: mercoledì e sabato; #1 Torre di Pisa sab 14/11, #2 Tower Bridge mer 18/11):** reel animati su opere famose nel mondo, numerati (#1, #2…), chiusura con domanda per i commenti e «Segui per la #…». Per i monumenti all'estero (Londra, America, ecc.) testo principale in italiano + **sottotitolo in inglese** più piccolo sotto; per quelli italiani solo italiano. Torri Gemelle e tragedie simili: solo taglio tecnico e rispettoso.
+- **Serie «Le Grandi Opere» (dal 10/11: mercoledì e sabato; #1 Torre di Pisa sab 14/11, #2 Tower Bridge mer 18/11):** reel animati su opere famose nel mondo, numerati (#1, #2…), chiusura con domanda per i commenti e «Segui per la #…». Per i monumenti all'estero (Londra, America, ecc.) testo principale in italiano + **sottotitolo in inglese** più piccolo sotto; per quelli italiani solo italiano. Torri Gemelle e tragedie simili: solo taglio tecnico e rispettoso.
 - **3D e innovazione continua (ing. 9/11):** il 3D (Remotion + three.js, `@remotion/three`, render con `--gl=swangle`; esempi `_motore/reels/Build3D.tsx` «dal progetto al cantiere» e `_motore/reels/TowerBridge.tsx`) è piaciuto molto: usarlo quando l'opera si presta (costruzione, apertura, cantiere). Regola: **non standardizzare**, ogni video deve avere un'idea nuova e diversa dai precedenti.
 - **Quale stile per quale contenuto (decisione dell'ing. 9/11):**
-  - **Costruzioni e «Meraviglie dell'ingegneria»** (edifici, torri, ponti, grandi opere): **modello 3D che si costruisce** (come `_motore/reels/TowerBridge.tsx` e `Build3D.tsx`), poi l'opera in funzione.
+  - **Costruzioni e «Le Grandi Opere»** (edifici, torri, ponti, grandi opere): **modello 3D che si costruisce** (come `_motore/reels/TowerBridge.tsx` e `Build3D.tsx`), poi l'opera in funzione.
   - **Caroselli di informazione e normativa** (bonus, pratiche, leggi, incentivi): **motore dei caroselli di sempre** (`_motore/`, stesso formato e impaginazione usati finora), senza cambiarlo.
   - Reel e video lunghi sui temi normativi/impianti: stile «animazione ingegneristica» 2D con la voce (`ReelPdc7.tsx`, `ReelFv6.tsx`, `Lungo.tsx`).
+- **«Le Grandi Opere» (nome deciso dall'ing. il 10/11; prima «Meraviglie dell'ingegneria»):** ogni video parte con una **sigla di 3 s** con il logo, «LE GRANDI OPERE · #n» e il titolo (`_motore/reels/GrandiOpere.tsx`, componente `GOIntro`), poi l'animazione. Sempre **3D con la costruzione e la realizzazione dell'opera**, le **curiosità più belle e sorprendenti** di ingegneria nel mondo. Episodi: #1 Tower Bridge (11/11), #2 Torre di Pisa (14/11); approvati dall'ing.: Torre Eiffel, Ponte di Brooklyn «e altre cose sorprendenti».
+- **Musica (ing. 10/11: «la musica di sottofondo non mi piace, usa un audio di qualità che catturi l'attenzione»):** mai più `beat100.wav`. Usare tracce cinematografiche/trailer di qualità con licenza libera (Wikimedia Commons, CC BY / CC0: es. Rafael Krux, Alexander Nakarada, Sascha Ende) in `public/musica/`, mixate con gli effetti sonori, −14 LUFS, e **sempre il credito** nella didascalia («Musica: «titolo» di autore, CC BY 4.0»). In uso: «Dramatic Trailer» di Rafael Krux (CC BY 4.0).
 - **Tempi di lettura:** ogni scritta deve restare a schermo abbastanza da essere letta con calma (l'ing. l'8/11: «è così veloce che non riesco a leggere»). Movimento veloce sì, testi lenti.
 
 ## Vocali dell'ing.
@@ -71,7 +73,7 @@ Guarda ogni slide e un montaggio dei fotogrammi di ogni video; ffprobe su durata
 Ogni dato normativo ha fonte e data. Distingui sempre **proposta** (ddl) e **legge in vigore**.
 
 ## Vincoli fissi
-- Il volto dell'ing. non compare mai, niente dirette. **Unica eccezione (consenso dell'ing. del 9/11):** la sua foto davanti al Tower Bridge, solo nell'episodio «Meraviglie dell'ingegneria» sul Tower Bridge.
+- Il volto dell'ing. non compare mai, niente dirette. **Unica eccezione (consenso dell'ing. del 9/11):** la sua foto davanti al Tower Bridge, solo nell'episodio «Le Grandi Opere» sul Tower Bridge.
 - Prezzi, preventivi e pareri su casi reali non si pubblicano.
 - Ogni video ha foto sue: la stessa foto di cantiere non si riusa. Sfoca nomi di committenti, imprese, fornitori e numeri di pratica.
 - Obiettivo al 31/12/2026: 50.000 follower su Instagram e 5.000 iscritti su YouTube.

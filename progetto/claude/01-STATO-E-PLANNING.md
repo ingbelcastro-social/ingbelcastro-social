@@ -27,7 +27,7 @@ Documento di riferimento per **cosa è uscito, cosa è programmato e cosa viene 
 **Regola di controllo:** ogni lunedì si registra il dato reale. Se siamo sotto la tappa di oltre il 20%, si cambiano formati, orari e temi.
 
 ## Settimana tipo (dal 2/11)
-**Dal 10/11 (decisione dell'ing.): niente più video lunghi.** Lun post IG+FB (argomento A) · Mar video 3D max 50 s sull'argomento A · Mer «Meraviglie dell'ingegneria» max 90 s · Gio post (argomento B) · Ven video 3D sull'argomento B · Sab «Meraviglie» · Dom nulla. IG + FB, più gli stessi video come Short YouTube. Video senza voce. **Orari: novembre tutto alle 19:00, dicembre tutto alle 9:30.** Dettagli e calendario: `03-PIANO-EDITORIALE-NOV-DIC.md`.
+**Dal 10/11 (decisione dell'ing.): niente più video lunghi.** Lun post IG+FB (argomento A) · Mar video 3D max 50 s sull'argomento A · Mer «Le Grandi Opere» max 90 s · Gio post (argomento B) · Ven video 3D sull'argomento B · Sab «Le Grandi Opere» · Dom nulla. IG + FB, più gli stessi video come Short YouTube. Video senza voce. **Orari: novembre tutto alle 19:00, dicembre tutto alle 9:30.** Dettagli e calendario: `03-PIANO-EDITORIALE-NOV-DIC.md`.
 
 ## Programmato su Metricool (riorganizzato il 10/11/2026 con il nuovo calendario)
 
@@ -44,17 +44,18 @@ Regola dal 2/11: lun carosello · mar reel (IG + reel FB + Short YT) · mer vide
 | Sab 7/11 | 19:00 | YT + FB | **Video 3 Direttore dei lavori** | ⏱ programmato |
 | Lun 9/11 | 19:00 | IG + FB | Carosello «La batteria conviene davvero?» (nuovo) | ⏱ programmato |
 | Mar 10/11 | 19:00 | IG reel + FB reel + YT Short | «La batteria conviene davvero?» **animato con la voce** (`Reel-Fotovoltaico-accumulo-animato-v3-30s.mp4`) | ⏱ programmato (9/11, ok dell'ing. sull'anteprima) |
-| Mer 11/11 | 19:00 | YT + FB | **Video 6 Fotovoltaico con accumulo** (8:02, nuovo stile «animazione ingegneristica», sigla architettonica, `Video-6-Fotovoltaico-accumulo-animato-v3.mp4`) | ⏱ programmato (9/11, ok dell'ing.) |
+| Mer 11/11 | 19:00 | IG reel + FB reel + YT Short | **Le Grandi Opere #1 – Tower Bridge** (sigla 3 s, 3D, musica «Dramatic Trailer» CC BY, `Reel-Grandi-Opere-1-Tower-Bridge-45s.mp4`) | ⏱ programmato (10/11) |
+| (Mer 11/11) | — | YT + FB | Video 6 lungo Fotovoltaico | 🗂 in bozza, non esce (decisione dell'ing. 10/11) |
 | Gio 12/11 | 19:00 | IG + FB | Carosello «Pompa di calore o caldaia?» (slide 6 v2: «Domani il video animato su questo tema») | ⏱ programmato |
 | Ven 13/11 | 19:00 | IG reel + FB reel + YT Short | «Pompa di calore o caldaia?» animato con la voce, chiusura nuova «Ti è stato utile? · Domani Meraviglie #1» (`Reel-Pompa-di-calore-animato-v4-30s.mp4`) | ⏱ programmato |
-| Sab 14/11 | 19:00 | IG reel + FB reel + YT Short | **Meraviglie dell'ingegneria #1 – Torre di Pisa** (spostata da domenica 15/11) | ⏱ programmato |
+| Sab 14/11 | 19:00 | IG reel + FB reel + YT Short | **Le Grandi Opere #2 – Torre di Pisa** (sigla 3 s, musica nuova, `Reel-Grandi-Opere-2-Torre-di-Pisa-41s.mp4`) | ⏱ programmato (10/11) |
 | (Sab 14/11) | — | YT + FB | Video 7 Pompa di calore (lungo) | 🗂 in **bozza** su Metricool, non esce (niente più video lunghi) |
 | Lun 16/11 | 19:00 | IG + FB | Carosello «Manovra 2027 e casa» (slide 6 v3: «Domani il video animato su questo tema»; ricontrollare gli emendamenti lunedì mattina) | ⏱ programmato |
-| Mar 17/11 | 19:00 | IG reel + FB reel + YT Short | **Video 3D (max 50 s) sul bonus casa 50%/36%** — da fare, anteprima all'ing. | ✍️ da produrre (il vecchio reel provvisorio è in bozza) |
-| Mer 18/11 | 19:00 | IG reel + FB reel + YT Short | **Meraviglie dell'ingegneria #2 – Tower Bridge** (3D, 42 s, IT + EN; spostata da giovedì 19/11) | ⏱ programmato |
+| Mar 17/11 | 19:00 | IG reel + FB reel + YT Short | **Video sul post (max 60 s) sul bonus casa 50%/36%** — da fare, anteprima all'ing. | ✍️ da produrre (il vecchio reel provvisorio è in bozza) |
+| Mer 18/11 | 19:00 | IG reel + FB reel + YT Short | **Le Grandi Opere #3 – Torre Eiffel** (3D) | ✍️ da produrre, anteprima all'ing. |
 | Gio 19/11 | 19:00 | IG + FB | Carosello «Caso studio: lavori senza CILA» (slide 6 v3: «Domani il video animato su questo tema») | ⏱ programmato |
-| Ven 20/11 | 19:00 | IG reel + FB reel + YT Short | **Video 3D (max 50 s) su lavori senza CILA / CILA-SCIA-permesso** — da fare, anteprima all'ing. | ✍️ da produrre (il vecchio reel provvisorio è in bozza) |
-| Sab 21/11 | 19:00 | IG reel + FB reel + YT Short | **Meraviglie dell'ingegneria #3** — da scegliere, anteprima all'ing. | ✍️ da produrre |
+| Ven 20/11 | 19:00 | IG reel + FB reel + YT Short | **Video sul post (max 60 s) su lavori senza CILA / CILA-SCIA-permesso** — da fare, anteprima all'ing. | ✍️ da produrre (il vecchio reel provvisorio è in bozza) |
+| Sab 21/11 | 19:00 | IG reel + FB reel + YT Short | **Le Grandi Opere #4 – Ponte di Brooklyn** (3D) | ✍️ da produrre, anteprima all'ing. |
 
 Di scorta in bozza (29/12, non pubblicate): carosello «Tolleranze» (solo FB, da rifare anche per IG), carosello «CER». Restano anche le bozze tecniche di test del 31/12 e il reel «SCORTA» CILA del 30/12 (base per il reel del 20/11).
 
@@ -62,6 +63,6 @@ Di scorta (bozza in Metricool, 30/12): reel «CILA, SCIA o permesso? Il test in 
 **Formato video lunghi (dal 31/10 sera):** motore dinamico `_motore/video2.py`: sigla V0 subito, poi una scena animata per ogni frase a tempo con la voce (audio un file per blocco), foto reali dell'ing. diverse per ogni video, beat molto basso, capitoli da `0:00 Introduzione`. L'ing. ha approvato il dinamismo dei video 2 e 3.
 
 ## Ogni domenica
-Claude legge le statistiche da Metricool, aggiorna la tabella delle tappe, prepara la settimana dopo: 2 caroselli, 2 video 3D (max 50 s) e 2 «Meraviglie» (max 90 s), con anteprima all'ing. prima di montare. Niente video lunghi né vocali.
+Claude legge le statistiche da Metricool, aggiorna la tabella delle tappe, prepara la settimana dopo: 2 caroselli, 2 video 3D (max 50 s) e 2 «Le Grandi Opere» (max 90 s), con anteprima all'ing. prima di montare. Niente video lunghi né vocali.
 
 **Nota tecnica (8/11):** nel cloud `python3` non vede playwright; il motore gira con `/usr/local/bin/python3.13` e Chromium in `/opt/pw-browsers/chromium` (passare `executable_path` a `chromium.launch()`). File e testi della settimana 16–21/11: `instagram/settimana-2026-11-16.md`; copioni: `youtube/copioni-settimana-2026-11-16.md`.
