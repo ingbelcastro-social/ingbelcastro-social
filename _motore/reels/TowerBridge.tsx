@@ -138,7 +138,7 @@ export const TowerBridge: React.FC = () => {
       <div style={{ position: "absolute", top: 232, left: 0, right: 0, display: "flex", justifyContent: "center", opacity: 1 - endIn }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14, background: "rgba(7,7,7,.85)", padding: "8px 22px", borderRadius: 40 }}>
           <Img src={staticFile("brands/ingbelcastro/logo-white.png")} style={{ height: 54 }} /><span style={{ fontFamily: INT, fontWeight: 800, fontSize: 34, color: "#fff" }}>@ing.belcastro</span></div></div>
-      <div style={{ position: "absolute", top: 322, left: 0, right: 0, textAlign: "center", fontFamily: INT, fontWeight: 800, fontSize: 30, color: OR, opacity: 1 - endIn }}>MERAVIGLIE DELL'INGEGNERIA · #2</div>
+      <div style={{ position: "absolute", top: 322, left: 0, right: 0, textAlign: "center", fontFamily: INT, fontWeight: 800, fontSize: 30, color: OR, opacity: 1 - endIn }}>LE GRANDI OPERE · #1</div>
       {/* testi */}
       <Txt op={win(t, 0.1, 3.3, 0.2)} it={<>Un ponte<br />che si <O>apre in due</O></>} en="A bridge that splits in two" size={108} />
       <Txt op={win(t, 3.4, 6.6, 0.25)} it={<>Londra, <O>1886</O></>} en="London, 1886: work begins" />
@@ -157,15 +157,14 @@ export const TowerBridge: React.FC = () => {
         <Txt op={io(t, 34.8, 35.3)} top={1500} it={<>Io ci sono stato.<br /><O>E tu?</O></>} en="I was there. What about you?" size={88} />
       </AbsoluteFill>
       <AbsoluteFill style={{ opacity: win(t, 38.0, 39.6, 0.3), background: "rgba(7,7,7,.95)" }}>
-        <Txt op={io(t, 38.1, 38.5)} top={700} it={<>Quale meraviglia<br />nella <O>#3</O>?</>} en="Which wonder should be next? Comment below" size={96} />
+        <Txt op={io(t, 38.1, 38.5)} top={700} it={<>Quale grande opera<br />vuoi <O>vedere</O>?</>} en="Which great work should be next? Comment below" size={96} />
       </AbsoluteFill>
       <AbsoluteFill style={{ opacity: endIn, background: "#000", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 36 }}>
         <Img src={staticFile("brands/ingbelcastro/logo-white.png")} style={{ width: 440 }} />
-        <div style={{ fontFamily: INT, fontWeight: 800, fontSize: 36, color: OR, letterSpacing: "0.15em" }}>MERAVIGLIE DELL'INGEGNERIA</div>
-        <div style={{ fontFamily: OSW, fontWeight: 700, fontSize: 80, color: "#fff", textTransform: "uppercase" }}>Segui per la <span style={{ color: OR }}>#3</span></div>
+        <div style={{ fontFamily: INT, fontWeight: 800, fontSize: 36, color: OR, letterSpacing: "0.15em" }}>LE GRANDI OPERE</div>
+        <div style={{ fontFamily: OSW, fontWeight: 700, fontSize: 80, color: "#fff", textTransform: "uppercase" }}>Segui per la <span style={{ color: OR }}>#2</span></div>
         <div style={{ fontFamily: INT, fontWeight: 800, fontSize: 40, color: "#ccc" }}>@ing.belcastro</div>
       </AbsoluteFill>
-      <Audio src={staticFile("tb/sound.wav")} />
       <div style={{ position: "absolute", top: 1860, left: 0, right: 0, textAlign: "center", fontFamily: INT, fontWeight: 600, fontSize: 22, color: "#999", opacity: (1 - endIn) * (1 - photo) }}>Animazione 3D illustrativa · proporzioni semplificate</div>
     </AbsoluteFill>
   );
