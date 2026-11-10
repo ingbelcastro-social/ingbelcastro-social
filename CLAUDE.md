@@ -43,7 +43,8 @@ Scrivi sempre in italiano, in modo semplice: l'ing. non è un tecnico informatic
   - **Giovedì** post/carosello — argomento B. **Venerdì** video 3D sull'argomento B (max 50 s). **Sabato** «Meraviglie dell'ingegneria».
   - **Domenica** nulla.
 - Pubblicazione: **Instagram + Facebook**; in più gli stessi video come **Short su YouTube** (scelta dell'ing. del 10/11).
-- Penultima slide del carosello: «Domani il video animato su questo tema.» (niente più «video completo»).
+- Penultima slide del carosello e didascalia del post: **«Seguimi per approfondimenti! Domani il video completo!»** (ing. 10/11).
+- Nei post e nei video del martedì/venerdì **non si annunciano le «Meraviglie»** né il loro giorno/ora: le Meraviglie escono senza preannuncio.
 - Orario unico: novembre 2026 alle 19:00, dicembre 2026 alle 9:30.
 - Video verticali 1080x1920, 30 fps, audio AAC −14 LUFS. Caroselli 6–7 slide 1080x1350: penultima scura con fonte e «non sostituisce una consulenza», ultima «Scrivimi in DM».
 - Vocali dell'ing.: non servono più (video senza voce).
