@@ -27,9 +27,9 @@ Documento di riferimento per **cosa è uscito, cosa è programmato e cosa viene 
 **Regola di controllo:** ogni lunedì si registra il dato reale. Se siamo sotto la tappa di oltre il 20%, si cambiano formati, orari e temi.
 
 ## Settimana tipo (dal 2/11)
-Lun carosello IG+FB · Mar reel IG + Short YT (con la voce, annuncia il video) · Mer video lungo YT+FB · Gio carosello · Ven reel + Short · Sab video lungo · Dom riposo e produzione. **Orari: novembre tutto alle 19:00, dicembre tutto alle 9:30.** Dettagli e calendario: `03-PIANO-EDITORIALE-NOV-DIC.md`.
+**Dal 10/11 (decisione dell'ing.): niente più video lunghi.** Lun post IG+FB (argomento A) · Mar video 3D max 50 s sull'argomento A · Mer «Meraviglie dell'ingegneria» max 90 s · Gio post (argomento B) · Ven video 3D sull'argomento B · Sab «Meraviglie» · Dom nulla. IG + FB, più gli stessi video come Short YouTube. Video senza voce. **Orari: novembre tutto alle 19:00, dicembre tutto alle 9:30.** Dettagli e calendario: `03-PIANO-EDITORIALE-NOV-DIC.md`.
 
-## Programmato su Metricool (ricontrollato con getScheduledPosts il 9/11/2026: Video 6, reel del 13/11 e Video 7 nel nuovo stile animato)
+## Programmato su Metricool (riorganizzato il 10/11/2026 con il nuovo calendario)
 
 Regola dal 2/11: lun carosello · mar reel (IG + reel FB + Short YT) · mer video lungo sullo **stesso argomento**; gio · ven · sab su un secondo argomento. Calendario completo in `03-PIANO-EDITORIALE-NOV-DIC.md` e nell'Excel.
 
@@ -45,17 +45,16 @@ Regola dal 2/11: lun carosello · mar reel (IG + reel FB + Short YT) · mer vide
 | Lun 9/11 | 19:00 | IG + FB | Carosello «La batteria conviene davvero?» (nuovo) | ⏱ programmato |
 | Mar 10/11 | 19:00 | IG reel + FB reel + YT Short | «La batteria conviene davvero?» **animato con la voce** (`Reel-Fotovoltaico-accumulo-animato-v3-30s.mp4`) | ⏱ programmato (9/11, ok dell'ing. sull'anteprima) |
 | Mer 11/11 | 19:00 | YT + FB | **Video 6 Fotovoltaico con accumulo** (8:02, nuovo stile «animazione ingegneristica», sigla architettonica, `Video-6-Fotovoltaico-accumulo-animato-v3.mp4`) | ⏱ programmato (9/11, ok dell'ing.) |
-| Gio 12/11 | 19:00 | IG + FB | Carosello «Pompa di calore o caldaia?» (nuovo) | ⏱ programmato |
-| Ven 13/11 | 19:00 | IG reel + FB reel + YT Short | «Pompa di calore o caldaia?» **animato con la voce** (`Reel-Pompa-di-calore-animato-v3-30s.mp4`) | ⏱ programmato (9/11, ok dell'ing.) |
-| Sab 14/11 | 19:00 | YT + FB | **Video 7 Pompa di calore o caldaia** (7:01, animato, sigla architettonica, `Video-7-Pompa-di-calore-animato-v2.mp4` + miniatura; crediti foto CC BY 2.0 in descrizione) | ⏱ programmato (9/11, ok dell'ing.) |
-| Dom 15/11 | 19:00 | IG reel + FB reel + YT Short | **Meraviglie dell'ingegneria #1 – Torre di Pisa** (38 s, animato senza voce, `Reel-Meraviglie-1-Torre-di-Pisa-38s.mp4`) | ⏱ programmato (9/11, ok dell'ing. sull'anteprima) |
-| Lun 16/11 | 19:00 | IG + FB | Carosello «Manovra 2027 e casa» **v2** (rifatto l'8/11: dati aggiornati, chi ha il 50%, «Domani il reel, mercoledì il video»; ricontrollare gli emendamenti lunedì mattina) | ⏱ programmato |
-| Mar 17/11 | 19:00 | IG reel + FB reel + YT Short | «Prima o seconda casa: 50% o 36%?» (provvisorio, chiusura «Mercoledì ore 19:00») | ⏱ programmato |
-| Mer 18/11 | 19:00 | YT + FB | **Video 8 Bonus casa 2027: chi ha diritto al 50%** | ✍️ copione pronto · vocali entro lun 16/11 ore 12:00 |
-| Gio 19/11 | 19:00 | IG + FB | Carosello «Caso studio: lavori senza CILA» **v2** (penultima con «Domani il reel, sabato il video») | ⏱ programmato |
-| Gio 19/11 | 19:00 | IG reel + FB reel + YT Short | **Meraviglie dell'ingegneria #2 – Tower Bridge** (3D, 42 s, IT + EN, foto dell'ing. con consenso; `media/2026-11-16/Reel-Meraviglie-2-Tower-Bridge-42s.mp4`) | ⏱ programmato (9/11, ok dell'ing.) |
-| Ven 20/11 | 19:00 | IG reel + FB reel + YT Short | «CILA, SCIA o permesso? Il test in 30 secondi» (provvisorio, chiusura «Sabato ore 19:00») | ⏱ programmato |
-| Sab 21/11 | 19:00 | YT + FB | **Video 5 CILA, SCIA o permesso di costruire** | ✍️ copione pronto (ricontrollato l'8/11) · vocali entro gio 19/11 ore 12:00 |
+| Gio 12/11 | 19:00 | IG + FB | Carosello «Pompa di calore o caldaia?» (slide 6 v2: «Domani il video animato su questo tema») | ⏱ programmato |
+| Ven 13/11 | 19:00 | IG reel + FB reel + YT Short | «Pompa di calore o caldaia?» animato con la voce, chiusura nuova «Ti è stato utile? · Domani Meraviglie #1» (`Reel-Pompa-di-calore-animato-v4-30s.mp4`) | ⏱ programmato |
+| Sab 14/11 | 19:00 | IG reel + FB reel + YT Short | **Meraviglie dell'ingegneria #1 – Torre di Pisa** (spostata da domenica 15/11) | ⏱ programmato |
+| (Sab 14/11) | — | YT + FB | Video 7 Pompa di calore (lungo) | 🗂 in **bozza** su Metricool, non esce (niente più video lunghi) |
+| Lun 16/11 | 19:00 | IG + FB | Carosello «Manovra 2027 e casa» (slide 6 v3: «Domani il video animato su questo tema»; ricontrollare gli emendamenti lunedì mattina) | ⏱ programmato |
+| Mar 17/11 | 19:00 | IG reel + FB reel + YT Short | **Video 3D (max 50 s) sul bonus casa 50%/36%** — da fare, anteprima all'ing. | ✍️ da produrre (il vecchio reel provvisorio è in bozza) |
+| Mer 18/11 | 19:00 | IG reel + FB reel + YT Short | **Meraviglie dell'ingegneria #2 – Tower Bridge** (3D, 42 s, IT + EN; spostata da giovedì 19/11) | ⏱ programmato |
+| Gio 19/11 | 19:00 | IG + FB | Carosello «Caso studio: lavori senza CILA» (slide 6 v3: «Domani il video animato su questo tema») | ⏱ programmato |
+| Ven 20/11 | 19:00 | IG reel + FB reel + YT Short | **Video 3D (max 50 s) su lavori senza CILA / CILA-SCIA-permesso** — da fare, anteprima all'ing. | ✍️ da produrre (il vecchio reel provvisorio è in bozza) |
+| Sab 21/11 | 19:00 | IG reel + FB reel + YT Short | **Meraviglie dell'ingegneria #3** — da scegliere, anteprima all'ing. | ✍️ da produrre |
 
 Di scorta in bozza (29/12, non pubblicate): carosello «Tolleranze» (solo FB, da rifare anche per IG), carosello «CER». Restano anche le bozze tecniche di test del 31/12 e il reel «SCORTA» CILA del 30/12 (base per il reel del 20/11).
 
@@ -63,6 +62,6 @@ Di scorta (bozza in Metricool, 30/12): reel «CILA, SCIA o permesso? Il test in 
 **Formato video lunghi (dal 31/10 sera):** motore dinamico `_motore/video2.py`: sigla V0 subito, poi una scena animata per ogni frase a tempo con la voce (audio un file per blocco), foto reali dell'ing. diverse per ogni video, beat molto basso, capitoli da `0:00 Introduzione`. L'ing. ha approvato il dinamismo dei video 2 e 3.
 
 ## Ogni domenica
-Claude legge le statistiche da Metricool, aggiorna la tabella delle tappe, prepara e programma la settimana dopo (caroselli, reel di 30 s con la voce, video lunghi) e manda i copioni.
+Claude legge le statistiche da Metricool, aggiorna la tabella delle tappe, prepara la settimana dopo: 2 caroselli, 2 video 3D (max 50 s) e 2 «Meraviglie» (max 90 s), con anteprima all'ing. prima di montare. Niente video lunghi né vocali.
 
 **Nota tecnica (8/11):** nel cloud `python3` non vede playwright; il motore gira con `/usr/local/bin/python3.13` e Chromium in `/opt/pw-browsers/chromium` (passare `executable_path` a `chromium.launch()`). File e testi della settimana 16–21/11: `instagram/settimana-2026-11-16.md`; copioni: `youtube/copioni-settimana-2026-11-16.md`.
