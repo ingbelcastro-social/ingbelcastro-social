@@ -44,7 +44,7 @@ Regola dal 2/11: lun carosello · mar reel (IG + reel FB + Short YT) · mer vide
 | Sab 7/11 | 19:00 | YT + FB | **Video 3 Direttore dei lavori** | ⏱ programmato |
 | Lun 9/11 | 19:00 | IG + FB | Carosello «La batteria conviene davvero?» (nuovo) | ⏱ programmato |
 | Mar 10/11 | 19:00 | IG reel + FB reel + YT Short | «La batteria conviene davvero?» **animato con la voce** (`Reel-Fotovoltaico-accumulo-animato-v3-30s.mp4`) | ⏱ programmato (9/11, ok dell'ing. sull'anteprima) |
-| Mer 11/11 | 19:00 | IG reel + FB reel + YT Short | **Le Grandi Opere #1 – Tower Bridge** (sigla 3 s, 3D, musica «Dramatic Trailer» CC BY, `Reel-Grandi-Opere-1-Tower-Bridge-45s.mp4`) | ⏱ programmato (10/11) |
+| Mer 11/11 | 19:00 | IG reel + FB reel + YT Short | **Le Grandi Opere #1 – Tower Bridge** v2 (96 s: sigla 4,5 s, 3D con fondazioni, contrappesi, passerelle; musica «Dramatic Trailer» CC BY, `Reel-Grandi-Opere-1-Tower-Bridge-v2-96s.mp4`) | ⏱ programmato (10/11) |
 | (Mer 11/11) | — | YT + FB | Video 6 lungo Fotovoltaico | 🗂 in bozza, non esce (decisione dell'ing. 10/11) |
 | Gio 12/11 | 19:00 | IG + FB | Carosello «Pompa di calore o caldaia?» (slide 6 v2: «Domani il video animato su questo tema») | ⏱ programmato |
 | Ven 13/11 | 19:00 | IG reel + FB reel + YT Short | «Pompa di calore o caldaia?» animato con la voce, chiusura nuova «Ti è stato utile? · Domani Meraviglie #1» (`Reel-Pompa-di-calore-animato-v4-30s.mp4`) | ⏱ programmato |

@@ -39,7 +39,7 @@ Scrivi sempre in italiano, in modo semplice: l'ing. non è un tecnico informatic
 - Settimana tipo, **due argomenti**:
   - **Lunedì** post/carosello (IG + FB) con descrizione e 5 hashtag — argomento A (informazione/normativa).
   - **Martedì** video animato **3D** sullo stesso argomento del post, **massimo 60 s**, senza voce (scritte + musica + suoni, come Taipei 101).
-  - **Mercoledì** «Le Grandi Opere», sempre sorprendente, **massimo 90 s**.
+  - **Mercoledì** «Le Grandi Opere», sempre sorprendente, **fino a 120 s** (ing. 10/11: «non preoccuparti se sfori»), con molti dettagli di ingegneria e tempi lenti per leggere.
   - **Giovedì** post/carosello — argomento B. **Venerdì** video 3D sull'argomento B (max 60 s). **Sabato** «Le Grandi Opere».
   - **Domenica** nulla.
 - Pubblicazione: **Instagram + Facebook**; in più gli stessi video come **Short su YouTube** (scelta dell'ing. del 10/11).
@@ -61,7 +61,7 @@ Scrivi sempre in italiano, in modo semplice: l'ing. non è un tecnico informatic
   - **Costruzioni e «Le Grandi Opere»** (edifici, torri, ponti, grandi opere): **modello 3D che si costruisce** (come `_motore/reels/TowerBridge.tsx` e `Build3D.tsx`), poi l'opera in funzione.
   - **Caroselli di informazione e normativa** (bonus, pratiche, leggi, incentivi): **motore dei caroselli di sempre** (`_motore/`, stesso formato e impaginazione usati finora), senza cambiarlo.
   - Reel e video lunghi sui temi normativi/impianti: stile «animazione ingegneristica» 2D con la voce (`ReelPdc7.tsx`, `ReelFv6.tsx`, `Lungo.tsx`).
-- **«Le Grandi Opere» (nome deciso dall'ing. il 10/11; prima «Meraviglie dell'ingegneria»):** ogni video parte con una **sigla di 3 s** con il logo, «LE GRANDI OPERE · #n» e il titolo (`_motore/reels/GrandiOpere.tsx`, componente `GOIntro`), poi l'animazione. Sempre **3D con la costruzione e la realizzazione dell'opera**, le **curiosità più belle e sorprendenti** di ingegneria nel mondo. Episodi: #1 Tower Bridge (11/11), #2 Torre di Pisa (14/11); approvati dall'ing.: Torre Eiffel, Ponte di Brooklyn «e altre cose sorprendenti».
+- **«Le Grandi Opere» (nome deciso dall'ing. il 10/11; prima «Meraviglie dell'ingegneria»):** ogni video parte con una **sigla di circa 4,5 s** con il logo, «LE GRANDI OPERE · #n» e il titolo (`_motore/reels/GrandiOpere.tsx`, componente `GOIntro`), poi l'animazione. Sempre **3D con la costruzione e la realizzazione dell'opera**, le **curiosità più belle e sorprendenti** di ingegneria nel mondo. Episodi: #1 Tower Bridge (11/11), #2 Torre di Pisa (14/11); approvati dall'ing.: Torre Eiffel, Ponte di Brooklyn «e altre cose sorprendenti».
 - **Musica (ing. 10/11: «la musica di sottofondo non mi piace, usa un audio di qualità che catturi l'attenzione»):** mai più `beat100.wav`. Usare tracce cinematografiche/trailer di qualità con licenza libera (Wikimedia Commons, CC BY / CC0: es. Rafael Krux, Alexander Nakarada, Sascha Ende) in `public/musica/`, mixate con gli effetti sonori, −14 LUFS, e **sempre il credito** nella didascalia («Musica: «titolo» di autore, CC BY 4.0»). In uso: «Dramatic Trailer» di Rafael Krux (CC BY 4.0).
 - **Tempi di lettura:** ogni scritta deve restare a schermo abbastanza da essere letta con calma (l'ing. l'8/11: «è così veloce che non riesco a leggere»). Movimento veloce sì, testi lenti.
 
