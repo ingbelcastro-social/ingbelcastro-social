@@ -85,7 +85,7 @@ export const ReelPdc7: React.FC = () => {
         <Img src={staticFile("brands/ingbelcastro/logo-white.png")} style={{ width: 420 }} />
         <div style={{ fontFamily: OSW, fontWeight: 700, fontSize: 92, color: "#fff", textTransform: "uppercase", textAlign: "center", lineHeight: 1.05 }}>Ti è stato<br />utile?</div>
         <div style={{ background: OR, color: "#fff", fontFamily: OSW, fontWeight: 700, fontSize: 70, padding: "14px 54px", borderRadius: 999, textTransform: "uppercase", transform: `scale(${1 + 0.04 * Math.sin(t * 5)})` }}>Salvalo e condividilo</div>
-        <div style={{ fontFamily: INT, fontWeight: 800, fontSize: 40, color: "#ccc", textAlign: "center", lineHeight: 1.3 }}>Domani<br /><span style={{ color: OR }}>Meraviglie dell'ingegneria #1</span></div>
+        <div style={{ fontFamily: INT, fontWeight: 800, fontSize: 40, color: "#ccc", textAlign: "center", lineHeight: 1.3 }}>Seguimi per<br /><span style={{ color: OR }}>approfondimenti!</span></div>
       </AbsoluteFill>
       <Audio src={staticFile("pdc7r/voce.wav")} />
       <Audio src={staticFile("beat100.wav")} volume={0.13} />
