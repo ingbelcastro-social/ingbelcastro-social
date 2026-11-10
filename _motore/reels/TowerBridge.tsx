@@ -14,7 +14,9 @@ const C = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const io = (t: number, a: number, b: number) => interpolate(t, [a, b], [0, 1], { ...C, easing: Easing.out(Easing.cubic) });
 const ioe = (t: number, a: number, b: number) => interpolate(t, [a, b], [0, 1], { ...C, easing: Easing.inOut(Easing.cubic) });
 const win = (t: number, a: number, b: number, f = 0.3) => Math.min(io(t, a, a + f), 1 - io(t, b - f, b));
-export const TB_DUR = 42;
+export const TB_DUR = 92;
+const RK = [0, 3.5, 9, 15, 22, 27, 32, 38, 42, 52, 58, 63, 68, 73, 78, 78.3, 84, 88, 92];
+const SK = [0, 3.2, 3.35, 3.5, 7.0, 9.4, 13.6, 17.4, 19.6, 23.6, 24.0, 24.4, 24.9, 29.4, 33.4, 34.4, 37.8, 39.0, 42];
 
 const TX = 2.2, TW = 1.1, TH = 6.2, DECK = 0.9, WALK = 4.6, LEAF = TX - TW / 2; // metà luce mobile
 
@@ -30,9 +32,9 @@ const Lattice: React.FC<{ x: number; k: number }> = ({ x, k }) => {
   return <>{items}</>;
 };
 
-const Tower: React.FC<{ x: number; stone: number; steel: number }> = ({ x, stone, steel }) => (
+const Tower: React.FC<{ x: number; stone: number; steel: number; pier?: number }> = ({ x, stone, steel, pier = 1 }) => (
   <group>
-    <mesh position={[x, -0.3, 0]} receiveShadow castShadow><boxGeometry args={[TW + 0.9, 1.6, TW + 1.4]} /><meshStandardMaterial color="#8b8478" roughness={0.9} /></mesh>
+    <mesh position={[x, -0.3, 0]} receiveShadow castShadow><boxGeometry args={[TW + 0.9, 1.6, TW + 1.4]} /><meshStandardMaterial color="#8b8478" roughness={0.9} transparent opacity={pier} /></mesh>
     {stone < 0.95 && <Lattice x={x} k={steel} />}
     {stone > 0 && <group>
       <mesh position={[x, TH / 2, 0]} castShadow><boxGeometry args={[TW, TH, TW]} /><meshStandardMaterial color="#c9c2b2" roughness={0.85} transparent opacity={stone} /></mesh>
@@ -50,20 +52,23 @@ const Chain: React.FC<{ sgn: number; k: number }> = ({ sgn, k }) => {
   return <>{[-0.6, 0.6].map((z) => <mesh key={z} position={[0, 0, z]} scale={[1, 1, 1]}><tubeGeometry args={[curve, 40, 0.06 * k, 6, false]} /><meshStandardMaterial color="#6aa6c8" metalness={0.5} roughness={0.4} /></mesh>)}</>;
 };
 
-const Bridge: React.FC<{ t: number; open: number; stone: number }> = ({ t, open, stone }) => {
+const Bridge: React.FC<{ t: number; open: number; stone: number; R: number; cw: number }> = ({ t, open, stone, R, cw }) => {
   const steelL = io(t, 3.6, 7.0), steelR = io(t, 4.0, 7.4);
   const walk = io(t, 7.0, 8.2), chains = io(t, 7.6, 8.8), side = io(t, 6.4, 7.6), leaves = io(t, 8.2, 9.2);
   const ang = (open * 86 * Math.PI) / 180;
   return (
     <group>
-      <Tower x={-TX} stone={stone} steel={steelL} /><Tower x={TX} stone={stone} steel={steelR} />
+      <Tower x={-TX} stone={stone} steel={steelL} pier={1 - 0.75 * cw} /><Tower x={TX} stone={stone} steel={steelR} pier={1 - 0.75 * cw} />
       {/* passerelle alte */}
       {[-0.35, 0.35].map((z) => <mesh key={z} position={[0, WALK, z]} scale={[walk, 1, 1]} castShadow><boxGeometry args={[2 * TX - TW, 0.32, 0.22]} /><meshStandardMaterial color="#5f97b8" metalness={0.4} roughness={0.5} /></mesh>)}
       {/* bascule (ruotano attorno al bordo interno delle torri) */}
       {[-1, 1].map((s) => <group key={s} position={[s * (TX - TW / 2), DECK, 0]} rotation={[0, 0, -s * ang]} scale={[leaves, 1, 1]}>
         <mesh position={[-s * LEAF / 2, 0, 0]} castShadow><boxGeometry args={[LEAF, 0.16, 1.5]} /><meshStandardMaterial color="#5f97b8" metalness={0.3} roughness={0.6} /></mesh>
         <mesh position={[-s * LEAF / 2, 0.1, 0]}><boxGeometry args={[LEAF, 0.02, 0.06]} /><meshBasicMaterial color="#e8e8e8" /></mesh>
+        <mesh position={[s * 0.45, -0.35, 0]}><boxGeometry args={[0.7, 0.55, 1.2]} /><meshStandardMaterial color={OR} emissive={OR} emissiveIntensity={0.6 * cw} transparent opacity={0.25 + 0.75 * cw} /></mesh>
       </group>)}
+      {/* pedoni sulle passerelle alte */}
+      {R > 62.5 && R < 68.5 && Array.from({ length: 8 }, (_, i) => { const x = (((R * 0.5 + i * 0.55) % 3.4) - 1.7) * (i % 2 ? 1 : -1); return <mesh key={`p${i}`} position={[x, WALK + 0.3, i % 2 ? 0.35 : -0.35]}><capsuleGeometry args={[0.05, 0.16, 4, 8]} /><meshStandardMaterial color="#fff" emissive="#fff" emissiveIntensity={0.4} /></mesh>; })}
       {/* campate laterali */}
       {[-1, 1].map((s) => <mesh key={`sd${s}`} position={[s * (TX + TW / 2 + 2.3), DECK, 0]} scale={[side, 1, 1]} castShadow><boxGeometry args={[4.6, 0.16, 1.5]} /><meshStandardMaterial color="#6f6f6f" roughness={0.8} /></mesh>)}
       <Chain sgn={-1} k={chains} /><Chain sgn={1} k={chains} />
@@ -92,13 +97,16 @@ const Bus: React.FC<{ t: number; open: number }> = ({ t, open }) => {
   </group>;
 };
 
-const Rig: React.FC<{ t: number }> = ({ t }) => {
+const Rig: React.FC<{ t: number; R: number }> = ({ t, R }) => {
   const { camera } = useThree();
   const a = interpolate(t, [0, 3, 12, 17, 19, 28, 30, 34, 42], [0.35, 0.5, 1.1, 1.35, 0.95, 0.75, 0.2, 0.15, 0.4], { ...C, easing: Easing.inOut(Easing.cubic) });
   const r = interpolate(t, [0, 3, 12, 14, 17, 19, 28, 30, 34], [24, 22, 25, 18.5, 18.5, 23, 23, 21, 24], { ...C, easing: Easing.inOut(Easing.cubic) });
   const h = interpolate(t, [0, 12, 14, 17, 19, 34], [3, 6, 4, 4, 3, 3], C);
-  camera.position.set(Math.sin(a) * r, h, Math.cos(a) * r);
-  camera.lookAt(0, interpolate(t, [0, 12, 14, 17, 19], [5.6, 6.0, 5.2, 5.2, 5.6], C), 0);
+  const fd = Math.min(io(R, 8.6, 9.6), 1 - io(R, 15.0, 16.0));
+  const cwz = Math.min(io(R, 51.5, 52.5), 1 - io(R, 58.0, 59.0));
+  const rr = r * (1 - 0.15 * cwz), hh = h * (1 - fd) + 1.0 * fd;
+  camera.position.set(Math.sin(a) * rr, hh, Math.cos(a) * rr);
+  camera.lookAt(0, interpolate(t, [0, 12, 14, 17, 19], [5.6, 6.0, 5.2, 5.2, 5.6], C) * (1 - fd) - 1.8 * fd - 1.0 * cwz, 0);
   return null;
 };
 
@@ -111,26 +119,29 @@ const Txt: React.FC<{ it: React.ReactNode; en: string; op: number; top?: number;
 const O: React.FC<{ children: React.ReactNode }> = ({ children }) => <span style={{ color: OR }}>{children}</span>;
 
 export const TowerBridge: React.FC = () => {
-  const f = useCurrentFrame(); const { width, height } = useVideoConfig(); const t = f / 30;
+  const f = useCurrentFrame(); const { width, height } = useVideoConfig(); const R = f / 30; const t = interpolate(R, RK, SK, C);
+  const fd = win(R, 9, 15.5, 0.6), cw = win(R, 52, 58.5, 0.6);
   const built = t < 3.2 ? 1 : 0; // nel gancio il ponte è già finito
   const open = t < 3.2 ? 0.18 * ioe(t, 1.0, 2.6) : ioe(t, 20.0, 23.5) * (1 - ioe(t, 26.5, 29.0)) + (t > 29.3 && t < 33.2 ? 0.12 * Math.sin(Math.PI * io(t, 29.4, 32.8)) : 0);
   const stone = built ? 1 : t < 9.6 ? 0 : io(t, 9.6, 11.2) * (1 - 0.8 * win(t, 13.6, 17.4, 0.5));
   const tb = built ? 99 : t;
   const deg = Math.round(open * 86);
-  const photo = io(t, 34.4, 35.0), endIn = io(t, 39.0, 39.5);
+  const photo = io(R, 78.3, 79.0), endIn = io(R, 88.0, 88.6);
   return (
     <AbsoluteFill style={{ background: "#07090c" }}>
       <ThreeCanvas width={width} height={height} shadows camera={{ fov: 45, position: [6, 4, 15] }}>
-        <Rig t={t} />
+        <Rig t={t} R={R} />
         <color attach="background" args={["#07090c"]} />
         <fog attach="fog" args={["#07090c", 18, 40]} />
         <ambientLight intensity={0.45} />
         <directionalLight position={[8, 12, 10]} intensity={2.0} castShadow shadow-mapSize={[2048, 2048]} shadow-camera-left={-12} shadow-camera-right={12} shadow-camera-top={12} shadow-camera-bottom={-12} />
         <pointLight position={[0, 5, 3]} intensity={10} color={OR} distance={14} />
-        <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.02, 0]} receiveShadow><planeGeometry args={[80, 80]} /><meshStandardMaterial color="#0e1a24" roughness={0.35} metalness={0.3} /></mesh>
+        <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.02, 0]} receiveShadow><planeGeometry args={[80, 80]} /><meshStandardMaterial color="#0e1a24" roughness={0.35} metalness={0.3} transparent opacity={1 - 0.7 * fd} side={THREE.DoubleSide} /></mesh>
+        {fd > 0 && [-1, 1].map((s) => <group key={`f${s}`}><mesh position={[s * TX, -2.8, 0]}><boxGeometry args={[TW + 0.9, 3.4, TW + 1.4]} /><meshStandardMaterial color="#8b8478" transparent opacity={0.35 * fd} /></mesh><mesh position={[s * TX, -4.5 + 1.7 * io(R, 10.5, 13.5), 0]} scale={[1, io(R, 10.5, 13.5) + 0.001, 1]}><boxGeometry args={[TW + 0.7, 3.4, TW + 1.2]} /><meshStandardMaterial color={OR} emissive={OR} emissiveIntensity={0.3} transparent opacity={0.8 * fd} /></mesh></group>)}
+        {fd > 0 && <mesh position={[0, -4.6, 0]}><boxGeometry args={[40, 0.4, 20]} /><meshStandardMaterial color="#3a2d22" transparent opacity={fd} /></mesh>}
         {Array.from({ length: 30 }, (_, i) => <mesh key={i} rotation={[-Math.PI / 2, 0, 0]} position={[((i * 37) % 30) - 15, 0.0, ((t * 0.6 + i * 1.3) % 30) - 15]}><planeGeometry args={[1.2, 0.04]} /><meshBasicMaterial color="#2c4a60" /></mesh>)}
         {[-1, 1].map((s) => <mesh key={s} position={[s * 11.5, 0.4, 0]} receiveShadow><boxGeometry args={[4, 1.2, 30]} /><meshStandardMaterial color="#1a1a1a" /></mesh>)}
-        <Bridge t={tb} open={open} stone={stone} />
+        <Bridge t={tb} open={open} stone={stone * (1 - 0.8 * cw)} R={R} cw={cw} />
         <Ship t={t} /><Bus t={t} open={open} />
       </ThreeCanvas>
       <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 900, background: "linear-gradient(rgba(7,9,12,.85), rgba(7,9,12,.55) 60%, rgba(7,9,12,0))" }} />
@@ -139,25 +150,37 @@ export const TowerBridge: React.FC = () => {
         <div style={{ display: "flex", alignItems: "center", gap: 14, background: "rgba(7,7,7,.85)", padding: "8px 22px", borderRadius: 40 }}>
           <Img src={staticFile("brands/ingbelcastro/logo-white.png")} style={{ height: 54 }} /><span style={{ fontFamily: INT, fontWeight: 800, fontSize: 34, color: "#fff" }}>@ing.belcastro</span></div></div>
       <div style={{ position: "absolute", top: 322, left: 0, right: 0, textAlign: "center", fontFamily: INT, fontWeight: 800, fontSize: 30, color: OR, opacity: 1 - endIn }}>LE GRANDI OPERE · #1</div>
-      {/* testi */}
-      <Txt op={win(t, 0.1, 3.3, 0.2)} it={<>Un ponte<br />che si <O>apre in due</O></>} en="A bridge that splits in two" size={108} />
-      <Txt op={win(t, 3.4, 6.6, 0.25)} it={<>Londra, <O>1886</O></>} en="London, 1886: work begins" />
-      <Txt op={win(t, 6.6, 9.6, 0.25)} it={<><O>11.000 t</O> di acciaio</>} en="11,000 tonnes of steel" />
-      <Txt op={win(t, 9.6, 13.6, 0.25)} it={<>Poi la pietra<br /><O>la riveste</O></>} en="Then stone covers it" />
-      <Txt op={win(t, 13.6, 17.5, 0.25)} it={<>La pietra è un <O>vestito</O>:<br />dentro è acciaio</>} en="The stone is just a coat: inside, it's steel" size={84} />
-      <Txt op={win(t, 17.5, 20.0, 0.25)} it={<>1894: <O>aperto</O></>} en="Opened in 1894, after 8 years" />
-      <Txt op={win(t, 20.0, 26.5, 0.25)} it={<>Arriva una nave:<br />si alza fino a <O>{deg}°</O></>} en="A ship arrives: the bascules lift up to 86°" size={90} top={380} />
-      <Txt op={win(t, 23.6, 26.5, 0.25)} top={640} it={<>in circa <O>1 minuto</O></>} en="in about one minute" size={72} />
-      <Txt op={win(t, 26.5, 29.4, 0.25)} it={<>A vapore<br />fino al <O>1976</O></>} en="Steam-powered until 1976" />
-      <Txt op={win(t, 29.4, 33.4, 0.25)} it={<>1952: un autobus<br /><O>salta il varco</O></>} en="1952: a bus jumped the gap" size={90} />
+      {/* testi (tempi reali R, ognuno almeno 4 s) */}
+      <Txt op={win(R, 0.1, 3.5, 0.2)} it={<>Un ponte<br />che si <O>apre in due</O></>} en="A bridge that splits in two" size={108} />
+      <Txt op={win(R, 3.5, 9, 0.3)} it={<>Londra, <O>1886</O></>} en="London, 1886: work begins" />
+      <div style={{ position: "absolute", left: 120, right: 120, top: 1250, opacity: win(R, 4.2, 9, 0.3), background: "rgba(7,7,7,.85)", border: `3px solid ${OR}`, borderRadius: 24, padding: "28px 34px", fontFamily: INT, color: "#fff" }}>
+        <div style={{ fontWeight: 800, fontSize: 40 }}>Architetto: <span style={{ color: OR }}>Horace Jones</span></div>
+        <div style={{ fontWeight: 800, fontSize: 40, marginTop: 10 }}>Ingegnere: <span style={{ color: OR }}>John Wolfe Barry</span></div>
+        <div style={{ fontWeight: 600, fontSize: 36, marginTop: 16, color: "#ccc" }}>5 imprese · 432 operai · 8 anni di lavori</div></div>
+      <Txt op={win(R, 9, 15.5, 0.3)} it={<>Fondazioni:<br /><O>2 piloni</O> nel Tamigi</>} en="Foundations: two huge piers in the Thames" size={92} />
+      <Txt op={win(R, 10.5, 15.5, 0.3)} top={1250} it={<>oltre <O>70.000 t</O><br />di calcestruzzo</>} en="over 70,000 tonnes of concrete" size={80} />
+      <Txt op={win(R, 15.5, 22, 0.3)} it={<><O>11.000 t</O> di acciaio</>} en="11,000 tonnes of steel for towers and walkways" />
+      <Txt op={win(R, 22, 27, 0.3)} it={<>Passerelle alte<br />e <O>campate sospese</O></>} en="High walkways and suspended side spans" size={90} />
+      <Txt op={win(R, 27, 32, 0.3)} it={<>Poi la pietra<br /><O>la riveste</O></>} en="Then stone covers it" />
+      <Txt op={win(R, 32, 38, 0.3)} it={<>La pietra è un <O>vestito</O>:<br />dentro è acciaio</>} en="The stone is just a coat: inside, it's steel" size={84} />
+      <Txt op={win(R, 38, 42, 0.3)} it={<>30 giugno 1894:<br /><O>inaugurato</O></>} en="Opened on 30 June 1894, after 8 years" size={90} />
+      <Txt op={win(R, 42, 52, 0.3)} it={<>Arriva una nave:<br />si alza fino a <O>{deg}°</O></>} en="A ship arrives: the bascules lift up to 86°" size={90} top={380} />
+      <Txt op={win(R, 46.5, 52, 0.3)} top={640} it={<>in circa <O>1 minuto</O></>} en="in about one minute" size={72} />
+      <Txt op={win(R, 52, 58.5, 0.3)} it={<>Il segreto:<br /><O>i contrappesi</O></>} en="The secret: counterweights" size={96} />
+      <Txt op={win(R, 53, 58.5, 0.3)} top={1250} it={<>nascosti nei piloni,<br />bilanciano i bracci</>} en="hidden in the piers, they balance the bascules" size={66} />
+      <Txt op={win(R, 58.5, 63, 0.3)} it={<>Altezza libera:<br /><O>8,6 m</O> chiuso · <O>42,5 m</O> aperto</>} en="Clearance: 8.6 m closed, 42.5 m open (high tide)" size={80} />
+      <Txt op={win(R, 63, 68, 0.3)} it={<>Le passerelle alte</>} en="The high walkways" size={96} />
+      <Txt op={win(R, 63.6, 68, 0.3)} top={1250} it={<>i pedoni attraversavano<br /><O>anche col ponte aperto</O></>} en="pedestrians could cross even when it was open" size={66} />
+      <Txt op={win(R, 68, 73, 0.3)} it={<>A vapore<br />fino al <O>1976</O></>} en="Steam-powered until 1976" />
+      <Txt op={win(R, 73, 78, 0.3)} it={<>1952: un autobus<br /><O>salta il varco</O></>} en="1952: a bus jumped the gap" size={90} />
       {/* foto dell'ing. */}
-      <AbsoluteFill style={{ opacity: photo * (1 - io(t, 37.8, 38.3)), background: "#07090c" }}>
+      <AbsoluteFill style={{ opacity: photo * (1 - io(R, 83.7, 84.2)), background: "#07090c" }}>
         <div style={{ position: "absolute", left: 90, right: 90, top: 380, height: 1100, borderRadius: 34, overflow: "hidden", border: `6px solid ${OR}`, transform: `scale(${0.94 + 0.06 * photo}) rotate(${(1 - photo) * -3}deg)` }}>
-          <Img src={staticFile("ing/tower-bridge-ing.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.04 + 0.05 * io(t, 34.4, 38.0)})` }} /></div>
-        <Txt op={io(t, 34.8, 35.3)} top={1500} it={<>Io ci sono stato.<br /><O>E tu?</O></>} en="I was there. What about you?" size={88} />
+          <Img src={staticFile("ing/tower-bridge-ing.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.04 + 0.06 * io(R, 78.3, 84)})` }} /></div>
+        <Txt op={io(R, 78.8, 79.3)} top={1500} it={<>Io ci sono stato.<br /><O>E tu?</O></>} en="I was there. What about you?" size={88} />
       </AbsoluteFill>
-      <AbsoluteFill style={{ opacity: win(t, 38.0, 39.6, 0.3), background: "rgba(7,7,7,.95)" }}>
-        <Txt op={io(t, 38.1, 38.5)} top={700} it={<>Quale grande opera<br />vuoi <O>vedere</O>?</>} en="Which great work should be next? Comment below" size={96} />
+      <AbsoluteFill style={{ opacity: win(R, 84, 88.6, 0.3), background: "rgba(7,7,7,.95)" }}>
+        <Txt op={io(R, 84.1, 84.5)} top={700} it={<>Quale grande opera<br />vuoi <O>vedere</O>?</>} en="Which great work should be next? Comment below" size={96} />
       </AbsoluteFill>
       <AbsoluteFill style={{ opacity: endIn, background: "#000", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 36 }}>
         <Img src={staticFile("brands/ingbelcastro/logo-white.png")} style={{ width: 440 }} />
