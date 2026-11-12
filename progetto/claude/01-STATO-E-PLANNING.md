@@ -29,6 +29,8 @@ Documento di riferimento per **cosa è uscito, cosa è programmato e cosa viene 
 ## Settimana tipo (dal 2/11)
 **Dal 10/11 (decisione dell'ing.): niente più video lunghi.** Lun post IG+FB (argomento A) · Mar video 3D max 50 s sull'argomento A · Mer «Le Grandi Opere» max 90 s · Gio post (argomento B) · Ven video 3D sull'argomento B · Sab «Le Grandi Opere» · Dom nulla. IG + FB, più gli stessi video come Short YouTube. Video senza voce. **Orari: novembre tutto alle 19:00, dicembre tutto alle 9:30.** Dettagli e calendario: `03-PIANO-EDITORIALE-NOV-DIC.md`.
 
+**⛔ PAUSA dal 12/11/2026 (decisione dell'ing.): tutte le uscite future sono in bozza su Metricool; nulla esce finché l'ing. non riparte.** Già usciti: Tower Bridge #1 (11/11).
+
 ## Programmato su Metricool (riorganizzato il 10/11/2026 con il nuovo calendario)
 
 Regola dal 2/11: lun carosello · mar reel (IG + reel FB + Short YT) · mer video lungo sullo **stesso argomento**; gio · ven · sab su un secondo argomento. Calendario completo in `03-PIANO-EDITORIALE-NOV-DIC.md` e nell'Excel.

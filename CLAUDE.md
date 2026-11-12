@@ -5,6 +5,9 @@ Si lavora **solo** da Claude Code con questo repository collegato (una chat prin
 Il progetto claude.ai «Social_ing.belcastro» è solo archivio e non si aggiorna più.
 Scrivi sempre in italiano, in modo semplice: l'ing. non è un tecnico informatico.
 
+## ⛔ PAUSA (decisa dall'ing. il 12/11/2026)
+- **Tutte le uscite sono in pausa**: su Metricool ogni post futuro è in bozza. Nessuna attività (chat o automatica) deve programmare, pubblicare o togliere dalla bozza niente finché l'ing. non lo dice in chat. Le attività automatiche possono solo leggere e scrivere note in `progetto/`.
+
 ## La priorità dell'ing. (8/11/2026): massima precisione E massima creatività
 - Ogni contenuto deve essere **interessante, che intrattiene, mai noioso, montato bene**. Il gioco è usare l'IA meglio degli altri: fare sempre il massimo.
 - Identità fissa: nero + arancio #F07A35, logo bianco su fondo nero, font Oswald/Inter. Dentro questa identità: **sbizzarrirsi** con foto, video, immagini e grafiche pertinenti al caso specifico di cui si parla.
