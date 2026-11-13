@@ -13,7 +13,9 @@ Scrivi sempre in italiano, in modo semplice: l'ing. non è un tecnico informatic
 - **Su @ing.belcastro non si pubblica più niente da qui**: resta il profilo professionale dell'ing., che lo gestisce lui.
 - **Facebook è stato tolto** da Metricool: nessun post Facebook. Dove più sotto si legge «+ FB» o «Pagina Facebook», la regola è superata.
 - Metricool (verificato il 13/11): il brand 7777116 è collegato a Instagram `engiplanet` e a YouTube (canale `UC83ycddHKcjM4Tf6smMWCcQ`). Attenzione: le bozze create prima del 13/11 erano pensate per @ing.belcastro e per Facebook; **non vanno tolte dalla bozza così come sono** (finirebbero su @engiplanet, e la parte Facebook fallirebbe). Vanno riviste una per una con l'ing.
-- Logo EngiPlanet: globo con edifici color rame su fondo grigio pietra, scritta «ENGIPLANET · ing. Belcastro». Da decidere con l'ing.: colori dei prossimi video (nero + arancio di prima oppure i colori nuovi) e se i caroselli normativi continuano e dove.
+- **Cosa si pubblica su @engiplanet (ing. 13/11):** solo video, **massimo 100 secondi**, su meraviglie dell'ingegneria, grandi opere, innovazioni digitali nelle costruzioni e temi affini alla pagina. **Senza la voce dell'ing.**, con tanta animazione e fatti benissimo. **Niente più contenuti normativi** (bonus, CILA, pratiche, caroselli di informazione): le parti di questo documento che li riguardano sono superate, e così il limite di 120 s.
+- **Tutti i video portano il nome EngiPlanet** (logo e firma EngiPlanet, non più «ing. Belcastro» come marchio). L'ing. Belcastro è il gestore della pagina: in biografia c'è «Gestito da @ing.belcastro».
+- Logo EngiPlanet: globo con edifici color rame su fondo grigio pietra, scritta «ENGIPLANET · ing. Belcastro». Da decidere con l'ing.: colori dei prossimi video (nero + arancio di prima oppure i colori nuovi) e quanti video a settimana e in quali giorni.
 
 ## La priorità dell'ing. (8/11/2026): massima precisione E massima creatività
 - Ogni contenuto deve essere **interessante, che intrattiene, mai noioso, montato bene**. Il gioco è usare l'IA meglio degli altri: fare sempre il massimo.
