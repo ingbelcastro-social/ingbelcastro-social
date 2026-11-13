@@ -3,6 +3,7 @@ import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, useVideoCo
 import { ThreeCanvas } from "@remotion/three";
 import { useThree } from "@react-three/fiber";
 import * as THREE from "three";
+import { FotoReale } from "./FotoReale";
 import { loadFont as loadOswald } from "@remotion/google-fonts/Oswald";
 import { loadFont as loadInter } from "@remotion/google-fonts/Inter";
 const { fontFamily: OSW } = loadOswald("normal", { weights: ["700"], subsets: ["latin", "latin-ext"] });
@@ -160,8 +161,9 @@ export const Pisa3D: React.FC = () => {
         <Txt op={io(R, 70.2, 70.7)} top={620} it={<>Non l'hanno<br />raddrizzata.</>} en="They didn't straighten it." size={100} />
         <Txt op={io(R, 72.5, 73)} top={960} it={<><O>L'hanno salvata.</O></>} en="They saved it." size={124} />
       </AbsoluteFill>
-      <AbsoluteFill style={{ opacity: win(R, 78.4, 86.6, 0.3), background: "rgba(7,7,7,.95)" }}>
-        <Txt op={io(R, 78.6, 79)} top={700} it={<>Quale grande opera<br />vuoi <O>vedere</O>?</>} en="Which great work should be next? Comment below" size={96} />
+      <FotoReale R={R} a={78.4} b={83.2} img="fotoreali/pisa.jpg" place="Piazza dei Miracoli · Pisa" credit="__CREDIT_pisa__" />
+      <AbsoluteFill style={{ opacity: win(R, 83, 86.6, 0.3), background: "rgba(7,7,7,.95)" }}>
+        <Txt op={io(R, 83.2, 83.6)} top={700} it={<>Quale grande opera<br />vuoi <O>vedere</O>?</>} en="Which great work should be next? Comment below" size={96} />
       </AbsoluteFill>
       <AbsoluteFill style={{ opacity: endIn, background: "#000", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 36 }}>
         <Img src={staticFile("engiplanet/logo-engiplanet-originale.jpg")} style={{ width: 560, height: 560, borderRadius: 280 }} />

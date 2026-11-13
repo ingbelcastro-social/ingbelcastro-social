@@ -3,6 +3,7 @@ import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, useVideoCo
 import { ThreeCanvas } from "@remotion/three";
 import { useThree } from "@react-three/fiber";
 import * as THREE from "three";
+import { FotoReale } from "./FotoReale";
 import { loadFont as loadOswald } from "@remotion/google-fonts/Oswald";
 import { loadFont as loadInter } from "@remotion/google-fonts/Inter";
 const { fontFamily: OSW } = loadOswald("normal", { weights: ["700"], subsets: ["latin", "latin-ext"] });
@@ -144,8 +145,9 @@ export const Burj3D: React.FC = () => {
               <div style={{ fontFamily: INT, fontWeight: 800, fontSize: 28, color: "#ddd", marginTop: 12, opacity: k }}>{n}</div></div>; })}
         </div>
       </AbsoluteFill>
-      <AbsoluteFill style={{ opacity: win(R, 79.5, 86.6, 0.3), background: "rgba(5,8,15,.95)" }}>
-        <Txt op={io(R, 79.7, 80.1)} top={700} it={<>Quale grande opera<br />vuoi <O>vedere</O>?</>} en="Which great work should be next? Comment below" size={96} />
+      <FotoReale R={R} a={79.5} b={83.2} img="fotoreali/burj.jpg" place="Burj Khalifa · Dubai" credit="" />
+      <AbsoluteFill style={{ opacity: win(R, 83, 86.6, 0.3), background: "rgba(5,8,15,.95)" }}>
+        <Txt op={io(R, 83.2, 83.6)} top={700} it={<>Quale grande opera<br />vuoi <O>vedere</O>?</>} en="Which great work should be next? Comment below" size={96} />
       </AbsoluteFill>
       <AbsoluteFill style={{ opacity: endIn, background: "#000", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 36 }}>
         <Img src={staticFile("engiplanet/logo-engiplanet-originale.jpg")} style={{ width: 560, height: 560, borderRadius: 280 }} />
