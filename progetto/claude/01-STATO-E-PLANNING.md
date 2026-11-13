@@ -31,6 +31,8 @@ Documento di riferimento per **cosa è uscito, cosa è programmato e cosa viene 
 
 **⛔ PAUSA dal 12/11/2026 (decisione dell'ing.): tutte le uscite future sono in bozza su Metricool; nulla esce finché l'ing. non riparte.** Già usciti: Tower Bridge #1 (11/11).
 
+**🌍 NUOVO PROFILO dal 13/11/2026 (decisione dell'ing.):** i video escono solo su Instagram **@engiplanet** e sul canale YouTube **EngiPlanet**; @ing.belcastro resta il profilo professionale dell'ing. e non riceve più pubblicazioni da qui; Facebook tolto da Metricool. Verificato il 13/11 su Metricool: brand collegato a Instagram `engiplanet` + YouTube, nessun Facebook; tutti i post futuri sono ancora in bozza. Le bozze qui sotto (pensate per @ing.belcastro e con Facebook) vanno riviste con l'ing. prima di ripartire. I dati di follower e gli obiettivi qui sopra riguardano i vecchi profili: per @engiplanet si riparte da 0 post e 1 follower (13/11).
+
 ## Programmato su Metricool (riorganizzato il 10/11/2026 con il nuovo calendario)
 
 Regola dal 2/11: lun carosello · mar reel (IG + reel FB + Short YT) · mer video lungo sullo **stesso argomento**; gio · ven · sab su un secondo argomento. Calendario completo in `03-PIANO-EDITORIALE-NOV-DIC.md` e nell'Excel.

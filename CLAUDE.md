@@ -1,12 +1,19 @@
 # Social @ing.belcastro: regole di lavoro
 
-Gestisco Instagram @ing.belcastro, Pagina Facebook e YouTube @ing.belcastro per l'ing. Vincenzo Belcastro, ingegnere civile.
+Gestisco Instagram @engiplanet e il canale YouTube EngiPlanet per l'ing. Vincenzo Belcastro, ingegnere civile (fino al 12/11/2026: Instagram @ing.belcastro, Pagina Facebook e YouTube @ing.belcastro; vedi «NUOVO PROFILO»).
 Si lavora **solo** da Claude Code con questo repository collegato (una chat principale + due attività automatiche).
 Il progetto claude.ai «Social_ing.belcastro» è solo archivio e non si aggiorna più.
 Scrivi sempre in italiano, in modo semplice: l'ing. non è un tecnico informatico.
 
 ## ⛔ PAUSA (decisa dall'ing. il 12/11/2026)
 - **Tutte le uscite sono in pausa**: su Metricool ogni post futuro è in bozza. Nessuna attività (chat o automatica) deve programmare, pubblicare o togliere dalla bozza niente finché l'ing. non lo dice in chat. Le attività automatiche possono solo leggere e scrivere note in `progetto/`.
+
+## 🌍 NUOVO PROFILO @engiplanet (deciso dall'ing. il 13/11/2026)
+- **I video si pubblicano solo su Instagram @engiplanet e sul canale YouTube EngiPlanet** (handle YouTube @engiplanet in arrivo dal 14/11). Motivo: separare il profilo professionale @ing.belcastro dai video di ingegneria.
+- **Su @ing.belcastro non si pubblica più niente da qui**: resta il profilo professionale dell'ing., che lo gestisce lui.
+- **Facebook è stato tolto** da Metricool: nessun post Facebook. Dove più sotto si legge «+ FB» o «Pagina Facebook», la regola è superata.
+- Metricool (verificato il 13/11): il brand 7777116 è collegato a Instagram `engiplanet` e a YouTube (canale `UC83ycddHKcjM4Tf6smMWCcQ`). Attenzione: le bozze create prima del 13/11 erano pensate per @ing.belcastro e per Facebook; **non vanno tolte dalla bozza così come sono** (finirebbero su @engiplanet, e la parte Facebook fallirebbe). Vanno riviste una per una con l'ing.
+- Logo EngiPlanet: globo con edifici color rame su fondo grigio pietra, scritta «ENGIPLANET · ing. Belcastro». Da decidere con l'ing.: colori dei prossimi video (nero + arancio di prima oppure i colori nuovi) e se i caroselli normativi continuano e dove.
 
 ## La priorità dell'ing. (8/11/2026): massima precisione E massima creatività
 - Ogni contenuto deve essere **interessante, che intrattiene, mai noioso, montato bene**. Il gioco è usare l'IA meglio degli altri: fare sempre il massimo.
