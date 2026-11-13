@@ -5,6 +5,7 @@ import { loadFont as loadInter } from "@remotion/google-fonts/Inter";
 import { TowerBridge, TB_DUR } from "./TowerBridge";
 import { Pisa, PISA_DUR } from "./Pisa";
 import { Pisa3D, P3_DUR } from "./Pisa3D";
+import { Burj3D, BJ_DUR } from "./Burj3D";
 const { fontFamily: OSW } = loadOswald("normal", { weights: ["700"], subsets: ["latin", "latin-ext"] });
 const { fontFamily: INT } = loadInter("normal", { weights: ["600", "800"], subsets: ["latin", "latin-ext"] });
 const OR = "#D98A58";
@@ -62,5 +63,14 @@ export const GOPisa3D: React.FC = () => (
     <Sequence durationInFrames={INTRO * 30}><GOIntro title="Torre di Pisa" place="Pisa · Italia" num={2} /></Sequence>
     <Sequence from={INTRO * 30}><Pisa3D /></Sequence>
     <Audio src={staticFile("go-pisa3d/mix.wav")} />
+  </AbsoluteFill>
+);
+
+export const GO_BJ_DUR = INTRO + BJ_DUR;
+export const GOBurj: React.FC = () => (
+  <AbsoluteFill style={{ background: "#000" }}>
+    <Sequence durationInFrames={INTRO * 30}><GOIntro title="Burj Khalifa" place="Dubai · UAE" num={3} /></Sequence>
+    <Sequence from={INTRO * 30}><Burj3D /></Sequence>
+    <Audio src={staticFile("go-burj/mix.wav")} />
   </AbsoluteFill>
 );
