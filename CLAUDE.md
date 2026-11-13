@@ -17,6 +17,9 @@ Scrivi sempre in italiano, in modo semplice: l'ing. non è un tecnico informatic
 - **Tutti i video portano il nome EngiPlanet** (logo e firma EngiPlanet, non più «ing. Belcastro» come marchio). L'ing. Belcastro è il gestore della pagina: in biografia c'è «Gestito da @ing.belcastro».
 - Logo EngiPlanet: globo con edifici color rame su fondo grigio pietra, scritta «ENGIPLANET · ing. Belcastro». Da decidere con l'ing.: colori dei prossimi video (nero + arancio di prima oppure i colori nuovi) e quanti video a settimana e in quali giorni.
 
+- **Ritmo e orario (ing. 14/11):** **3 video a settimana** sulle grandi opere, **pubblicazione alle 8:00 del mattino** (questo sostituisce 19:00/9:30 e il calendario post+video). Giorni proposti: lunedì, mercoledì, venerdì (in attesa dell'ok dell'ing.). Ogni video deve essere «spaziale»: animazione ingegneristica 3D al massimo livello.
+- **Marchio nei video (dal 14/11):** sigla con il logo EngiPlanet (`_motore/assets/engiplanet/`), accento color rame `#D98A58` al posto dell'arancio, targhetta «ENGIPLANET» in alto, chiusura «Segui @engiplanet». Primo video pronto: `media/engiplanet/EngiPlanet-Grandi-Opere-1-Tower-Bridge-96s.mp4`. Foto profilo: `_motore/assets/engiplanet/avatar-engiplanet-simbolo.jpg`.
+
 ## La priorità dell'ing. (8/11/2026): massima precisione E massima creatività
 - Ogni contenuto deve essere **interessante, che intrattiene, mai noioso, montato bene**. Il gioco è usare l'IA meglio degli altri: fare sempre il massimo.
 - Identità fissa: nero + arancio #F07A35, logo bianco su fondo nero, font Oswald/Inter. Dentro questa identità: **sbizzarrirsi** con foto, video, immagini e grafiche pertinenti al caso specifico di cui si parla.

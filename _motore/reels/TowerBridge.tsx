@@ -9,7 +9,7 @@ const { fontFamily: OSW } = loadOswald("normal", { weights: ["700"], subsets: ["
 const { fontFamily: INT } = loadInter("normal", { weights: ["600", "800"], subsets: ["latin", "latin-ext"] });
 
 // Meraviglie dell'ingegneria #2 — Tower Bridge (3D, testi IT + EN)
-const OR = "#F07A35";
+const OR = "#D98A58";
 const C = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const io = (t: number, a: number, b: number) => interpolate(t, [a, b], [0, 1], { ...C, easing: Easing.out(Easing.cubic) });
 const ioe = (t: number, a: number, b: number) => interpolate(t, [a, b], [0, 1], { ...C, easing: Easing.inOut(Easing.cubic) });
@@ -148,7 +148,7 @@ export const TowerBridge: React.FC = () => {
       {/* logo e serie */}
       <div style={{ position: "absolute", top: 232, left: 0, right: 0, display: "flex", justifyContent: "center", opacity: 1 - endIn }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14, background: "rgba(7,7,7,.85)", padding: "8px 22px", borderRadius: 40 }}>
-          <Img src={staticFile("brands/ingbelcastro/logo-white.png")} style={{ height: 54 }} /><span style={{ fontFamily: INT, fontWeight: 800, fontSize: 34, color: "#fff" }}>@ing.belcastro</span></div></div>
+          <Img src={staticFile("engiplanet/avatar-engiplanet-simbolo.jpg")} style={{ height: 58, width: 58, borderRadius: 29 }} /><span style={{ fontFamily: INT, fontWeight: 800, fontSize: 34, color: "#fff", letterSpacing: "0.08em" }}>ENGIPLANET</span></div></div>
       <div style={{ position: "absolute", top: 322, left: 0, right: 0, textAlign: "center", fontFamily: INT, fontWeight: 800, fontSize: 30, color: OR, opacity: 1 - endIn }}>LE GRANDI OPERE · #1</div>
       {/* testi (tempi reali R, ognuno almeno 4 s) */}
       <Txt op={win(R, 0.1, 3.5, 0.2)} it={<>Un ponte<br />che si <O>apre in due</O></>} en="A bridge that splits in two" size={108} />
@@ -183,10 +183,10 @@ export const TowerBridge: React.FC = () => {
         <Txt op={io(R, 84.1, 84.5)} top={700} it={<>Quale grande opera<br />vuoi <O>vedere</O>?</>} en="Which great work should be next? Comment below" size={96} />
       </AbsoluteFill>
       <AbsoluteFill style={{ opacity: endIn, background: "#000", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 36 }}>
-        <Img src={staticFile("brands/ingbelcastro/logo-white.png")} style={{ width: 440 }} />
+        <Img src={staticFile("engiplanet/logo-engiplanet-originale.jpg")} style={{ width: 560, height: 560, borderRadius: 280 }} />
         <div style={{ fontFamily: INT, fontWeight: 800, fontSize: 36, color: OR, letterSpacing: "0.15em" }}>LE GRANDI OPERE</div>
         <div style={{ fontFamily: OSW, fontWeight: 700, fontSize: 80, color: "#fff", textTransform: "uppercase" }}>Segui per la <span style={{ color: OR }}>#2</span></div>
-        <div style={{ fontFamily: INT, fontWeight: 800, fontSize: 40, color: "#ccc" }}>@ing.belcastro</div>
+        <div style={{ fontFamily: INT, fontWeight: 800, fontSize: 40, color: "#ccc" }}>@engiplanet</div>
       </AbsoluteFill>
       <div style={{ position: "absolute", top: 1860, left: 0, right: 0, textAlign: "center", fontFamily: INT, fontWeight: 600, fontSize: 22, color: "#999", opacity: (1 - endIn) * (1 - photo) }}>Animazione 3D illustrativa · proporzioni semplificate</div>
     </AbsoluteFill>
