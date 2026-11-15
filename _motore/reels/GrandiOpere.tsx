@@ -6,6 +6,7 @@ import { TowerBridge, TB_DUR } from "./TowerBridge";
 import { Pisa, PISA_DUR } from "./Pisa";
 import { Pisa3D, P3_DUR } from "./Pisa3D";
 import { Burj3D, BJ_DUR } from "./Burj3D";
+import { Gottardo3D, GT_DUR } from "./Gottardo3D";
 const { fontFamily: OSW } = loadOswald("normal", { weights: ["700"], subsets: ["latin", "latin-ext"] });
 const { fontFamily: INT } = loadInter("normal", { weights: ["600", "800"], subsets: ["latin", "latin-ext"] });
 const OR = "#D98A58";
@@ -72,5 +73,14 @@ export const GOBurj: React.FC = () => (
     <Sequence durationInFrames={INTRO * 30}><GOIntro title="Burj Khalifa" place="Dubai · UAE" num={3} /></Sequence>
     <Sequence from={INTRO * 30}><Burj3D /></Sequence>
     <Audio src={staticFile("go-burj/mix.wav")} />
+  </AbsoluteFill>
+);
+
+export const GO_GT_DUR = INTRO + GT_DUR;
+export const GOGottardo: React.FC = () => (
+  <AbsoluteFill style={{ background: "#000" }}>
+    <Sequence durationInFrames={INTRO * 30}><GOIntro title="San Gottardo" place="Svizzera · Switzerland" num={4} /></Sequence>
+    <Sequence from={INTRO * 30}><Gottardo3D /></Sequence>
+    <Audio src={staticFile("go-gottardo/mix.wav")} />
   </AbsoluteFill>
 );
