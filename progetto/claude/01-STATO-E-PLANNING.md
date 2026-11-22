@@ -12,7 +12,7 @@ Documento di riferimento per **cosa è uscito, cosa è programmato e cosa viene 
 | 1/11 (partenza) | — | — | 1.131 (dato del 30/10) | 1 |
 | 8/11 | 3.000 | 150 | 1.146 (dato del 6/11) · −62% | 5 · −97% |
 | 15/11 | 6.000 | 400 | n.d. (Metricool ora legge @engiplanet: 1 follower il 12–13/11) | n.d. |
-| 22/11 | 10.000 | 800 | | |
+| 22/11 | 10.000 | 800 | @engiplanet: 3 follower (20/11) | n.d. |
 | 29/11 | 16.000 | 1.300 | | |
 | 6/12 | 23.000 | 2.000 | | |
 | 13/12 | 31.000 | 2.900 | | |
@@ -27,6 +27,8 @@ Documento di riferimento per **cosa è uscito, cosa è programmato e cosa viene 
 **Regola di controllo:** ogni lunedì si registra il dato reale. Se siamo sotto la tappa di oltre il 20%, si cambiano formati, orari e temi.
 
 **Sessione automatica della domenica 15/11/2026 (solo lettura, PAUSA in corso):** nessun contenuto preparato o programmato. Metricool 16–28/11: 8 post, **tutti in bozza** (lun 16 carosello Manovra IG+FB; mar 17 reel bonus IG + FB + Short; gio 19 carosello CILA IG+FB; ven 20 reel CILA IG + FB + Short): sono vecchi contenuti normativi per @ing.belcastro con Facebook, da non togliere dalla bozza (vedi regole @engiplanet). Statistiche Instagram (ora account `engiplanet`, 8–15/11): 1 follower, 161 visualizzazioni e 128 account raggiunti il 13/11; reel: 3 pubblicati/misurati, 160 visualizzazioni, 2 interazioni. I dati di @ing.belcastro non sono più leggibili da Metricool. Il testo dell'attività della domenica è ancora quello vecchio (@ing.belcastro, caroselli, FB, video lunghi): va aggiornato con l'ing. prima della ripartenza.
+
+**Sessione automatica della domenica 22/11/2026 (solo lettura, PAUSA in corso):** nessun contenuto preparato o programmato. Metricool 23/11–5/12: nessun post programmato né in bozza restituito da getScheduledPosts. Statistiche Instagram `engiplanet` (15–22/11): follower da 2 (15–19/11) a **3** (20/11), +0/−0 registrati il 22/11; visualizzazioni 35 il 15/11 e poi 1–2 al giorno; copertura 29 il 15/11; reel (15/11): 36 visualizzazioni, 33 account raggiunti, 1 reel misurato. Il profilo è fermo perché non esce nulla: la crescita ripartirà solo con la ripresa delle uscite. Il testo dell'attività della domenica è ancora quello vecchio: va aggiornato con l'ing. prima della ripartenza.
 
 ## Settimana tipo (dal 2/11)
 **Dal 10/11 (decisione dell'ing.): niente più video lunghi.** Lun post IG+FB (argomento A) · Mar video 3D max 50 s sull'argomento A · Mer «Le Grandi Opere» max 90 s · Gio post (argomento B) · Ven video 3D sull'argomento B · Sab «Le Grandi Opere» · Dom nulla. IG + FB, più gli stessi video come Short YouTube. Video senza voce. **Orari: novembre tutto alle 19:00, dicembre tutto alle 9:30.** Dettagli e calendario: `03-PIANO-EDITORIALE-NOV-DIC.md`.
